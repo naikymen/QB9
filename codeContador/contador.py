@@ -5,10 +5,10 @@ ptmlistfile = open('ptmlist.txt', 'r')
 ptmlistid = []
 i = 1
 for line in ptmlistfile:
-	#print line
-	esta = line.count('ID   ')
-	if esta == 1:
-		print('ocurrencia ',i)
-		i = i+1
+    #print line
+    esta = line.count('ID   ')
+    if esta == 1:
+        print('ocurrencia ', i)
+        i += 1
 
 ptmlistfile.close()
