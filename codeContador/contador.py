@@ -1,14 +1,13 @@
 __author__ = 'naikymen'
 
-ptmlistfile = open('ptmlist.txt', 'r')
+ptmlist = open('../ptmlist', 'r')
 #print ptmlistfile.readline()
 ptmlistid = []
 i = 1
-for line in ptmlistfile:
+for line in ptmlist:
     #print line
-    esta = line.count('ID   ')
-    if esta == 1:
-        print('ocurrencia ', i)
-        i += 1
-
-ptmlistfile.close()
+    lineadeID = line.count('ID   ')
+    if lineadeID == 1:
+        ptmlistid.append(line)
+print(ptmlistid[:2])
+ptmlist.close()
