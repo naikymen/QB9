@@ -6,14 +6,14 @@ ptmlist = open('../ptmlist', 'r')
 #contenedor para las ptm's
 ptmlistid = []
 ptmlistdupes = []
-print(ptmlistid)
+print("el valor inicial de la lista es: ", ptmlistid, "\n")
 
 #itera en las lienas y en cada una las courrencias de 'ID   '
 for line in ptmlist:
-    lineadeID = line.count('ID   ')
+    IDline = line.count('ID   ')
     line = line.rstrip('\n')  # quita caracter de nueva linea a la derecha
-    line = line.lstrip('ID   ')  # quita segmento 'ID   ' a la izquierda
-    if lineadeID == 1:
+    line = line[5:]  # quita segmento 'ID   ' a la izquierda
+    if IDline == 1:
         if line not in ptmlistid:  # si la linea es de ID y no está en la lista, agregarla a la lista
             #print(line)
             ptmlistid.append(line)
