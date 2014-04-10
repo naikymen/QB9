@@ -1,9 +1,17 @@
+# coding=utf-8
 __author__ = 'naikymen'
+from Bio import Seq
+from Bio import SeqIO
+from Bio import Entrez
+from Bio.Blast import NCBIWWW
 
-import Bio.Seq as Bioseq
+#Entrez usage example
+Entrez.email = "nico.fruta@gmail.com"
+handle = Entrez.efetch(db="nucleotide", id="57240072", rettype="gb", retmode="text")
+print(handle.readline().strip(), "\n")
 
-#create a sequence object
-my_seq = Bioseq.Seq('CATGTAGACTAG')
+#Bioseq usage example
+my_seq = Seq.Seq('CATGTAGACTAG')  # create a sequence object
 
 #print out some details about it
 print("seq %s is %i bases long" % (my_seq, len(my_seq)))

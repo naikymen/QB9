@@ -1,3 +1,4 @@
+# coding=utf-8
 __author__ = 'naikymen'
 
 #abrir el archivo que contiene la lista de modificaciones postraduccionales de uniprot
