@@ -64,7 +64,7 @@ i = 0
 line = ptmlist.readline().lstrip('\n')
 while i < 13:
     print line[:2] + categories [i]
-    if line[:2] == categories[i]:  # si la linea corresponde al campo "i"
+    if line[:2] == categories[i]:  # si la linea corresponde al campo "i"a
         print('se guarda ', line[5:], ' en ' + categories[i]) # HACER QUE IMPRIMA EN UNA LINE
         #record[categories[i]] = line[5:]  # guardar sus datos en el campo que corresponde a la categoria
         #print(categories[i] + ' --- ' + record[categories[i]])  # e imprimir la categoria
