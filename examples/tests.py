@@ -2,32 +2,27 @@
 __author__ = 'nicolas'
 ptmlist = open('../ptmlist', 'r')
 from collections import OrderedDict
+import psycopg2
 
-categories = (  # lista del conjunto de categorías posibles
-    'ID',
-    'AC',
-    'FT',
-    'TG',
-    'PA',
-    'PP',
-    'CF',
-    'MM',
-    'MA',
-    'LC',
-    'TR',
-    'KW',
-    'DR',
-)
+categories = OrderedDict()  # las categorías están en un diccionario con su type de postgresql, dsp los cambio
+categories['ID'] = "text"
+categories['AC'] = "text"
+categories['FT'] = "text"
+categories['TG'] = "text"
+categories['PA'] = "text"
+categories['PP'] = "text"
+categories['CF'] = "text"
+categories['MM'] = "text"
+categories['MA'] = "text"
+categories['LC'] = "text"
+categories['TR'] = "text"
+categories['KW'] = "text"
+categories['DR'] = "text"
 
-i = 0
-dummy = ''
-record = OrderedDict()
+items = categories.items()
+print("\n    " + str(categories.items())[2:-2].replace("'", '').replace("),", "").replace(",", "").replace(" (", "\n    "))
 
-print(record)
-
-for cat in categories:  # para cada categoría
-    record[cat] = i  # agregarla al registro y llenar el campo con el valor por defecto
-    i += 1
-
-for key in record.iterkeys():
-    print(key)
+"""conn = psycopg2.connect("dbname=test user=naikymen")
+cur = conn.cursor()
+cur.execute("SELECT * FROM ptm_table")
+print(cur.fetchall())"""
