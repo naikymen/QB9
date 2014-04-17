@@ -1,34 +1,15 @@
 # coding=utf-8
 __author__ = 'nicolas'
+from Bio import *
 from peewee import *
-import psycopg2
+import playhouse.postgres_ext
 
 ptmlist = open('../ptmlist', 'r')
 
-DBNAME = 'ptm_db'
-usuario = 'usuariocopado784'
-ptm_db = PostgresqlDatabase(DBNAME, user=usuario)
-ptm_db.get_conn().set_client_encoding('UTF8')
-
-
-class PostgresqlModel(Model):
-    ID = TextField(unique=True, primary_key=True, help_text='Identifier (FT description); starts a PTM entry')
-    AC = TextField(unique=True, help_text='Accession (PTM-xxxx)')
-    FT = TextField(help_text='Feature Key')
-    TG =
-    PA
-    PP
-    CF
-    MM
-    MA
-    LC
-    TR
-    KW
-    DR
-
-
-    class Meta:
-        database = ptm_db
+#DBNAME = 'ptm_db'
+#usuario = 'usuariocopado784'
+#ptm_db = PostgresqlDatabase(DBNAME, user=usuario)
+#ptm_db.get_conn().set_client_encoding('UTF8')
 
 dummy = ''  # valor por defecto de los campos del registro
 record_cero = {}  # un diccionario (el registro) que va a contener los datos para una PTM
