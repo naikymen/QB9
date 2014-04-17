@@ -1,60 +1,61 @@
 # coding=utf-8
 __author__ = 'nicolas'
-from Bio import *
-from peewee import *
-import playhouse.postgres_ext
+from psycopg2 import *
+import psycopg2
+from collections import OrderedDict
 
 ptmlist = open('../ptmlist', 'r')
 
-#DBNAME = 'ptm_db'
-#usuario = 'usuariocopado784'
-#ptm_db = PostgresqlDatabase(DBNAME, user=usuario)
-#ptm_db.get_conn().set_client_encoding('UTF8')
+categories = OrderedDict()  # las categorías están en un diccionario con su type de postgresql, dsp los cambio
+categories['ID'] = "text"
+categories['AC'] = "text"
+categories['FT'] = "text"
+categories['TG'] = "text"
+categories['PA'] = "text"
+categories['PP'] = "text"
+categories['CF'] = "text"
+categories['MM'] = "text"
+categories['MA'] = "text"
+categories['LC'] = "text"
+categories['TR'] = "text"
+categories['KW'] = "text"
+categories['DR'] = "text"
 
-dummy = ''  # valor por defecto de los campos del registro
-record_cero = {}  # un diccionario (el registro) que va a contener los datos para una PTM
+conn = psycopg2.connect("dbname=test user=naikymen")
+cur = conn.cursor()
+sql_table_name = ''
+sql_table_query = ''
+#for keys in categories.iterkeys():  # armar la parte del el query de columnas y tipos
+#    sql_table_query += keys + ' ' + categories[keys] + ', '  # todo resolver problema con los separadores en CREATE
+#cur.execute("CREATE TABLE IF NOT EXISTS " + sql_table_name + sql_table_query)  # todo averiguar como era el CREATE
+#sql_insert_values = ''
 
-categories = {  # lista del conjunto de categorías posibles
-    'ID',
-    'AC',
-    'FT',
-    'TG',
-    'PA',
-    'PP',
-    'CF',
-    'MM',
-    'MA',
-    'LC',
-    'TR',
-    'KW',
-    'DR',
-}
-
+empty_record = OrderedDict()  # aca voy a meter duplas "nombre de columna" + "valor de campo" de c/linea
 for gato in categories:  # para cada categoría
-    record_cero[gato] = dummy  # agregarla al registro y llenar el campo con el valor por defecto
-
-
-record = record_cero  # defino el diccionario de registros, después me va a servir para vaciarlo
+    empty_record[gato] = ''  # agregarla al registro y llenar el campo con el valor por defecto
+record = empty_record  # defino así el diccionario de registros vacío
 
 line = ptmlist.readline()  # comienzo a contar lineas, asigno el valor de la primera a "line"
 i = 0
-while line != '':
-    for cat in categories:  # toma cada elemento de categoria
+
+while line != '':  # mientras la linea no sea la "última", o sea, el fin del archivo.
+    if line[:2] == '//':  # si la nueva linea es un separador de PTMs "//"
+        #for value in record.itervalues():  # meter cada valor en el registro
+        #    sql_insert_values += ', ' + str(value)  # todo resolver problema con los separadores en INSERT
+        #cur.execute("INSERT INTO ptm_table VALUES (" + sql_insert_values + ')')  # ejecutar el insert
+        i += 1  # contar PTMs separadas por la doble barra "//".
+        for key in record.iterkeys():  # un print. Obs: este record está ordenado ¿útil para hacer el INSERT?
+            print(key + ' (PTM ' + str(i) + ')' + ':\n' + record[key])
+        record = empty_record  # después del insert, vaciar el registro.
+        line = ptmlist.readline()  # y cambiar de linea.
+    for cat in categories.iterkeys():  # toma cada elemento de categoria (en orden)
         if line[:2] == cat:  # y si la linea corresponde a la categoria
             record[cat] = line[5:-1]  # agrega su contenido al registro para esa categoria
             line = ptmlist.readline()  # y cambia a una nueva linea
             while line[:2] == cat:  # mientras la linea nueva sea de la misma id que la anterior
-                record[cat] += '\n' + line[5:-1]  # agrega su contenido con el separador de nueva linea
+                record[cat] += '\n' + line[5:-1]  # agrega su contenido con el separador de nueva linea, puede ser otro
                 line = ptmlist.readline()  # y cambia a una nueva linea
-    if line[:2] == '//':  # y si la nueva linea es un separador de PTMs "//"
-        # INSERT INTO ptm's VALUES record ??
-        # acá falta el query, que no se hacer todavía
-        i += 1  # vamos contando PTMs separadas por la doble barra "//"
-        for perro in record:  # un lindo print para ver que anda to-do =)
-            print(perro + ' (PTM ' + str(i) + ')' + ':\n' + record[perro])
-        record = record_cero  # después del insert, vaciar el registro
-        line = ptmlist.readline()  # y cambiar de linea
-    # si la linea está vacía, se llegó al final del archivo y el while termina
+    # si la linea está vacía, es porque llegó al final del archivo y el while termina
 
 # antes el registro lo escribí así
 #record_cero = {'ID': dummy, 'AC': dummy, 'FT': dummy, 'TG': dummy, 'PA': dummy,
