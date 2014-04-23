@@ -51,7 +51,12 @@ while line != '':  # mientras la linea no sea la "última", o sea, el fin del ar
     if line[:2] == '//':  # si la nueva linea es un separador de PTMs "//" hacer un INSERT
         sql_insert_columns = ', '.join(record.iterkeys())  # unir los elementos de keys con comas
         sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los elementos devalues con comas
-        output.write(("INSERT INTO TABLE mysql.ptm_table VALUES (%r)" % sql_insert_values + '\n').replace("\"", ''))  # solo para probar
+        output.write(("INSERT INTO TABLE mysql.ptm_table VALUES (%r)" % sql_insert_values + '\n').replace("\"", ''))
+"""
+el insert no anda, me dice que está mal la sintaxis:
+mysql> INSERT INTO TABLE mysql.ptm_table VALUES ('(2-aminosuccinimidyl)acetic acid (Asn-Gly)', 'PTM-0450', 'CROSSLNK', 'Asparagine-Glycine.', 'Amino acid side chain-Amino acid backbone.', 'Anywhere-Protein core.', 'H-3 N-1', '-17.026549', '-17.03', 'Extracellular and lumenal localisation.', 'Archaea; taxId:2157 (Archaea). --- Bacteria; taxId:2 (Bacteria). --- Eukaryota; taxId:2759 (Eukaryota).', 'null', 'RESID; AA0441. --- PSI-MOD; 01624.');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE mysql.ptm_table VALUES ('(2-aminosuccinimidyl)acetic acid (Asn-Gly)', 'PTM' at line 1
+"""
         i += 1  # contar PTMs separadas por la doble barra "//".
         record = empty_record  # después del insert, vaciar el registro.
         line = ptmlist.readline()  # y cambiar de linea.
