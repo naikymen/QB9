@@ -2,9 +2,7 @@
 __author__ = 'nicolas'
 from os.path import expanduser
 from ordereddict import OrderedDict
-from sql import *
-from sql.aggregate import *
-from sql.conditionals import *
+#from collections import OrderedDict
 
 ptmlist_file = expanduser("~") + '/QB9-git/QB9/ptmlist'
 ptmlist = open(ptmlist_file)
@@ -36,28 +34,22 @@ sql_insert_values = '\''
 sql_insert_columns = ''
 
 #crear la tabla
-#table_def = str(categories.items())[2:-2].replace("'", '').replace("),", "").replace(",", "").replace(" (", ", ")
-#print("CREATE TABLE IF NOT EXISTS test.ptm_table (" + table_def + ");")
+table_def_items = []  # lista para concatenaciones de key y valor
+for cat, value in categories.items():  # concatenaciones key y valor
+    table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
+table_def = ', '.join(table_def_items)  # definicion de la tabla
+output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + "); \n")  # guardar el CREATE en output
 
-empty_record = OrderedDict()  # aca voy a meter duplas "nombre de columna" + "valor de campo" de c/linea
-for gato in categories:  # para cada categoría
-    empty_record[gato] = 'null'  # agregarla al registro y llenar el campo con el valor por defecto
-record = empty_record  # defino así el diccionario de registros vacío
+empty_record = OrderedDict()  # dicionario para las duplas "nombre de columna" + "valor de campo" de c/linea
+for gato in categories:  # defino los keys del diccionario y les asigno un valor x defecto
+    empty_record[gato] = 'null'
+record = empty_record  # defino así el diccionario de registros vacío que voy a usar
 
 line = ptmlist.readline()  # comienzo a contar lineas, asigno el valor de la primera a "line"
-i = 0
-
 while line != '':  # mientras la linea no sea la "última", o sea, el fin del archivo.
     if line[:2] == '//':  # si la nueva linea es un separador de PTMs "//" hacer un INSERT
-        sql_insert_columns = ', '.join(record.iterkeys())  # unir los elementos de keys con comas
         sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los elementos devalues con comas
-        output.write(("INSERT INTO TABLE mysql.ptm_table VALUES (%r)" % sql_insert_values + '\n').replace("\"", ''))
-"""
-el insert no anda, me dice que está mal la sintaxis:
-mysql> INSERT INTO TABLE mysql.ptm_table VALUES ('(2-aminosuccinimidyl)acetic acid (Asn-Gly)', 'PTM-0450', 'CROSSLNK', 'Asparagine-Glycine.', 'Amino acid side chain-Amino acid backbone.', 'Anywhere-Protein core.', 'H-3 N-1', '-17.026549', '-17.03', 'Extracellular and lumenal localisation.', 'Archaea; taxId:2157 (Archaea). --- Bacteria; taxId:2 (Bacteria). --- Eukaryota; taxId:2759 (Eukaryota).', 'null', 'RESID; AA0441. --- PSI-MOD; 01624.');
-ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE mysql.ptm_table VALUES ('(2-aminosuccinimidyl)acetic acid (Asn-Gly)', 'PTM' at line 1
-"""
-        i += 1  # contar PTMs separadas por la doble barra "//".
+        output.write(("INSERT INTO mysql.ptm_table VALUES (%r)" % sql_insert_values + '\n').replace("\"", ''))
         record = empty_record  # después del insert, vaciar el registro.
         line = ptmlist.readline()  # y cambiar de linea.
     for cat in categories.iterkeys():  # toma cada elemento de categoria (en orden)
@@ -67,14 +59,4 @@ ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that 
             while line[:2] == cat:  # mientras la linea nueva sea de la misma id que la anterior
                 record[cat] += ' --- ' + line[5:-1]  # agrega su contenido con un separador
                 line = ptmlist.readline()  # y cambia a una nueva linea
-    # si la linea está vacía, es porque llegó al final del archivo y el while termina
-
-# antes el registro lo escribí así
-#record_cero = {'ID': dummy, 'AC': dummy, 'FT': dummy, 'TG': dummy, 'PA': dummy,
-#    'PP': dummy, 'CF': dummy, 'MM': dummy, 'MA': dummy, 'LC': dummy, 'TR': dummy, 'KW': dummy, 'DR': dummy}
-
-#cur.execute("SELECT * FROM test.ptm_table")
-#cur.fetchall()
-#cur.close()
-
-# HOLA!!! """
+    # si la linea está vacía, es porque llegó al final del archivo y el while termina"""
