@@ -922,8 +922,8 @@ TR   Bacteria; taxId:1224 (Proteobacteria), taxId:1239 (Firmicutes).
 TR   Eukaryota; taxId:3041 (Chlorophyta), taxId:33208 (Metazoa).
 DR   RESID; AA0185.
 DR   PSI-MOD; 00193.
-ID   3-oxoalanine (Ser)
 //
+ID   3-oxoalanine (Ser)
 AC   PTM-0034
 FT   MOD_RES
 TG   Serine.
