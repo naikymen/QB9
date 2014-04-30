@@ -69,8 +69,23 @@ for aa in aas:  # Para cada linea en la lista de nombres de aminoácidos
             + " TG LIKE '" + nombre + "'")
     solo = int(str(cur.fetchone())[1:-3])
 
-    execute("INSERT INTO reactividad (nombre, total, solo, acomp) "#
+    execute("SELECT COUNT(TG) FROM ptm_table WHERE"
+            + " (TG LIKE '" + nombre + "-%'"
+            + " OR TG LIKE '%-" + nombre + "')"
+            + "AND TG NOT LIKE '%-%-%'")
+    acomp1 = int(str(cur.fetchone())[1:-3])
+
+    execute("SELECT COUNT(TG) FROM ptm_table WHERE"
+            + " (TG LIKE '" + nombre + "-%'"
+            + " OR TG LIKE '%-" + nombre + "-%'"
+            + " OR TG LIKE '%-" + nombre + "')"
+            + " AND TG LIKE '%-%-%'")
+    acomp2 = int(str(cur.fetchone())[1:-3])
+
+    print("\n nombre: " + nombre + "\n acomp: " + str(acomp) + "\n acomp1: " + str(acomp1) + "\n acomp2: " + str(acomp2))
+
+    #print("INSERT INTO reactividad (nombre, total, solo, acomp, acomp1, acomp2) "
             # guardar en la tabla de reactividades los 3 valores obtenidos
-            "VALUES('" + nombre + "', " + str(total) + ", " + str(solo) + ", " + str(acomp) + ")")
+    #        "VALUES('" + nombre + "', " + str(total) + ", " + str(solo) + ", " + str(acomp) + ", " + str(acomp1) + ", " + str(acomp2) + ")")
 
 # Chauchas """
