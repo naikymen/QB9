@@ -36,38 +36,41 @@ while line != '':
     line = aminoacidos.readline()
 
 # Crear la tabla para la "reactividad" de los aminoácidos
-#execute("CREATE TABLE IF NOT EXISTS reactividad ("
-#        "nombre varchar(20) PRIMARY KEY, "  # Acá puedo poner foreign key?
-#        "total TINYINT, "
-#        "solo TINYINT, "
-#        "acomp TINYINT)")
+#execute("create table if not exists reactividad ("
+#        "nombre varchar(100) not null, total TINYINT, "
+#        "solo TINYINT, acomp TINYINT, "
+#        "FOREIGN KEY fk_nom(nombre) "
+#        "REFERENCES nombresaa(nombre) "
+#        "ON DELETE NO ACTION) "
+#        "ENGINE=INNODB;")
+
 
 # Llenar la tabla
-solo = 0
-
-for aa in aas:
-    print(aa[6:])
-
-# Obtener el total
-for aa in aas:
+for aa in aas:  # Para cada linea en la lista de nombres de aminoácidos
+    nombre = aa[6:]  # Tomar el nombre entero
     execute("SELECT COUNT(TG) FROM ptm_table WHERE"
-            + " TG LIKE '" + aa[6:] + "'"
-            + " OR TG LIKE '" + aa[6:] + "-%'"
-            + " OR TG LIKE '%-" + aa[6:] + "-%'"
-            + " OR TG LIKE '%-" + aa[6:] + "'")
-    total = int(str(cur.fetchone())[1:3].rstrip('L'))
-    print(str(total) + " -- " + aa[6:])
+            # Conseguir el total de PTMs en las que está involucrado,
+            + " TG LIKE '" + nombre + "'"
+            + " OR TG LIKE '" + nombre + "-%'"
+            + " OR TG LIKE '%-" + nombre + "-%'"
+            + " OR TG LIKE '%-" + nombre + "'")
+    fetch = cur.fetchone()
+    total = int(str(fetch)[1:-3])
 
     execute("SELECT COUNT(TG) FROM ptm_table WHERE"
-            + " OR TG LIKE '" + aa[6:] + "-%'"
-            + " OR TG LIKE '%-" + aa[6:] + "-%'"
-            + " OR TG LIKE '%-" + aa[6:] + "'")
-    acomp = int(str(cur.fetchone())[1:3].rstrip('L'))
-    print(str(acomp) + " -- " + aa[6:])
+            # las PTMs en las que está involucrado con otro residuo de aminoácido y
+            + " TG LIKE '" + nombre + "-%'"
+            + " OR TG LIKE '%-" + nombre + "-%'"
+            + " OR TG LIKE '%-" + nombre + "'")
+    acomp = int(str(cur.fetchone())[1:-3])
 
     execute("SELECT COUNT(TG) FROM ptm_table WHERE"
-            + " TG LIKE '" + aa[6:] + "'")
-    solo = int(str(cur.fetchone())[1:3].rstrip('L'))
-    print(str(solo) + " -- " + aa[6:])
+            # las PTMs en las que solamente se modifica este residuo
+            + " TG LIKE '" + nombre + "'")
+    solo = int(str(cur.fetchone())[1:-3])
+
+    execute("INSERT INTO reactividad (nombre, total, solo, acomp) "#
+            # guardar en la tabla de reactividades los 3 valores obtenidos
+            "VALUES('" + nombre + "', " + str(total) + ", " + str(solo) + ", " + str(acomp) + ")")
 
 # Chauchas """
