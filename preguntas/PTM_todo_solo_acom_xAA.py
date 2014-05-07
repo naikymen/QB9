@@ -13,6 +13,8 @@ cur.execute("USE mysql")
 # Abrir el archivo con los nombres completos de los aminoacidos
 aminoacidos_file = expanduser("~") + '/QB9-git/QB9/resources/aminoacidos'
 aminoacidos = open(aminoacidos_file)
+output_file = expanduser("~") + '/QB9-git/QB9/resources/output.txt'
+output = open(output_file, 'w')
 
 # Defino una funcion de ejecución porque soy vago
 
@@ -82,7 +84,7 @@ for aa in aas:  # Para cada linea en la lista de nombres de aminoácidos
             + " AND TG LIKE '%-%-%'")
     acomp2 = int(str(cur.fetchone())[1:-3])
 
-    print("\n nombre: " + nombre + "\n acomp: " + str(acomp) + "\n acomp1: " + str(acomp1) + "\n acomp2: " + str(acomp2))
+    output.write("\n nombre: " + nombre + "\n acomp: " + str(acomp) + "\n acomp1: " + str(acomp1) + "\n acomp2: " + str(acomp2) +"\n")
 
     #print("INSERT INTO reactividad (nombre, total, solo, acomp, acomp1, acomp2) "
             # guardar en la tabla de reactividades los 3 valores obtenidos

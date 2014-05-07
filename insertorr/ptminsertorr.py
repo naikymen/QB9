@@ -45,7 +45,7 @@ for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(table_def_items)  # definicion de la tabla
 #output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + "); \n")  # guardar el CREATE en output
-cur.execute("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ")")
+cur.execute("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB")
 con.commit()
 
 #Defino un modelo de diccionario donde cargar los valores que voy a extraer de la lista
