@@ -1,0 +1,15 @@
+Archaea & Bacteria
+mysql> select count(*) from ptm_archaea a, ptm_bacteria b where b.ID = a.ID;
+|       68 |
+
+Bacteria & Eukarya
+mysql> select count(*) from ptm_eukarya e, ptm_bacteria b where b.ID = e.ID;
+|      111 |
+
+Eukarya & Archaea
+mysql> select count(*) from ptm_eukarya e, ptm_archaea a where a.ID = e.ID;
+|       70 |
+
+Archaea & Bacteria & Eukarya
+65
+-------query pendiente--------

@@ -47,7 +47,7 @@ for nombre in aas:
 
     variable tg=
     vars(
-        
+
     )
     print("INSERT INTO dist_aa (nombre, ID, TG) VALUES ("
             + "'" + nombre + "',"
