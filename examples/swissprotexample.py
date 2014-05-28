@@ -19,7 +19,7 @@ descriptions = []
 for record in SwissProt.parse(sprot):
     #if not record.description[15:29] == "ncharacterized":  # traer entradas no no caraterizadas
     if i < 1000:  # solo 20 elementos en la lista
-        if  "MOD_RES" in str(record):
+        if str(record.features).__contains__("MOD_RES"):
             print(record.features)
         #descriptions.append(str(record.accessions)[2:-2])  # adjuntar n° de acceso de la entrada sin [' y ']
         i += 1
