@@ -1,0 +1,7 @@
+tabla <- read.csv("/home/nicolas/QB9-git/QB9/resources/dataframesinesp.csv", header = TRUE, sep = ",", quote = "\"")
+linea <- lm(tabla$Decay ~ tabla$Friendly.PTM)
+plot(x=tabla$Friendly.PTM,y=tabla$Decay, main = "Friendly Decay", pch = 21, bg = "red", xlab="Acomp PTMs", ylab="Decay")
+abline(linea$coefficients)
+text(tabla$Friendly.PTM, tabla$Decay, tabla$Residue, pos = 4, offset = 0.25, cex = 0.7)
+summary(linea)
+anova(linea)
