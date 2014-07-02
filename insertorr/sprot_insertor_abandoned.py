@@ -9,7 +9,7 @@ sprot_file = expanduser("~") + '/QB9_Files/uniprot_sprot.dat'
 sprot = open(sprot_file)
 output_file = expanduser("~") + '/QB9-git/QB9/resources/output.txt'
 output = open(output_file, 'w')
-
+"""
 #Las categorías están en un diccionario con su type de postgresql todo optimizar los campos
 categories = OrderedDict()
 categories['AC'] = "varchar(200) PRIMARY KEY"  # accesion number
@@ -65,8 +65,11 @@ while i <= 1000:
 
 """
 i = 0
-while i <= 200:
+line = sprot.readline()
+while line != "":
     line = sprot.readline()
-    print(line[:-1])
-    i += 1
+    if line[0] == "/":
+        i += 1
+        print(i)
+print(i)
 # """
