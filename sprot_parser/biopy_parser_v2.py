@@ -29,7 +29,7 @@ ptmrecords = ["MOD_RES", "LIPID", "CARBOHYD", "DISULFID", "CROSSLNK"]
 neqs = ["Probable", "Potential", "By similarity"]  # ¿Y "definitive"?
 # Las categorías están en un diccionario con su type de postgresql todo optimizar los campos
 categories = OrderedDict()
-categories['AC'] = "varchar(20) PRIMARY KEY"  # accesion number
+categories['AC'] = "varchar(20) NOT NULL"  # accesion number
 categories['FT'] = "varchar(20)"
 categories['STATUS'] = "varchar(20)"
 categories['PTM'] = "varchar(50)"
@@ -116,7 +116,6 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
                             for p in data.itervalues():
                                 listap.append(str(p))
                             sql_insert_values = '\'' + '\', \''.join(listap) + '\''
-                            print(sql_insert_values)
                             cur.execute(("INSERT INTO sprot VALUES (%r);"
                                          % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
                             con.commit()

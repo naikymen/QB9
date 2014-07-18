@@ -1,1 +1,1 @@
-CREATE TABLE IF NOT EXISTS ptm_table (AC varchar(20) PRIMARY KEY, FT varchar(20), STATUS varchar(20), PTM varchar(50), SQ text(45000), LENGTH varchar(200), ORG text(500), OC varchar(20), HO text(500)) ENGINE=InnoDB; 
+CREATE TABLE IF NOT EXISTS ptm_table (AC varchar(20) NOT NULL, FT varchar(20), STATUS varchar(20), PTM varchar(50), SQ text(45000), LENGTH varchar(200), ORG text(500), OC varchar(20), HO text(500)) ENGINE=InnoDB; 
