@@ -13,11 +13,13 @@ output_file = expanduser("~") + '/QB9-git/QB9/resources/output.txt'
 output = open(output_file, 'w')
 
 #Configurar el cursor para la base de datos mysql
-con = mdb.connect('localhost', 'nicolas', '', '')
+con = mdb.connect('localhost', 'root', '', '')
 cur = con.cursor()
 cur.execute("SELECT VERSION()")
 print(cur.fetchone())
-cur.execute("USE mysql")
+cur.execute("USE ptmdb")
+cur.execute("SHOW TABLES")
+
 
 #Las categorías están en un diccionario con su type de postgresql todo optimizar los campos
 categories = OrderedDict()
@@ -45,8 +47,8 @@ for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(table_def_items)  # definicion de la tabla
 #output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + "); \n")  # guardar el CREATE en output
-cur.execute("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB")
-con.commit()
+print("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB")
+#con.commit()
 
 #Defino un modelo de diccionario donde cargar los valores que voy a extraer de la lista
 empty_record = OrderedDict()
@@ -54,7 +56,7 @@ for gato in categories:  # usando las keys de categories y un valor por defecto 
     empty_record[gato] = 'null'
 record = empty_record  # este es el diccionario de registros vacío que voy a usar
 
-line = ptmlist.readline()  # comienzo a contar lineas, asigno el valor de la primera a "line"
+line = ptmlist.readline()  # comienzo a leer lineas, asigno el valor de la primera a "line"
 while line != '':  # mientras la linea no sea la "última", o sea, el fin del archivo.
     if line[:2] == '//':  # si la nueva linea es un separador de PTMs "//" hacer un INSERT
         # output.write(str(record.items()))
