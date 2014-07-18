@@ -108,7 +108,7 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
                         print("Position: " + str(feature[1]))
                     if feature[3]:
                         print(feature[3])
-        if i > 100000:  # el número de entradas (separadas por //) es 542782
+        if i > 1000:  # el número de entradas (separadas por //) es 542782
             print(i)
             break
 # The sequence counts 60 amino acids per line, in groups of 10 amino acids, beginning in position 6 of the line.
