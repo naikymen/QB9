@@ -29,15 +29,15 @@ ptmrecords = ["MOD_RES", "LIPID", "CARBOHYD", "DISULFID", "CROSSLNK"]
 neqs = ["Probable", "Potential", "By similarity"]  # ¿Y "definitive"?
 # Las categorías están en un diccionario con su type de postgresql todo optimizar los campos
 categories = OrderedDict()
-categories['AC'] = "varchar(20) NOT NULL"  # accesion number
-categories['FT'] = "varchar(20)"
-categories['STATUS'] = "varchar(20)"
-categories['PTM'] = "varchar(50)"
+categories['AC'] = "varchar(30) NOT NULL"  # accesion number
+categories['FT'] = "varchar(30)"
+categories['STATUS'] = "varchar(30)"
+categories['PTM'] = "varchar(100)"
 categories['SQ'] = "text(45000)"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
 categories['LENGTH'] = "varchar(200)"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
 categories['ORG'] = "text(500)"  # organism
-categories['OC'] = "varchar(20)"  # organism classification, vamos solo con el dominio
-#categories['OX'] = "varchar(200)"  # taxonomic ID
+categories['OC'] = "varchar(30)"  # organism classification, vamos solo con el dominio
+categories['OX'] = "varchar(200)"  # taxonomic ID
 categories['HO'] = "text(500)"  # host organism
 #categories['CC'] = "varchar(200)"  # comments section, nos interesa el campo "PTM"
 #categories['SQi'] = "varchar(200)"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
@@ -45,7 +45,7 @@ categories['HO'] = "text(500)"  # host organism
 # Defino un modelo de diccionario donde cargar los valores que voy a extraer de la lista
 empty_data = OrderedDict()
 for gato in categories:  # usando las keys de categories y un valor por defecto todo vacío no es nulo ¿cómo hago?
-    empty_data[gato] = 'null'
+    empty_data[gato] = 'NULL'
 data = empty_data  # este es el diccionario de registros vacío que voy a usar"""
 
 # Crear la tabla
@@ -55,7 +55,7 @@ for cat, value in categories.items():  # concatenaciones key y valor
 table_def = ', '.join(table_def_items)  # definicion de la tabla
 output = open(output_file, 'w')
 output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB; \n")  # guardar el CREATE en output
-#cur.execute("CREATE TABLE IF NOT EXISTS sprot (" + table_def + ") ENGINE=InnoDB")
+#cur.execute("CREATE TABLE IF NOT EXISTS sprot2 (" + table_def + ") ENGINE=InnoDB")
 #con.commit()
 
 status = "Experimental"
@@ -66,67 +66,97 @@ listap = []
 with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
     for record in SwissProt.parse(sprot):
         i += 1
-        data['AC'] = record.accessions[0]  # solo el principal todo insertar el primero y la secuencia+info en una tabla
-        data['SQ'] = record.sequence
-        data['LENGTH'] = record.sequence_length
-        #data['SQi'] = record.seqinfo
-        data['FT'] = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
-        #data['OX'] = record.taxonomy_id
-        data['ORG'] = record.organism  # esto el bicho
-        data['OC'] = record.organism_classification[0]  # esto me tira el dominio del bicho
-        if not record.host_organism:
-            data['HO'] = 'No host'
-        else:
-            olista = []
-            for o in record.host_organism:
-                olista.append((o.split(";"))[0])
-            data['HO'] = ', '.join(olista)  # y esto el host del virus ¿o parásito?
-
-        for a in range(0, len(data['FT'])):  # guardar los campos "candidato" del FT en una lista llamada out
-            out.append(data['FT'][a][0])
+        data = empty_data
+        features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
+        for a in range(0, len(features)):  # guardar los campos "candidato" del FT en una lista llamada out
+            out.append(features[a][0])
         interes = list(set(out).intersection(ptmrecords))  # armar un set con los interesantes y hacerlo lista interes
         if interes:  # si interes no está vacía, entonces hay algo para cargar
+            data['AC'] = record.accessions[0]  # solo el principal
+            # todo insertar el primero y la secuencia+info en una tabla
+            data['SQ'] = record.sequence
+            data['LENGTH'] = record.sequence_length
+            #data['SQi'] = record.seqinfo
+            data['OX'] = record.taxonomy_id
+            data['ORG'] = record.organism  # esto el bicho
+            data['OC'] = record.organism_classification[0]  # esto me tira el dominio del bicho
+            if not record.host_organism:
+                data['HO'] = 'No host'
+            else:
+                olista = []
+                for o in record.host_organism:
+                    olista.append((o.split(";"))[0])
+                data['HO'] = ', '.join(olista)  # y esto el host del virus ¿o parásito?
+
         # todo cargar secuencias y ptms por separado? evitar duplicados de secuencia, relacion via AC?
-            for feature in data['FT']:  # iterar los features de la entrada
+            for feature in features:  # iterar los features de la entrada
                 if feature[0] in interes:  # si el titulo del FT interesa, proseguir ¡mejora un poco! =D
                     for tipo in interes:  # iterear los tipos interesantes encontrados en el feature
-                        if feature[0] in tipo:  # si el feature evaluado interesante, imprimir las cosas de ese feature
+                        if feature[0] in tipo:  # si el feature evaluado interesante, cargar los datos en data[]
                             A = feature[1]  # de el residuo tal (va a ser el mismo que el siguiente si está solo)
                             B = feature[2]  # hacia el otro. OJO hay algunos desconocidos indicados con un "?"
                             C = feature[3]  # este tiene la posta?
                             D = feature[4]  # este aparece a veces? todo wtf?
                             status = "Experimental"
                             ptm = ''
-                            if C:
-                                for neq in neqs:
-                                    if neq in C:
-                                        status = neq
+
+                            # Asignar FT
+                            data['FT'] = feature[0]
+
+                            # Asignar STATUS y PTM
+                            if C:  # si C (el que tiene el nombre de la PTM y el STATUS) contiene algo
+                                for neq in neqs:  # iterar los STATUS posibles
+                                    if neq in C:  # si C contiene el STATUS pirulo
+                                        data['STATUS'] = neq  # asignar el valor a STATUS
                                         C = C.replace('('+neq+")", '')  # hay que sacar esta porquería
-                                        C = C.replace(neq, '')  # hay que sacar esta porquería si no aparece con paréntesis
-                                        break
-                                ptm = ((C.split(" /"))[0].split(';')[0]).rstrip(" ").rstrip(".").rstrip(" ")
-                                data['STATUS'] = status
-                                data['PTM'] = ptm
+                                        C = C.replace(neq, '')
+                                        # hay que sacar esta porquería si no aparece con paréntesis
+                                        break  # esto corta con el loop más "cercano" en indentación
+                                ptm = ((C.split(" /"))[0].split(';')[0]).\
+                                    rstrip(" ").rstrip(".").rstrip(" ")
+                                # Obs: a veces las mods tienen identificadores estables que empiezan con "/"
+                                # así que hay que sacarlo. y otas cosas desoués de un ";" CHAU.
+                                # Ver http://web.expasy.org/docs/userman.html#FT_line
+                                # También le saco espacios y puntos al final.
                                 if tipo == 'DISULFID':
                                     data['PTM'] = "Disulfide Bridge"
-                                data['FT'] = tipo
-                                # Obs: a veces las mods tienen identificadores estables, así que hay que sacarlo. CHAU.
-                                # Ver http://web.expasy.org/docs/userman.html#FT_line
+                                else:
+                                    data['PTM'] = ptm
+
+                            #if data['AC'] == "P80351":  # si es una de las entradas que tiene problemas, hacer cosas
+                            #    print("\n " + tipo + " --- " + data['AC'] + " --- " + data['PTM'])
+                            #    print(features)
+                            #if data['AC'] == "P80351":  # si es una de las entradas que tiene problemas, hacer cosas
+                            #    print(data['FT'])
 
                             for p in data.itervalues():
-                                listap.append(str(p))
-                            sql_insert_values = '\'' + '\', \''.join(listap) + '\''
-                            cur.execute(("INSERT INTO sprot VALUES (%r);"
+                                listap.append(str(p).replace("'", "''"))
+                            if len(listap) != 10:
+                                print("\n")
+                                print(data['AC'])
+                                print(listap)
+                            sql_insert_values = '\'' + \
+                                                '\', \''.join(listap) + \
+                                                '\''
+                            #if not listap[1]:
+                            #    print(listap)
+                            #if len(data['FT']) >= 10:
+                            #    print("\n")
+                            #    print(data['AC'])
+                            #    for element in data['FT']:
+                            #        print(element)
+
+                            cur.execute(("INSERT INTO sprot2 VALUES (%r);"
                                          % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
                             con.commit()
                             listap = []
                             # unir los elementos de values con comas
         out = []
 
-        #if i >= 150:  # el número de entradas (separadas por //) es 542782 verificado con biopython
+        if i >= 10000:  # el número de entradas (separadas por //) es 542782 verificado con biopython
         #    print("\n")
         #    print(i)
-        #    break
+            break
 # The sequence counts 60 amino acids per line, in groups of 10 amino acids, beginning in position 6 of the line.
 # http://www.uniprot.org/manual/
 # General Annotation: cofactores, mass spectrometry data, PTM (complementario al MOD_RES y otras PTMs..?)

@@ -1,0 +1,46 @@
+nicolas@monastrel[sprot_parser] python biopy_parser_v2.py             [ 6:26PM]
+('5.1.69-0ubuntu0.10.04.1',)
+Traceback (most recent call last):
+  File "biopy_parser_v2.py", line 120, in <module>
+    % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
+  File "/usr/lib/pymodules/python2.6/MySQLdb/cursors.py", line 166, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/pymodules/python2.6/MySQLdb/connections.py", line 35, in defaulterrorhandler
+    raise errorclass, errorvalue
+_mysql_exceptions.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's goatgrass) (Aegilops squarrosa)', 'Eukaryota', 'No host')' at line 1")
+
+
+
+nicolas@monastrel[sprot_parser] python biopy_parser_v2.py             [ 6:26PM]
+('5.1.69-0ubuntu0.10.04.1',)
+biopy_parser_v2.py:120: Warning: Data truncated for column 'PTM' at row 1
+  % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
+biopy_parser_v2.py:120: Warning: Data truncated for column 'FT' at row 1
+  % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
+^CTraceback (most recent call last):
+  File "biopy_parser_v2.py", line 121, in <module>
+    con.commit()
+KeyboardInterrupt
+
+
+
+
+nicolas@monastrel[sprot_parser] python biopy_parser_v2.py             [ 6:28PM]
+('5.1.69-0ubuntu0.10.04.1',)
+
+
+biopy_parser_v2.py:120: Warning: Data truncated for column 'FT' at row 1
+  % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
+###### esto puede tener que ver con esto http://www.codeproject.com/Questions/450707/Data-Truncated-For-Column-row
+###### Pasaba que eestaba cargando mal el FT, le metia toda la lista y no entraba en el campo, por eso la advertencia (gracias restricciones!!!!!! =D)
+
+
+Traceback (most recent call last):
+  File "biopy_parser_v2.py", line 120, in <module>
+    print(listap[1])
+  File "/usr/lib/pymodules/python2.6/MySQLdb/cursors.py", line 166, in execute
+    self.errorhandler(self, exc, value)
+  File "/usr/lib/pymodules/python2.6/MySQLdb/connections.py", line 35, in defaulterrorhandler
+    raise errorclass, errorvalue
+_mysql_exceptions.OperationalError: (1136, "Column count doesn't match value count at row 1")
+nicolas@monastrel[sprot_parser]      
