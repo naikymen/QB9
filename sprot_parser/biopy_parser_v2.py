@@ -110,8 +110,6 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
                             data['FT'] = feature[0]
                             data['FROM_RES'] = A
                             data['TO_RES'] = B
-                            # reiniciar
-
 
                             # reiniciar PTM y STATUS
                             data['PTM'] = empty_data['PTM']
@@ -131,10 +129,10 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
                                 # así que hay que sacarlo. y otas cosas desoués de un ";" CHAU.
                                 # Ver http://web.expasy.org/docs/userman.html#FT_line
                                 # También le saco espacios y puntos al final.
-                                if tipo == 'DISULFID':
-                                    data['PTM'] = "Disulfide Bridge"
-                                else:
-                                    data['PTM'] = ptm
+                            if tipo == 'DISULFID':
+                                data['PTM'] = "Disulfide Bridge"
+                            else:
+                                data['PTM'] = ptm
 
                             #if data['AC'] == "P80351":  # si es una de las entradas que tiene problemas, hacer cosas
                             #    print("\n " + tipo + " --- " + data['AC'] + " --- " + data['PTM'])
@@ -144,10 +142,6 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
 
                             for p in data.itervalues():
                                 listap.append(str(p).replace("'", "''"))
-                            if len(listap) != 10:
-                                print("\n")
-                                print(data['AC'])
-                                print(listap)
                             sql_insert_values = '\'' + \
                                                 '\', \''.join(listap) + \
                                                 '\''
@@ -167,10 +161,10 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
                             listap = []
                             # unir los elementos de values con comas
 
-        #if i >= 10000:  # el número de entradas (separadas por //) es 542782 verificado con biopython
-        #    print("\n")
-        #    print(i)
-        #    break
+        if i >= 5000:  # el número de entradas (separadas por //) es 542782 verificado con biopython
+            print("\n")
+            print(i)
+            break
 # The sequence counts 60 amino acids per line, in groups of 10 amino acids, beginning in position 6 of the line.
 # http://www.uniprot.org/manual/
 # General Annotation: cofactores, mass spectrometry data, PTM (complementario al MOD_RES y otras PTMs..?)
