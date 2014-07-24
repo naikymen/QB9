@@ -112,6 +112,7 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
                             data['TO_RES'] = B
 
                             # reiniciar PTM y STATUS
+                            ptm = ''
                             data['PTM'] = empty_data['PTM']
                             data['STATUS'] = "Experimental"
                             # Asignar STATUS y PTM
@@ -126,40 +127,29 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
                                 ptm = ((C.split(" /"))[0].split(';')[0]).\
                                     rstrip(" ").rstrip(".").rstrip(" ")
                                 # Obs: a veces las mods tienen identificadores estables que empiezan con "/"
-                                # así que hay que sacarlo. y otas cosas desoués de un ";" CHAU.
+                                # así que hay que sacarlo. y otas cosas después de un ";" CHAU.
+                                # También hay CROSSLNKs con otras anotaciones, que los hace aparecer como únicas
+                                # al contarlas, pero en realidad son casi iguales todo quizás ocurre con otras?
                                 # Ver http://web.expasy.org/docs/userman.html#FT_line
                                 # También le saco espacios y puntos al final.
-                            if tipo == 'DISULFID':
+                                # Odio esto del formato... todo no hay algo que lo haga mejor?
+                            if tipo == 'DISULFID':  # si el tipo es disulfuro, no hay mucho que decir.
                                 data['PTM'] = "Disulfide Bridge"
-                            else:
+                            else:  # pero si no lo es, guardamos la ptm en el campo PTM.
                                 data['PTM'] = ptm
 
-                            #if data['AC'] == "P80351":  # si es una de las entradas que tiene problemas, hacer cosas
-                            #    print("\n " + tipo + " --- " + data['AC'] + " --- " + data['PTM'])
-                            #    print(features)
-                            #if data['AC'] == "P80351":  # si es una de las entradas que tiene problemas, hacer cosas
-                            #    print(data['FT'])
-
-                            for p in data.itervalues():
-                                listap.append(str(p).replace("'", "''"))
+                            for p in data.itervalues():  # itero los valores de los datos que fui cargando al dict.
+                                listap.append(str(p).replace("'", "''"))  # y los pongo en una lista
                             sql_insert_values = '\'' + \
                                                 '\', \''.join(listap) + \
                                                 '\''
-                            #if not listap[1]:
-                            #    print(listap)
-                            #if len(data['FT']) >= 10:
-                            #    print("\n")
-                            #    print(data['AC'])
-                            #    for element in data['FT']:
-                            #        print(element)
-
+                            # Que después uno como van en el INSERT
+                            # El insert, en el que reemplazo ' por '', para escaparlas en sql
                             cur.execute(("INSERT INTO sprot2 VALUES (%r);"
                                          % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
                             con.commit()
-
-                            ptm = ''
-                            listap = []
                             # unir los elementos de values con comas
+                            listap = []
 
         if i >= 5000:  # el número de entradas (separadas por //) es 542782 verificado con biopython
             print("\n")
