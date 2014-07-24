@@ -151,10 +151,10 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
                             # unir los elementos de values con comas
                             listap = []
 
-        if i >= 5000:  # el número de entradas (separadas por //) es 542782 verificado con biopython
-            print("\n")
-            print(i)
-            break
+        #if i >= 5000:  # el número de entradas (separadas por //) es 542782 verificado con biopython
+        #    print("\n")
+        #    print(i)
+        #    break
 # The sequence counts 60 amino acids per line, in groups of 10 amino acids, beginning in position 6 of the line.
 # http://www.uniprot.org/manual/
 # General Annotation: cofactores, mass spectrometry data, PTM (complementario al MOD_RES y otras PTMs..?)
