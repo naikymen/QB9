@@ -26,8 +26,8 @@ ftlist = []
 #  Interesting feature types
 ptmrecords = ["MOD_RES", "LIPID", "CARBOHYD", "DISULFID", "CROSSLNK"]
 # Non-experimental qualifiers for feature annotations
-neqs = ["Probable", "Potential", "By similarity"]  # ¿Y "definitive"?
-# Las categorías están en un diccionario con su type de postgresql todo optimizar los campos
+neqs = ["Probable", "Potential", "By similarity"]  # Y "Experimental"
+# Las categorías están en un diccionario con su type de mysql todo optimizar los campos
 categories = OrderedDict()
 categories['AC'] = "varchar(30) NOT NULL"  # accesion number
 categories['FT'] = "varchar(30) NOT NULL"
@@ -48,19 +48,19 @@ categories['HO'] = "text(500)"  # host organism
 empty_data = OrderedDict()
 for gato in categories:  # usando las keys de categories y un valor por defecto todo vacío no es nulo ¿cómo hago?
     empty_data[gato] = 'NULL'
-data = empty_data  # este es el diccionario de registros vacío que voy a usar"""
+data = empty_data  # este es el diccionario de registros vacío que voy a usar
 
 # Crear la tabla
 table_def_items = []  # lista para concatenaciones de key y valor
 for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(table_def_items)  # definicion de la tabla
-output = open(output_file, 'w')
-output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB; \n")  # guardar el CREATE en output
+#output = open(output_file, 'w')
+#output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB; \n")
+#  guardar el CREATE en output
 cur.execute("CREATE TABLE IF NOT EXISTS sprot2 (" + table_def + ") ENGINE=InnoDB")
 con.commit()
 
-data['STATUS'] = "Experimental"
 ptm = ''
 out = []
 listap = []
@@ -164,7 +164,7 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
 # todo también dentro de FT
 
 # """
-output.close()
+#output.close()
 print('\n')
 print(time.time() - start_time)
 
