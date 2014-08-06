@@ -12,7 +12,8 @@ import MySQLdb as mdb
 start_time = time.time()
 
 # Armo un diccionario con los AAs que voy a contar
-prot_dic = OrderedDict((k, 0) for k in 'ABCDEFGHIKLMNOPQRSTUVWXYZ')
+abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+prot_dic = OrderedDict((k, 0) for k in abc)
 
 
 def count_amino_acids_ext(seq):  # Defino una  función que toma una secuencia y los cuenta
@@ -67,11 +68,13 @@ data = empty_data  # este es el diccionario de registros vacío que voy a usar
 
 # Crear las tablas
 prot_dic_def_items = []
-prot_dic_def = OrderedDict((k, 'SMALLINT') for k in 'ABCDEFGHIKLMNOPQRSTUVWXYZ')
+prot_dic_def = OrderedDict((k, 'SMALLINT') for k in abc)
 for cat, value in prot_dic_def.items():  # concatenaciones key y valor
     prot_dic_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(prot_dic_def_items)  # definicion de la tabla
-cur.execute("CREATE TABLE IF NOT EXISTS aa_count (AC_NUM VARCHAR(30), OC_ID VARCHAR(30), " + table_def + ") ENGINE=InnoDB")
+cur.execute("CREATE TABLE IF NOT EXISTS aa_count (AC_NUM VARCHAR(30), OC_ID VARCHAR(30), LENGTH SMALLINT,"
+      + table_def
+      + ") ENGINE=InnoDB")
 con.commit()
 #output = open(output_file, 'w')
 #output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB; \n")
@@ -99,9 +102,10 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
         cur.execute("INSERT INTO aa_count VALUES ('"
-                    + record.accessions[0] + "', '"
-                    + record.organism_classification[0]
-                    + "', " + sql_insert_values_q + ")")
+              + record.accessions[0] + "', '"
+              + record.organism_classification[0] + "', "
+              + str(record.sequence_length)
+              + ", " + sql_insert_values_q + ")")
         con.commit()
 
         """
@@ -210,7 +214,7 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
             con.commit()
             listar = []"""
 
-        #if i >= 100:  # segun uniprot el número de entradas es 542782 (verificado con biopython)
+        #if i >= 2:  # segun uniprot el número de entradas es 542782 (verificado con biopython)
         #    print("\n")
         #    print(i)
         #    break
