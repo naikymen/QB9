@@ -72,7 +72,7 @@ prot_dic_def = OrderedDict((k, 'SMALLINT') for k in abc)
 for cat, value in prot_dic_def.items():  # concatenaciones key y valor
     prot_dic_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(prot_dic_def_items)  # definicion de la tabla
-cur.execute("CREATE TABLE IF NOT EXISTS aa_count (AC_NUM VARCHAR(30), OC_ID VARCHAR(30), LENGTH SMALLINT,"
+cur.execute("CREATE TABLE IF NOT EXISTS count_aa (AC_NUM VARCHAR(30), OC_ID VARCHAR(30), LENGTH MEDIUMINT,"
       + table_def
       + ") ENGINE=InnoDB")
 con.commit()
@@ -101,7 +101,7 @@ with open(sprot_file) as sprot:  # esto me abre y cierra el archivo al final
         for q in contenido_aa.itervalues():
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
-        cur.execute("INSERT INTO aa_count VALUES ('"
+        cur.execute("INSERT INTO count_aa VALUES ('"
               + record.accessions[0] + "', '"
               + record.organism_classification[0] + "', "
               + str(record.sequence_length)

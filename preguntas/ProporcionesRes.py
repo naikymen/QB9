@@ -51,8 +51,8 @@ for k in abc:
 query2 = 'SUM(' + '), SUM('.join(query1) + ')'
 query3 = 'SUM(' + ') + SUM('.join(query1) + ')'
 
-query2 = 'SELECT ' + query2 + ' from aa_count'
-query3 = 'SELECT ' + query3 + ' from aa_count'
+query2 = 'SELECT ' + query2 + ' from count_aa'
+query3 = 'SELECT ' + query3 + ' from count_aa'
 
 query(query3)
 
@@ -68,11 +68,24 @@ r = r.fetch_row(maxrows=0)
 for i in range(0, 25):
     info[abc[i]] = r[0][i]
 
+j = 0
+l = 0
+
 for i, k in info.iteritems():
-    print(aminoacids(0)[i] + ": " + str(k*100/total)[0:4] + "%")
+    print(aminoacids(0)[i] + ", " + str(k*100/total)[0:4] + "%")
+    l = l + int(k)
+    j = j + (k*100/total)
 
 
+print("%tot: " + str(j))
+print("#TotRes: " + str(l))
 
+query("SELECT COUNT(*) FROM count_aa")
+r = con.store_result()
+r = r.fetch_row(maxrows=0)
+print("#TotSeq: " + str(r[0][0]))
 
+print("En la versión de 2014_03, SwissProt contiene 542782 entradas de secuencia, que suman 193019802 aminoácidos =)")
+print("ftp://ftp.uniprot.org/pub/databases/uniprot/previous_releases/release-2014_03/knowledgebase/")
 
 #"""

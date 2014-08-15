@@ -1,0 +1,31 @@
+Ala, 8.25%
+Asx, 0.00%
+Cys, 1.37%
+Asp, 5.45%
+Glu, 6.75%
+Phe, 3.86%
+Gly, 7.07%
+His, 2.27%
+Ile, 5.95%
+Lys, 5.84%
+Leu, 9.66%
+Met, 2.41%
+Asn, 4.06%
+Pyl, 0.00%
+Pro, 4.71%
+Gln, 3.93%
+Arg, 5.53%
+Ser, 6.57%
+Thr, 5.34%
+Sec, 0.00%
+Val, 6.86%
+Trp, 1.08%
+Xaa, 0.00%
+Tyr, 2.92%
+Glx, 0.00%
+
+   Ala (A) 8.26   Gln (Q) 3.93   Leu (L) 9.66   Ser (S) 6.57
+   Arg (R) 5.53   Glu (E) 6.74   Lys (K) 5.83   Thr (T) 5.34
+   Asn (N) 4.05   Gly (G) 7.08   Met (M) 2.41   Trp (W) 1.09
+   Asp (D) 5.46   His (H) 2.27   Phe (F) 3.86   Tyr (Y) 2.92
+   Cys (C) 1.37   Ile (I) 5.95   Pro (P) 4.71   Val (V) 6.87
