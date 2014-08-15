@@ -40,7 +40,7 @@ categories['DR'] = "varchar(80)"
 #variables del insert
 sql_insert_values = ''
 sql_insert_columns = ''
-
+i=0
 #crear la tabla
 table_def_items = []  # lista para concatenaciones de key y valor
 for cat, value in categories.items():  # concatenaciones key y valor
@@ -61,15 +61,22 @@ while line != '':  # mientras la linea no sea la "última", o sea, el fin del ar
     if line[:2] == '//':  # si la nueva linea es un separador de PTMs "//" hacer un INSERT
         # output.write(str(record.items()))
         sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los elementos devalues con comas
-        output.write(("INSERT INTO ptm_table VALUES (%r);"
-                      % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
-        cur.execute(("INSERT INTO ptm_table VALUES (%r);"
-                     % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
-        con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
+        tgs = (((sql_insert_values.replace("'", "").replace(".","")).split(", "))[3])
+        tgs = tgs.split("-")
+        print(len(tgs))
+
+        #output.write(("INSERT INTO ptm_table VALUES (%r);"
+        #              % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
+        #cur.execute(("INSERT INTO ptm_table VALUES (%r);"
+        #             % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
+        #con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
         record = empty_record  # después del insert, vaciar el registro.
         line = ptmlist.readline()  # y cambiar de linea.
     for cat in categories.iterkeys():  # toma cada elemento de categoria (en orden)
-        if line[:2] == cat:  # y si la linea corresponde a la categoria
+        if cat == "TG" and cat == line[:2]:
+                record[cat] = line[5:-1]
+                line = ptmlist.readline()
+        elif line[:2] == cat:  # y si la linea corresponde a la categoria
             record[cat] = line[5:-1].replace("'", "''")  # agrega su contenido al registro para esa categoria
             line = ptmlist.readline()  # y cambia a una nueva linea
             while line[:2] == cat:  # mientras la linea nueva sea de la misma id que la anterior
