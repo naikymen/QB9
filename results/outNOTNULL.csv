@@ -1,0 +1,395 @@
+(3R)-3-hydroxyarginine$1$Arginine$MOD_RES
+(3R)-3-hydroxyasparagine$38$Asparagine$MOD_RES
+(3R)-3-hydroxyaspartate$48$Aspartate$MOD_RES
+(3R,4R)-3,4-dihydroxyproline$1$Proline$MOD_RES
+(3R,4R)-4,5-dihydroxyisoleucine$2$Isoleucine$MOD_RES
+(3R,4S)-3,4-dihydroxyproline$55$Proline$MOD_RES
+(3R,4S)-4-hydroxyisoleucine$2$Isoleucine$MOD_RES
+(3S)-3-hydroxyasparagine$75$Asparagine$MOD_RES
+(3S)-3-hydroxyaspartate$2$Aspartate$MOD_RES
+(3S)-3-hydroxyhistidine$17$Histidine$MOD_RES
+(3S,4R)-3,4-dihydroxyisoleucine$1$Isoleucine$MOD_RES
+(4R)-4,5-dihydroxyleucine$1$Leucine$MOD_RES
+(E)-2,3-didehydrobutyrine$5$Threonine$MOD_RES
+(E)-2,3-didehydrotyrosine$3$Tyrosine$MOD_RES
+(Z)-2,3-didehydrobutyrine$26$Threonine$MOD_RES
+(Z)-2,3-didehydrotyrosine$3$Tyrosine$MOD_RES
+1'-histidyl-3'-tyrosine (His-Tyr)$218$Histidine-Tyrosine$CROSSLNK
+1-amino-2-propanone$1$Threonine$MOD_RES
+1-thioglycine$88$Glycine$MOD_RES
+2',4',5'-topaquinone$53$Tyrosine$MOD_RES
+2'-(S-cysteinyl)-histidine (Cys-His)$43$Cysteine-Histidine$CROSSLNK
+2'-cysteinyl-6'-hydroxytryptophan sulfoxide (Trp-Cys)$2$Tryptophan-Cysteine$CROSSLNK
+2'-methylsulfonyltryptophan$1$Tryptophan$MOD_RES
+2,3-didehydroalanine (Cys)$35$Cysteine$MOD_RES
+2,3-didehydroalanine (Ser)$293$Serine$MOD_RES
+2,3-didehydrobutyrine$28$Threonine$MOD_RES
+2,3-didehydrotyrosine$8$Tyrosine$MOD_RES
+2-cysteinyl-D-allo-threonine (Cys-Thr)$1$Cysteine-Threonine$CROSSLNK
+2-cysteinyl-D-phenylalanine (Cys-Phe)$1$Cysteine-Phenylalanine$CROSSLNK
+2-cysteinyl-L-phenylalanine (Cys-Phe)$1$Cysteine-Phenylalanine$CROSSLNK
+2-iminomethyl-5-imidazolinone (Gln-Gly)$5$Glutamine-Glycine$CROSSLNK
+2-iminomethyl-5-imidazolinone (Glu-Gly)$1$Glutamate-Glycine$CROSSLNK
+2-iminomethyl-5-imidazolinone (Met-Gly)$2$Methionine-Glycine$CROSSLNK
+2-methylglutamine$1$Glutamine$MOD_RES
+2-oxobutanoic acid$6$Threonine$MOD_RES
+2-tetrahydro-2-pyridyl-5-imidazolinone (Lys-Gly)$1$Lysine-Glycine$CROSSLNK
+3',4'-dihydroxyphenylalanine$130$Tyrosine$MOD_RES
+3'-(S-cysteinyl)-tyrosine (Cys-Tyr)$13$Cysteine-Tyrosine$CROSSLNK
+3'-(S-cysteinyl)-tyrosine (Tyr-Cys)$6$Tyrosine-Cysteine$CROSSLNK
+3'-geranyl-2',N2-cyclotryptophan$2$Tryptophan$LIPID
+3'-histidyl-3-tyrosine (His-Tyr)$1$Histidine-Tyrosine$CROSSLNK
+3'-nitrotyrosine$2$Tyrosine$MOD_RES
+3,4-dihydroxyarginine$2$Arginine$MOD_RES
+3,4-dihydroxyproline$1$Proline$MOD_RES
+3-(O4'-tyrosyl)-valine (Val-Tyr)$15$Valine-Tyrosine$CROSSLNK
+3-(S-cysteinyl)-tyrosine (Cys-Tyr)$1$Cysteine-Tyrosine$CROSSLNK
+3-cysteinyl-aspartic acid (Cys-Asp)$6$Cysteine-Aspartate$CROSSLNK
+3-hydroxyasparagine$5$Asparagine$MOD_RES
+3-hydroxyphenylalanine$1$Phenylalanine$MOD_RES
+3-hydroxyproline$58$Proline$MOD_RES
+3-hydroxytryptophan$5$Tryptophan$MOD_RES
+3-hydroxyvaline$3$Valine$MOD_RES
+3-methylthioaspartic acid$743$Aspartate$MOD_RES
+3-oxoalanine (Cys)$63$Cysteine$MOD_RES
+3-oxoalanine (Ser)$4$Serine$MOD_RES
+3-phenyllactic acid$3$Phenylalanine$MOD_RES
+4'-cysteinyl-tryptophylquinone (Cys-Trp)$3$Cysteine-Tryptophan$CROSSLNK
+4,5,5'-trihydroxyleucine$1$Leucine$MOD_RES
+4,5-dihydroxylysine$8$Lysine$MOD_RES
+4-aspartylphosphate$944$Aspartate$MOD_RES
+4-carboxyglutamate$1254$Glutamate$MOD_RES
+4-cysteinyl-glutamic acid (Cys-Glu)$3$Cysteine-Glutamate$CROSSLNK
+4-hydroxyarginine$1$Arginine$MOD_RES
+4-hydroxyglutamate$1$Glutamate$MOD_RES
+4-hydroxyproline$1807$Proline$MOD_RES
+5-(methoxymethyl)thiazole-4-carboxylic acid (Val-Cys)$1$Valine-Cysteine$CROSSLNK
+5-glutamyl 2-aminoadipic acid$4$Glutamate$MOD_RES
+5-glutamyl glutamate$3$Glutamate$MOD_RES
+5-glutamyl glycerylphosphorylethanolamine$116$Glutamate$MOD_RES
+5-glutamyl N2-lysine$4$Glutamate$MOD_RES
+5-glutamyl N2-ornithine$3$Glutamate$MOD_RES
+5-glutamyl polyglycine$8$Glutamate$MOD_RES
+5-hydroxy-3-methylproline (Ile)$1$Isoleucine$MOD_RES
+5-hydroxylysine$280$Lysine$MOD_RES
+5-imidazolinone (Ala-Gly)$250$Alanine-Glycine$CROSSLNK
+5-imidazolinone (Asn-Gly)$1$Asparagine-Glycine$CROSSLNK
+5-imidazolinone (Cys-Gly)$4$Cysteine-Glycine$CROSSLNK
+5-imidazolinone (Lys-Gly)$1$Lysine-Glycine$CROSSLNK
+5-imidazolinone (Ser-Gly)$5$Serine-Glycine$CROSSLNK
+5-methylarginine$12$Arginine$MOD_RES
+6'-bromotryptophan$89$Tryptophan$MOD_RES
+6'-chlorotryptophan$1$Tryptophan$MOD_RES
+7'-hydroxytryptophan$94$Tryptophan$MOD_RES
+ADP-ribosylarginine$155$Arginine$MOD_RES
+ADP-ribosylasparagine$8$Asparagine$MOD_RES
+ADP-ribosylcysteine$33$Cysteine$MOD_RES
+ADP-ribosylserine$7$Serine$MOD_RES
+Alanine amide$62$Alanine$MOD_RES
+Allysine$144$Lysine$MOD_RES
+Aminomalonic acid (Ser)$1$Serine$MOD_RES
+Arginine amide$210$Arginine$MOD_RES
+Asparagine amide$167$Asparagine$MOD_RES
+Aspartate 1-(chondroitin 4-sulfate)-ester$13$Aspartate$MOD_RES
+Aspartic acid 1-amide$10$Aspartate$MOD_RES
+Aspartyl aldehyde$104$Aspartate$MOD_RES
+Aspartyl isopeptide (Asn)$3$Asparagine$MOD_RES
+Aspartyl isopeptide (Asp)$1$Aspartate$MOD_RES
+Asymmetric dimethylarginine$775$Arginine$MOD_RES
+Beta-decarboxylated aspartate$1$Aspartate$MOD_RES
+Beta-methyllanthionine (Cys-Thr)$11$Cysteine-Threonine$CROSSLNK
+Beta-methyllanthionine (Thr-Cys)$65$Threonine-Cysteine$CROSSLNK
+Blocked amino end (Ala)$30$Alanine$MOD_RES
+Blocked amino end (Arg)$1$Arginine$MOD_RES
+Blocked amino end (Asn)$1$Asparagine$MOD_RES
+Blocked amino end (Asp)$1$Aspartate$MOD_RES
+Blocked amino end (Cys)$1$Cysteine$MOD_RES
+Blocked amino end (Gln)$6$Glutamine$MOD_RES
+Blocked amino end (Glu)$1$Glutamate$MOD_RES
+Blocked amino end (Gly)$4$Glycine$MOD_RES
+Blocked amino end (Ile)$1$Isoleucine$MOD_RES
+Blocked amino end (Leu)$1$Leucine$MOD_RES
+Blocked amino end (Met)$25$Methionine$MOD_RES
+Blocked amino end (Pro)$3$Proline$MOD_RES
+Blocked amino end (Ser)$18$Serine$MOD_RES
+Blocked amino end (Thr)$15$Threonine$MOD_RES
+Blocked amino end (Val)$1$Valine$MOD_RES
+Blocked amino end (Xaa)$2$Undefined$MOD_RES
+Blocked carboxyl end (Arg)$1$Arginine$MOD_RES
+Blocked carboxyl end (His)$1$Histidine$MOD_RES
+Bromohistidine$1$Histidine$MOD_RES
+Cholesterol glycine ester$30$Glycine$LIPID
+Citrulline$434$Arginine$MOD_RES
+Cyclopeptide (Ala-Arg)$1$Alanine-Arginine$CROSSLNK
+Cyclopeptide (Ala-Ile)$1$Alanine-Isoleucine$CROSSLNK
+Cyclopeptide (Ala-Pro)$1$Alanine-Proline$CROSSLNK
+Cyclopeptide (Asn-Gly)$1$Asparagine-Glycine$CROSSLNK
+Cyclopeptide (Asp-Asn)$1$Aspartate-Asparagine$CROSSLNK
+Cyclopeptide (Gly-Asn)$88$Glycine-Asparagine$CROSSLNK
+Cyclopeptide (Gly-Asp)$23$Glycine-Aspartate$CROSSLNK
+Cyclopeptide (His-Asn)$1$Histidine-Asparagine$CROSSLNK
+Cyclopeptide (His-Asp)$1$Histidine-Aspartate$CROSSLNK
+Cyclopeptide (Ile-Pro)$2$Isoleucine-Proline$CROSSLNK
+Cyclopeptide (Leu-Leu)$1$Leucine-Leucine$CROSSLNK
+Cyclopeptide (Leu-Trp)$1$Leucine-Tryptophan$CROSSLNK
+Cyclopeptide (Lys-Asp)$2$Lysine-Aspartate$CROSSLNK
+Cyclopeptide (Pro-Met)$1$Proline-Methionine$CROSSLNK
+Cyclopeptide (Pro-Tyr)$1$Proline-Tyrosine$CROSSLNK
+Cyclopeptide (Ser-Asn)$5$Serine-Asparagine$CROSSLNK
+Cyclopeptide (Ser-Gly)$2$Serine-Glycine$CROSSLNK
+Cyclo[(prolylserin)-O-yl] cysteinate$1$Cysteine$MOD_RES
+CysO-cysteine adduct$2$Glycine$MOD_RES
+Cysteine amide$206$Cysteine$MOD_RES
+Cysteine derivative$3$Cysteine$MOD_RES
+Cysteine methyl disulfide$8$Cysteine$MOD_RES
+Cysteine methyl ester$830$Cysteine$MOD_RES
+Cysteine persulfide$23$Cysteine$MOD_RES
+Cysteine sulfenic acid (-SOH)$225$Cysteine$MOD_RES
+Cysteine sulfinic acid (-SO2H)$19$Cysteine$MOD_RES
+Cysteinyl-selenocysteine (Cys-Sec)$41$Cysteine-Selenocysteine$CROSSLNK
+Cysteinyl-selenocysteine (Sec-Cys)$1$Selenocysteine-Cysteine$CROSSLNK
+D-4-hydroxyvaline$2$Valine$MOD_RES
+D-alanine (Ala)$22$Alanine$MOD_RES
+D-alanine (Ser)$3$Serine$MOD_RES
+D-allo-isoleucine$6$Isoleucine$MOD_RES
+D-asparagine$1$Asparagine$MOD_RES
+D-leucine$10$Leucine$MOD_RES
+D-methionine$7$Methionine$MOD_RES
+D-phenylalanine$18$Phenylalanine$MOD_RES
+D-serine (Cys)$1$Cysteine$MOD_RES
+D-serine (Ser)$2$Serine$MOD_RES
+D-threonine$1$Threonine$MOD_RES
+D-tryptophan$13$Tryptophan$MOD_RES
+D-valine$2$Valine$MOD_RES
+Deamidated asparagine$233$Asparagine$MOD_RES
+Deamidated glutamine$205$Glutamine$MOD_RES
+Decarboxylated threonine$3$Threonine$MOD_RES
+Dimethylated arginine$157$Arginine$MOD_RES
+Diphthamide$92$Histidine$MOD_RES
+FMN phosphoryl serine$2$Serine$MOD_RES
+FMN phosphoryl threonine$54$Threonine$MOD_RES
+Glutamate methyl ester (Gln)$31$Glutamine$MOD_RES
+Glutamate methyl ester (Glu)$62$Glutamate$MOD_RES
+Glutamic acid 1-amide$29$Glutamate$MOD_RES
+Glutamine amide$53$Glutamine$MOD_RES
+Glutamine derivative$2$Glutamine$MOD_RES
+Glycine amide$238$Glycine$MOD_RES
+Glycine radical$123$Glycine$MOD_RES
+Glycyl adenylate$30$Glycine$MOD_RES
+GPI-anchor amidated alanine$92$Alanine$LIPID
+GPI-anchor amidated asparagine$187$Asparagine$LIPID
+GPI-anchor amidated aspartate$53$Aspartate$LIPID
+GPI-anchor amidated cysteine$15$Cysteine$LIPID
+GPI-anchor amidated glycine$188$Glycine$LIPID
+GPI-anchor amidated serine$404$Serine$LIPID
+GPI-anchor amidated threonine$1$Threonine$LIPID
+GPI-like-anchor amidated alanine$7$Alanine$LIPID
+GPI-like-anchor amidated asparagine$15$Asparagine$LIPID
+GPI-like-anchor amidated aspartate$1$Aspartate$LIPID
+GPI-like-anchor amidated glycine$4$Glycine$LIPID
+GPI-like-anchor amidated serine$16$Serine$LIPID
+Histidine amide$24$Histidine$MOD_RES
+Hydroxyproline$323$Proline$MOD_RES
+Hypusine$108$Lysine$MOD_RES
+Isoaspartyl glycine isopeptide (Gly-Asn)$1$Glycine-Asparagine$CROSSLNK
+Isoaspartyl lysine isopeptide (Lys-Asn)$10$Lysine-Asparagine$CROSSLNK
+Isoaspartyl lysine isopeptide (Lys-Asp)$1$Lysine-Aspartate$CROSSLNK
+Isodityrosine (Tyr-Tyr)$3$Tyrosine-Tyrosine$CROSSLNK
+Isoglutamyl cysteine thioester (Cys-Gln)$42$Cysteine-Glutamine$CROSSLNK
+Isoglutamyl glycine isopeptide (Gly-Glu)$1$Glycine-Glutamate$CROSSLNK
+Isoglutamyl lysine isopeptide (Lys-Gln)$2$Lysine-Glutamine$CROSSLNK
+Isoleucine amide$156$Isoleucine$MOD_RES
+Isoleucine derivative$1$Isoleucine$MOD_RES
+L-allo-isoleucine$2$Isoleucine$MOD_RES
+Lactic acid$2$Serine$MOD_RES
+Lanthionine (Cys-Ser)$1$Cysteine-Serine$CROSSLNK
+Lanthionine (Ser-Cys)$61$Serine-Cysteine$CROSSLNK
+Leucine amide$762$Leucine$MOD_RES
+Leucine methyl ester$34$Leucine$MOD_RES
+Lysine amide$110$Lysine$MOD_RES
+Lysine derivative$3$Lysine$MOD_RES
+Lysine methyl ester$1$Lysine$MOD_RES
+Lysine tyrosylquinone (Lys-Tyr)$18$Lysine-Tyrosine$CROSSLNK
+Lysine tyrosylquinone (Tyr-Lys)$1$Tyrosine-Lysine$CROSSLNK
+Lysino-D-alanine (Lys)$1$Lysine$MOD_RES
+Lysinoalanine (Ser-Lys)$5$Serine-Lysine$CROSSLNK
+Methionine (R)-sulfoxide$182$Methionine$MOD_RES
+Methionine amide$135$Methionine$MOD_RES
+Methionine derivative$1$Methionine$MOD_RES
+Methionine sulfone$1$Methionine$MOD_RES
+Methionine sulfoxide$142$Methionine$MOD_RES
+Methylhistidine$18$Histidine$MOD_RES
+N,N,N-trimethylalanine$50$Alanine$MOD_RES
+N,N,N-trimethylglycine$3$Glycine$MOD_RES
+N,N,N-trimethylserine$2$Serine$MOD_RES
+N,N-(cysteine-1,S-diyl)phenylalanine (Cys-Phe)$1$Cysteine-Phenylalanine$CROSSLNK
+N,N-(cysteine-1,S-diyl)serine (Cys-Ser)$1$Cysteine-Serine$CROSSLNK
+N,N-dimethylalanine$11$Alanine$MOD_RES
+N,N-dimethylglycine$1$Glycine$MOD_RES
+N,N-dimethylleucine$1$Leucine$MOD_RES
+N,N-dimethylproline$15$Proline$MOD_RES
+N,N-dimethylserine$1$Serine$MOD_RES
+N-(12-oxomyristoyl)cysteine$1$Cysteine$LIPID
+N-acetylalanine$3925$Alanine$MOD_RES
+N-acetylaspartate$125$Aspartate$MOD_RES
+N-acetylcysteine$48$Cysteine$MOD_RES
+N-acetylglutamate$30$Glutamate$MOD_RES
+N-acetylglycine$193$Glycine$MOD_RES
+N-acetylmethionine$3190$Methionine$MOD_RES
+N-acetylproline$301$Proline$MOD_RES
+N-acetylserine$2404$Serine$MOD_RES
+N-acetylthreonine$732$Threonine$MOD_RES
+N-acetyltyrosine$2$Tyrosine$MOD_RES
+N-acetylvaline$215$Valine$MOD_RES
+N-carbamoylalanine$1$Alanine$MOD_RES
+N-D-glucuronoyl glycine$1$Glycine$MOD_RES
+N-formylglycine$1$Glycine$MOD_RES
+N-formylmethionine$175$Methionine$MOD_RES
+N-methylalanine$21$Alanine$MOD_RES
+N-methylglycine$1$Glycine$MOD_RES
+N-methylisoleucine$1$Isoleucine$MOD_RES
+N-methylleucine$3$Leucine$MOD_RES
+N-methylmethionine$13$Methionine$MOD_RES
+N-methylphenylalanine$74$Phenylalanine$MOD_RES
+N-methylproline$11$Proline$MOD_RES
+N-methylserine$1$Serine$MOD_RES
+N-methyltyrosine$2$Tyrosine$MOD_RES
+N-myristoyl glycine$1445$Glycine$LIPID
+N-palmitoyl cysteine$2046$Cysteine$LIPID
+N-palmitoyl glycine$18$Glycine$LIPID
+N-pyruvate 2-iminyl-cysteine$1$Cysteine$MOD_RES
+N-pyruvate 2-iminyl-valine$1$Valine$MOD_RES
+N-[(12R)-12-hydroxymyristoyl]cysteine$1$Cysteine$LIPID
+N2,N2-dimethylarginine$2$Arginine$MOD_RES
+N2-acetylarginine$55$Arginine$MOD_RES
+N2-succinyltryptophan$1$Tryptophan$MOD_RES
+N4,N4-dimethylasparagine$1$Asparagine$MOD_RES
+N4-methylasparagine$104$Asparagine$MOD_RES
+N5-methylarginine$5$Arginine$MOD_RES
+N5-methylglutamine$1410$Glutamine$MOD_RES
+N6,N6,N6-trimethyl-5-hydroxylysine$5$Lysine$MOD_RES
+N6,N6,N6-trimethyllysine$1290$Lysine$MOD_RES
+N6,N6-dimethyllysine$785$Lysine$MOD_RES
+N6-(3,6-diaminohexanoyl)-5-hydroxylysine$152$Lysine$MOD_RES
+N6-(ADP-ribosyl)lysine$2$Lysine$MOD_RES
+N6-(pyridoxal phosphate)lysine$6456$Lysine$MOD_RES
+N6-(retinylidene)lysine$245$Lysine$MOD_RES
+N6-1-carboxyethyl lysine$4$Lysine$MOD_RES
+N6-acetyllysine$21878$Lysine$MOD_RES
+N6-biotinyllysine$83$Lysine$MOD_RES
+N6-carboxylysine$1607$Lysine$MOD_RES
+N6-crotonyl-L-lysine$549$Lysine$MOD_RES
+N6-formyllysine$6$Lysine$MOD_RES
+N6-lipoyllysine$585$Lysine$MOD_RES
+N6-malonyllysine$200$Lysine$MOD_RES
+N6-methylated lysine$392$Lysine$MOD_RES
+N6-methyllysine$1117$Lysine$MOD_RES
+N6-murein peptidoglycan lysine$19$Lysine$MOD_RES
+N6-myristoyl lysine$56$Lysine$LIPID
+N6-palmitoyl lysine$13$Lysine$LIPID
+N6-poly(methylaminopropyl)lysine$13$Lysine$MOD_RES
+N6-succinyllysine$6777$Lysine$MOD_RES
+Nitrated tyrosine$303$Tyrosine$MOD_RES
+O-(2-aminoethylphosphoryl)serine$1$Serine$MOD_RES
+O-(2-cholinephosphoryl)serine$15$Serine$MOD_RES
+O-(5'-phospho-DNA)-serine$13$Serine$MOD_RES
+O-(5'-phospho-DNA)-tyrosine$1$Tyrosine$MOD_RES
+O-(5'-phospho-RNA)-serine$9$Serine$MOD_RES
+O-(5'-phospho-RNA)-tyrosine$151$Tyrosine$MOD_RES
+O-(pantetheine 4'-phosphoryl)serine$1021$Serine$MOD_RES
+O-(phosphoribosyl dephospho-coenzyme A)serine$112$Serine$MOD_RES
+O-(sn-1-glycerophosphoryl)serine$3$Serine$MOD_RES
+O-8alpha-FAD tyrosine$1$Tyrosine$MOD_RES
+O-acetylserine$3$Serine$MOD_RES
+O-acetylthreonine$3$Threonine$MOD_RES
+O-AMP-threonine$3$Threonine$MOD_RES
+O-AMP-tyrosine$67$Tyrosine$MOD_RES
+O-decanoyl serine$6$Serine$LIPID
+O-decanoyl threonine$1$Threonine$LIPID
+O-methylthreonine$3$Threonine$MOD_RES
+O-octanoyl serine$12$Serine$LIPID
+O-octanoyl threonine$1$Threonine$LIPID
+O-palmitoyl serine$166$Serine$LIPID
+O-palmitoyl threonine$5$Threonine$LIPID
+O-UMP-tyrosine$37$Tyrosine$MOD_RES
+Omega-hydroxyceramide glutamate ester$9$Glutamine$LIPID
+Omega-N-methylarginine$334$Arginine$MOD_RES
+Omega-N-methylated arginine$344$Arginine$MOD_RES
+Oxazole-4-carboxylic acid (Cys-Ser)$1$Cysteine-Serine$CROSSLNK
+Oxazole-4-carboxylic acid (Gly-Ser)$3$Glycine-Serine$CROSSLNK
+Oxazole-4-carboxylic acid (Ile-Ser)$2$Isoleucine-Serine$CROSSLNK
+Oxazole-4-carboxylic acid (Ser-Ser)$6$Serine-Serine$CROSSLNK
+Oxazoline-4-carboxylic acid (Cys-Ser)$2$Cysteine-Serine$CROSSLNK
+Pentaglycyl murein peptidoglycan amidated alanine$1$Alanine$MOD_RES
+Pentaglycyl murein peptidoglycan amidated threonine$200$Threonine$MOD_RES
+Phenylalanine amide$836$Phenylalanine$MOD_RES
+Phosphatidylethanolamine amidated glycine$81$Glycine$LIPID
+Phosphoarginine$4$Arginine$MOD_RES
+Phosphocysteine$5$Cysteine$MOD_RES
+Phosphohistidine$701$Histidine$MOD_RES
+Phosphoserine$68484$Serine$MOD_RES
+Phosphothreonine$16208$Threonine$MOD_RES
+Phosphotyrosine$7952$Tyrosine$MOD_RES
+PolyADP-ribosyl glutamic acid$107$Glutamate$MOD_RES
+Proline 5-hydroxy-oxazole-4-carbothionic acid (Pro-Cys)$1$Proline-Cysteine$CROSSLNK
+Proline amide$144$Proline$MOD_RES
+Pros-8alpha-FAD histidine$42$Histidine$MOD_RES
+Pros-methylhistidine$19$Histidine$MOD_RES
+Pyrrolidone carboxylic acid$1607$Glutamine$MOD_RES
+Pyrrolidone carboxylic acid (Glu)$6$Glutamate$MOD_RES
+Pyrroloquinoline quinone (Glu-Tyr)$37$Glutamate-Tyrosine$CROSSLNK
+Pyruvic acid (Cys)$4$Cysteine$MOD_RES
+Pyruvic acid (Ser)$1210$Serine$MOD_RES
+S-(2-aminovinyl)-3-methyl-D-cysteine (Thr-Cys)$1$Threonine-Cysteine$CROSSLNK
+S-(2-aminovinyl)-D-cysteine (Cys-Cys)$1$Cysteine-Cysteine$CROSSLNK
+S-(2-aminovinyl)-D-cysteine (Ser-Cys)$5$Serine-Cysteine$CROSSLNK
+S-(4-hydroxycinnamyl)cysteine$5$Cysteine$MOD_RES
+S-(coelenterazin-3a-yl)cysteine$1$Cysteine$MOD_RES
+S-(dipyrrolylmethanemethyl)cysteine$471$Cysteine$MOD_RES
+S-12-hydroxyfarnesyl cysteine$2$Cysteine$LIPID
+S-4a-FMN cysteine$36$Cysteine$MOD_RES
+S-6-FMN cysteine$2$Cysteine$MOD_RES
+S-8alpha-FAD cysteine$81$Cysteine$MOD_RES
+S-archaeol cysteine$12$Cysteine$LIPID
+S-bacillithiol cysteine disulfide$1$Cysteine$MOD_RES
+S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)$1$Cysteine-Cysteine$CROSSLNK
+S-cysteinyl cysteine$9$Cysteine$MOD_RES
+S-diacylglycerol cysteine$2018$Cysteine$LIPID
+S-farnesyl cysteine$382$Cysteine$LIPID
+S-geranylgeranyl cysteine$1098$Cysteine$LIPID
+S-glutathionyl cysteine$59$Cysteine$MOD_RES
+S-methylcysteine$19$Cysteine$MOD_RES
+S-nitrosocysteine$468$Cysteine$MOD_RES
+S-palmitoyl cysteine$3769$Cysteine$LIPID
+S-selanylcysteine$4$Cysteine$MOD_RES
+S-stearoyl cysteine$11$Cysteine$LIPID
+Serine amide$103$Serine$MOD_RES
+Serine microcin E492 siderophore ester$1$Serine$MOD_RES
+Sulfoserine$3$Serine$MOD_RES
+Sulfothreonine$1$Threonine$MOD_RES
+Sulfotyrosine$1020$Tyrosine$MOD_RES
+Symmetric dimethylarginine$172$Arginine$MOD_RES
+Tele-8alpha-FAD histidine$59$Histidine$MOD_RES
+Tele-8alpha-FMN histidine$1$Histidine$MOD_RES
+Tele-methylhistidine$79$Histidine$MOD_RES
+Tele-phosphohistidine$2$Histidine$MOD_RES
+Thiazole-4-carboxylic acid (Arg-Cys)$2$Arginine-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Asn-Cys)$1$Asparagine-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Cys-Cys)$7$Cysteine-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Glu-Cys)$1$Glutamate-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Gly-Cys)$4$Glycine-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Ile-Cys)$2$Isoleucine-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Phe-Cys)$1$Phenylalanine-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Ser-Cys)$16$Serine-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Thr-Cys)$10$Threonine-Cysteine$CROSSLNK
+Thiazole-4-carboxylic acid (Val-Cys)$5$Valine-Cysteine$CROSSLNK
+Thiazoline-4-carboxylic acid (Phe-Cys)$1$Phenylalanine-Cysteine$CROSSLNK
+Threonine amide$105$Threonine$MOD_RES
+Thyroxine$13$Tyrosine$MOD_RES
+Triiodothyronine$4$Tyrosine$MOD_RES
+Tryptophan amide$196$Tryptophan$MOD_RES
+Tryptophan derivative$1$Tryptophan$MOD_RES
+Tryptophan tryptophylquinone (Trp-Trp)$6$Tryptophan-Tryptophan$CROSSLNK
+Tryptophylquinone$9$Tryptophan$MOD_RES
+Tyrosine amide$146$Tyrosine$MOD_RES
+Valine amide$417$Valine$MOD_RES
