@@ -1,0 +1,36 @@
+__author__ = 'nicolas'
+# coding=utf-8
+
+
+Traer las ocurrencias de cada FT clasificado como PTM
+select PTM, count(AC) as count from sprot2 where FT like "MOD_RES" group by PTM order by count;
+
+Traer las ocurrencias de cada FT clasificado como CROSSLNK
+select PTM, count(AC) as count from sprot2 where FT like "CROSSLNK" group by PTM order by count;
+
+Traer el número de ocurrencias de cada tipo de FT
+select ft, count(*) from sprot2 group by ft;
+
+Traer el residuo modificado para esa PTM en swissprot, presente en la tabla de PTMs de uniprot
+select sprot2.PTM, ptm_table.TG from sprot2, ptm_table where sprot2.PTM = ptm_table.ID group by sprot2.PTM;
+OJO! DE LAS QUE ESTAN EN ptm_table HAY ALGUNAS AUSENTES EN SWISSPROT
+
+
+Traer cada ptm en swissprot y el target que le corresponde si se encuentra en ptm_table
+select sprot2.PTM, sprot2.FT, ptm_table.TG from sprot2 LEFT JOIN ptm_table ON sprot2.PTM = ptm_table.ID group by sprot2.PTM;
+OJO! Algunas no fueron bien procesadas y aparecen distintas cuando son la misma. Ej: "Tryptophyl-tyrosyl-methioninium"
+
+Crear una tabla con la cuenta de cada PTM en sprot2 y otra info
+create table s2_ptms AS (select FT, count(AC) as COUNT, PTM, STATUS from sprot2 group by PTM);
+
+Ahora si, el JOIN para traer las 466 PTMs en ptm_table y su cuenta en sprot2
+select ptm.ID, ptm.TG, s2_ptms.count as s2count from ptm_table as ptm LEFT JOIN s2_ptms ON ptm.ID = s2_ptms.PTM;
+466 resultados
+
+el JOIN para traer las PTMs en sprot2, su cuenta y el TG según ptm_table
+select s2_ptms.PTM, s2_ptms.count, ptm_table.TG from s2_ptms LEFT JOIN ptm_table ON ptm_table.ID = s2_ptms.PTM;
+658 resultados
+
+Me hago una tabla con el resultado del LEFT JOIN y traigo sus valores nulos para curarlos manualmente
+create table sarasa as (select s2_ptms.PTM, s2_ptms.count, ptm_table.TG, s2_ptms.FT from s2_ptms LEFT JOIN ptm_table ON ptm_table.ID = s2_ptms.PTM);
+select * from sarasa where TG IS NULL;
