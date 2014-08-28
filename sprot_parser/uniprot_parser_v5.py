@@ -12,8 +12,8 @@ start_time = time.time()
 
 # Variables del script
 database = "ptmdb"
-tabla_cuentas = "trembl_count_aa"
-tabla_ptms = "trembl_ptms"
+tabla_cuentas = "trembl_count5"
+tabla_ptms = "trembl_ptms5"
 file_name = "uniprot_trembl.dat"
 
 # Armo un diccionario con los AAs que voy a contar
@@ -51,8 +51,8 @@ categories['AC'] = "varchar(30) NOT NULL"  # accesion number
 categories['FT'] = "varchar(30) NOT NULL"
 categories['STATUS'] = "varchar(30) NOT NULL"
 categories['PTM'] = "varchar(100) NOT NULL"
-categories['FROM_RES'] = "varchar(200) NOT NULL"
-categories['TO_RES'] = "varchar(200) NOT NULL"
+categories['FROM_RES'] = "varchar(10) NOT NULL"
+categories['TO_RES'] = "varchar(10) NOT NULL"
 categories['SQ'] = "text(45000) NOT NULL"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
 categories['LENGTH'] = "varchar(200) NOT NULL"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
 categories['ORG'] = "text(500) NOT NULL"  # organism
@@ -68,17 +68,20 @@ for gato in categories:  # usando las keys de categories y un valor por defecto 
     empty_data[gato] = 'NOFT'
 data = empty_data  # este es el diccionario de registros vacío que voy a usar
 
-# Crear las tablas
+# Crear la tabla de cuentas
 prot_dic_def_items = []
 prot_dic_def = OrderedDict((k, 'SMALLINT') for k in abc)
 for cat, value in prot_dic_def.items():  # concatenaciones key y valor
     prot_dic_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(prot_dic_def_items)  # definicion de la tabla
-cur.execute("CREATE TABLE IF NOT EXISTS " + tabla_cuentas + " (AC_NUM VARCHAR(30), OC_ID VARCHAR(30), LENGTH MEDIUMINT,"
-      + table_def
-      + ") ENGINE=InnoDB")
+cur.execute("CREATE TABLE IF NOT EXISTS "
+            + tabla_cuentas
+            + " (AC VARCHAR(30) UNIQUE, OC_ID VARCHAR(30), LENGTH MEDIUMINT,"
+            + table_def
+            + ") ENGINE=InnoDB")
 con.commit()
 
+# Crear la tabla de ptms
 table_def_items = []  # lista para concatenaciones de key y valor
 for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
@@ -120,14 +123,15 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
         cur.execute("INSERT INTO " + tabla_cuentas + " VALUES ('"
-              + record.accessions[0] + "', '"
-              + record.organism_classification[0] + "', "
-              + str(record.sequence_length)
-              + ", " + sql_insert_values_q + ")")
+                    + record.accessions[0] + "', '"
+                    + record.organism_classification[0] + "', "
+                    + str(record.sequence_length)
+                    + ", " + sql_insert_values_q + ")")
         con.commit()
 
         # Acá empiezo con los features, hay alguno interesante?
         features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
+        out = []
         for a in range(0, len(features)):  # guardar los campos "candidato" del FT en una lista llamada out
             out.append(features[a][0])
         interes = list(set(out).intersection(ptmrecords))  # armar un set con los interesantes y hacerlo lista interes
@@ -162,11 +166,11 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                 for neq in neqs:  # iterar los STATUS posibles
                                     if neq in C:  # si C contiene el STATUS pirulo
                                         data['STATUS'] = neq  # asignar el valor a STATUS
-                                        C = C.replace('('+neq+")", '')  # hay que sacar esta porquería
+                                        C = C.replace('(' + neq + ")", '')  # hay que sacar esta porquería
                                         C = C.replace(neq, '')
                                         # hay que sacar esta porquería si no aparece con paréntesis
                                         break  # esto corta con el loop más "cercano" en indentación
-                                ptm = ((C.split(" /"))[0].split(';')[0]).\
+                                ptm = ((C.split(" /"))[0].split(';')[0]). \
                                     rstrip(" ").rstrip(".").rstrip(" ")
                                 # Obs: a veces las mods tienen identificadores estables que empiezan con "/"
                                 # así que hay que sacarlo. y otas cosas después de un ";" CHAU.
@@ -178,14 +182,30 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             if tipo == 'DISULFID':  # si el tipo es disulfuro, no hay mucho que decir.
                                 data['PTM'] = "S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)"
                             else:  # pero si no lo es, guardamos la ptm en el campo PTM.
+                                if len(ptm) >= 50:  # hay algunas ptms que especifican de mas y no matchean con la lista
+                                    if ptm[:49] == "Tryptophyl-tyrosyl-methioninium (Trp-Tyr) (with M":
+                                        ptm = "Tryptophyl-tyrosyl-methioninium (Trp-Tyr) (with M-...)"
+                                    if ptm[:49] == "Tryptophyl-tyrosyl-methioninium (Tyr-Met) (with W":
+                                        ptm = "Tryptophyl-tyrosyl-methioninium (Trp-Tyr) (with W-...)"
+
+                                    if ptm[:53] == "Glycyl lysine isopeptide (Gly-Lys) (interchain with K":
+                                        ptm = "Glycyl lysine isopeptide (Gly-Lys) (interchain with K-...)"
+                                    if ptm[:53] == "Glycyl lysine isopeptide (Gly-Lys) (interchain with G":
+                                        ptm = "Glycyl lysine isopeptide (Lys-Gly) (interchain with G-...)"
+
+                                        #if ptm[:50] == "":
+                                        #    ptm = ""
+                                        #if ptm[:50] == "":
+                                        #    ptm = ""
+
                                 data['PTM'] = ptm
 
                             listap = []
                             for p in data.itervalues():  # itero los valores de los datos que fui cargando al dict.
                                 listap.append(str(p).replace("'", "''"))  # y los pongo en una lista
                             sql_insert_values_p = '\'' + \
-                                                '\', \''.join(listap) + \
-                                                '\''
+                                                  '\', \''.join(listap) + \
+                                                  '\''
                             # Que después uno como van en el INSERT
                             # El insert, en el que reemplazo ' por '', para escaparlas en sql
 
@@ -203,7 +223,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                          % sql_insert_values_r + '\n').replace("\"", '').replace('.', ''))
             con.commit()
 
-        #if i >= 1000:  # segun uniprot el número de entradas de secuencias es 54247468
+        #if i >= 10000:  # segun uniprot el número de entradas de secuencias es 54247468
         #    print("\n")
         #    print(i)
         #    break

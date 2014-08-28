@@ -6489,7 +6489,7 @@ TR   Eukaryota; taxId:4751 (Fungi).
 DR   RESID; AA0348.
 DR   PSI-MOD; 00353.
 //
-ID   Tryptophyl-tyrosyl-methioninium (Tyr-Met) (with W-...)
+ID    (Tyr-Met) (with W-...)
 AC   PTM-0329
 FT   CROSSLNK
 TG   Tyrosine-Methionine-Tryptophan.
