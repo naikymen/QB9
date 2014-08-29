@@ -39,7 +39,7 @@ abc = 'ABCDEFGHIKLMNOPQRSTUVWXYZ'
 query1 = []
 info = OrderedDict()
 
-con = mdb.connect('localhost', 'root', '', '')
+con = mdb.connect('localhost', 'nicolas', passwd="nicolas", db="ptmdb")
 cur = con.cursor()
 cur.execute("SELECT VERSION()")
 print(cur.fetchone())

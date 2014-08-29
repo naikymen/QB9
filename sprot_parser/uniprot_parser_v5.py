@@ -16,18 +16,6 @@ tabla_cuentas = "trembl_count5"
 tabla_ptms = "trembl_ptms5"
 file_name = "uniprot_trembl.dat"
 
-# Armo un diccionario con los AAs que voy a contar
-abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-prot_dic = OrderedDict((k, 0) for k in abc)
-
-
-def count_amino_acids_ext(seq):  # Defino una  función que toma una secuencia y los cuenta
-    prot_dic2 = prot_dic
-    for aa in prot_dic2:
-        prot_dic2[aa] = seq.count(aa)
-    return prot_dic2  # y devuelve un dict ordenado con pares AA, #AA
-
-
 # Conectar a la base de datos
 con = mdb.connect('localhost', 'nicolas', passwd="nicolas", db=database)
 cur = con.cursor()
@@ -39,8 +27,18 @@ cur.execute("USE " + database)
 uniprot_file = expanduser("~") + '/QB9_Files/' + file_name
 output_file = expanduser("~") + '/QB9-git/QB9/resources/output.txt'
 
-# Container for the list of features
-ftlist = []
+
+def count_amino_acids_ext(seq):  # Defino una  función que toma una secuencia y los cuenta
+    prot_dic2 = prot_dic
+    for aa in prot_dic2:
+        prot_dic2[aa] = seq.count(aa)
+    return prot_dic2  # y devuelve un dict ordenado con pares AA, #AA
+
+
+# Armo un diccionario con los AAs que voy a contar
+abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+prot_dic = OrderedDict((k, 0) for k in abc)
+
 # Interesting feature types
 ptmrecords = ["MOD_RES", "LIPID", "CARBOHYD", "DISULFID", "CROSSLNK"]
 # Non-experimental qualifiers for feature annotations
