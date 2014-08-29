@@ -33,13 +33,13 @@ def execute(a):
 def query(b):
     con.query(b)
 
-
+database = "ptmdb"
 abcJ = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 abc = 'ABCDEFGHIKLMNOPQRSTUVWXYZ'
 query1 = []
 info = OrderedDict()
 
-con = mdb.connect('localhost', 'nicolas', passwd="nicolas", db="ptmdb")
+con = mdb.connect('localhost', 'nicolas', passwd="nicolas", db=database)
 cur = con.cursor()
 cur.execute("SELECT VERSION()")
 print(cur.fetchone())
