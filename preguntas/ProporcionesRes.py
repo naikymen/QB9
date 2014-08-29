@@ -34,6 +34,7 @@ def query(b):
     con.query(b)
 
 database = "ptmdb"
+count_table = "sprot_count5"
 abcJ = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 abc = 'ABCDEFGHIKLMNOPQRSTUVWXYZ'
 query1 = []
@@ -51,8 +52,8 @@ for k in abc:
 query2 = 'SUM(' + '), SUM('.join(query1) + ')'
 query3 = 'SUM(' + ') + SUM('.join(query1) + ')'
 
-query2 = 'SELECT ' + query2 + ' from count_aa'
-query3 = 'SELECT ' + query3 + ' from count_aa'
+query2 = 'SELECT ' + query2 + ' from ' + count_table
+query3 = 'SELECT ' + query3 + ' from ' + count_table
 
 query(query3)
 
@@ -80,7 +81,7 @@ for i, k in info.iteritems():
 print("%tot: " + str(j))
 print("#TotRes: " + str(l))
 
-query("SELECT COUNT(*) FROM count_aa")
+query('SELECT COUNT(*) FROM ' + count_table)
 r = con.store_result()
 r = r.fetch_row(maxrows=0)
 print("#TotSeq: " + str(r[0][0]))
