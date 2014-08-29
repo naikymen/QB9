@@ -51,6 +51,8 @@ categories['STATUS'] = "varchar(30) NOT NULL"
 categories['PTM'] = "varchar(100) NOT NULL"
 categories['FROM_RES'] = "varchar(10) NOT NULL"
 categories['TO_RES'] = "varchar(10) NOT NULL"
+categories['FROM_AA'] = "varchar(10) NOT NULL"  # vamo a implementar el target directamente!!!! =D
+categories['TO_AA'] = "varchar(10) NOT NULL"
 categories['SQ'] = "text(45000) NOT NULL"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
 categories['LENGTH'] = "varchar(200) NOT NULL"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
 categories['ORG'] = "text(500) NOT NULL"  # organism
@@ -120,12 +122,14 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         for q in contenido_aa.itervalues():
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
-        cur.execute("INSERT INTO " + tabla_cuentas + " VALUES ('"
-                    + record.accessions[0] + "', '"
-                    + record.organism_classification[0] + "', "
-                    + str(record.sequence_length)
-                    + ", " + sql_insert_values_q + ")")
-        con.commit()
+
+        if i >= 480:
+            cur.execute("INSERT INTO " + tabla_cuentas + " VALUES ('"
+                        + record.accessions[0] + "', '"
+                        + record.organism_classification[0] + "', "
+                        + str(record.sequence_length)
+                        + ", " + sql_insert_values_q + ")")
+            con.commit()
 
         # Acá empiezo con los features, hay alguno interesante?
         features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
@@ -148,8 +152,11 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
 
                             # reiniciar FT, FROM y TO
                             data['FT'] = empty_data['FT']
-                            data['FROM_RES'] = empty_data['FROM_RES']
-                            data['TO_RES'] = empty_data['TO_RES']
+                            data['FROM_RES'] = '?'
+                            data['TO_RES'] = '?'
+                            data['FROM_AA'] = '?'
+                            data['TO_AA'] = '?'
+
                             # Asignar FT
                             data['FT'] = feature[0]
                             data['FROM_RES'] = A
@@ -159,6 +166,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             ptm = ''
                             data['PTM'] = empty_data['PTM']
                             data['STATUS'] = "Experimental"
+
                             # Asignar STATUS y PTM
                             if C:  # si C (el que tiene el nombre de la PTM y el STATUS) contiene algo
                                 for neq in neqs:  # iterar los STATUS posibles
@@ -179,7 +187,15 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                 # Odio esto del formato... todo no hay algo que lo haga mejor?
                             if tipo == 'DISULFID':  # si el tipo es disulfuro, no hay mucho que decir.
                                 data['PTM'] = "S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)"
+                                data['FROM_AA'] = 'C'
+                                data['TO_AA'] = 'C'
                             else:  # pero si no lo es, guardamos la ptm en el campo PTM.
+                                # Asignar target residue
+                                if A != '?':
+                                    data['FROM_AA'] = data['SQ'][int(data['FROM_RES'])]
+                                if B != '?':
+                                    data['TO_AA'] = data['SQ'][int(data['TO_RES'])]
+
                                 if len(ptm) >= 50:  # hay algunas ptms que especifican de mas y no matchean con la lista
                                     if ptm[:49] == "Tryptophyl-tyrosyl-methioninium (Trp-Tyr) (with M":
                                         ptm = "Tryptophyl-tyrosyl-methioninium (Trp-Tyr) (with M-\.\.\.)"
@@ -206,10 +222,10 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                                   '\''
                             # Que después uno como van en el INSERT
                             # El insert, en el que reemplazo ' por '', para escaparlas en sql
-
-                            cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                                         % sql_insert_values_p + '\n').replace("\"", '').replace('.', ''))
-                            con.commit()
+                            if i >= 480:
+                                cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
+                                             % sql_insert_values_p + '\n').replace("\"", '').replace('.', ''))
+                                con.commit()
                             # unir los elementos de values con comas
         else:
             # Si, en cambio, la entrada no tiene FT insteresantes, solo cargo los datos generales y defaults
@@ -217,14 +233,16 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
             for r in data.itervalues():
                 listar.append(str(r).replace("'", "''"))
             sql_insert_values_r = '\'' + '\', \''.join(listar) + '\''
-            cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                         % sql_insert_values_r + '\n').replace("\"", '').replace('.', ''))
-            con.commit()
 
-        #if i >= 10000:  # segun uniprot el número de entradas de secuencias es 54247468
-        #    print("\n")
-        #    print(i)
-        #    break
+            if i >= 480:
+                cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
+                             % sql_insert_values_r + '\n').replace("\"", '').replace('.', ''))
+                con.commit()
+
+        if i >= 500:  # segun uniprot el número de entradas de secuencias es 54247468
+            print("\n")
+            print(i)
+            break
 # The sequence counts 60 amino acids per line, in groups of 10 amino acids, beginning in position 6 of the line.
 # http://www.uniprot.org/manual/
 # General Annotation: cofactores, mass spectrometry data, PTM (complementario al MOD_RES y otras PTMs..?)
