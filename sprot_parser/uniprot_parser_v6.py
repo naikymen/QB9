@@ -74,7 +74,7 @@ prot_dic_def = OrderedDict((k, 'SMALLINT') for k in abc)
 for cat, value in prot_dic_def.items():  # concatenaciones key y valor
     prot_dic_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(prot_dic_def_items)  # definicion de la tabla
-cur.execute("CREATE TABLE IF NOT EXISTS "
+"""cur.execute("CREATE TABLE IF NOT EXISTS "
             + tabla_cuentas
             + " (AC VARCHAR(30) UNIQUE, OC_ID VARCHAR(30), LENGTH MEDIUMINT,"
             + table_def
@@ -87,7 +87,7 @@ for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def_2 = ', '.join(table_def_items)  # definicion de la tabla
 cur.execute("CREATE TABLE IF NOT EXISTS " + tabla_ptms + " (" + table_def_2 + ") ENGINE=InnoDB")
-con.commit()
+con.commit()"""
 
 # Variables del loop
 i = 0
@@ -104,6 +104,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         # Acá cargo los datos generales para las PTMs de una proteína/entrada de uniprot (instancias de entradas)
         data['AC'] = record.accessions[0]  # solo el principal, el resto nose.
         data['SQ'] = record.sequence
+        sq = data['SQ']
         data['LENGTH'] = record.sequence_length
         data['OX'] = record.taxonomy_id
         data['ORG'] = record.organism  # el bicho
@@ -123,13 +124,13 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
 
-        if i >= 480:
+        """if i >= 480:
             cur.execute("INSERT INTO " + tabla_cuentas + " VALUES ('"
                         + record.accessions[0] + "', '"
                         + record.organism_classification[0] + "', "
                         + str(record.sequence_length)
                         + ", " + sql_insert_values_q + ")")
-            con.commit()
+            con.commit()"""
 
         # Acá empiezo con los features, hay alguno interesante?
         features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
@@ -167,7 +168,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             data['PTM'] = empty_data['PTM']
                             data['STATUS'] = "Experimental"
 
-                            # Asignar STATUS y PTM
+                            # AsignarSTATUS y PTM
                             if C:  # si C (el que tiene el nombre de la PTM y el STATUS) contiene algo
                                 for neq in neqs:  # iterar los STATUS posibles
                                     if neq in C:  # si C contiene el STATUS pirulo
@@ -185,6 +186,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                 # Ver http://web.expasy.org/docs/userman.html#FT_line
                                 # También le saco espacios y puntos al final.
                                 # Odio esto del formato... todo no hay algo que lo haga mejor?
+
                             if tipo == 'DISULFID':  # si el tipo es disulfuro, no hay mucho que decir.
                                 data['PTM'] = "S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)"
                                 data['FROM_AA'] = 'C'
@@ -192,9 +194,16 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             else:  # pero si no lo es, guardamos la ptm en el campo PTM.
                                 # Asignar target residue
                                 if A != '?':
-                                    data['FROM_AA'] = data['SQ'][int(data['FROM_RES'])]
+                                    data['FROM_AA'] = sq[int(data['FROM_RES']) - 1]
                                 if B != '?':
-                                    data['TO_AA'] = data['SQ'][int(data['TO_RES'])]
+                                    data['TO_AA'] = sq[int(data['TO_RES']) - 1]
+
+                                if data['FT'] == 'CROSSLNK':
+                                    print("\n " + data['FROM_AA'] + " " + data["TO_AA"])
+                                    print(data['FROM_RES'])
+                                    print(data['TO_RES'])
+                                    print(ptm)
+                                    print(data['FT'])
 
                                 if len(ptm) >= 50:  # hay algunas ptms que especifican de mas y no matchean con la lista
                                     if ptm[:49] == "Tryptophyl-tyrosyl-methioninium (Trp-Tyr) (with M":
@@ -222,10 +231,10 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                                   '\''
                             # Que después uno como van en el INSERT
                             # El insert, en el que reemplazo ' por '', para escaparlas en sql
-                            if i >= 480:
+                            """if i >= 480:
                                 cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
                                              % sql_insert_values_p + '\n').replace("\"", '').replace('.', ''))
-                                con.commit()
+                                con.commit()"""
                             # unir los elementos de values con comas
         else:
             # Si, en cambio, la entrada no tiene FT insteresantes, solo cargo los datos generales y defaults
@@ -234,12 +243,12 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                 listar.append(str(r).replace("'", "''"))
             sql_insert_values_r = '\'' + '\', \''.join(listar) + '\''
 
-            if i >= 480:
+            """if i >= 480:
                 cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
                              % sql_insert_values_r + '\n').replace("\"", '').replace('.', ''))
-                con.commit()
+                con.commit()"""
 
-        if i >= 500:  # segun uniprot el número de entradas de secuencias es 54247468
+        if i >= 1000:  # segun uniprot el número de entradas de secuencias es 54247468
             print("\n")
             print(i)
             break
