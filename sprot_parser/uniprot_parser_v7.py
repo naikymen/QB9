@@ -122,7 +122,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
     for record in SwissProt.parse(uniprot):  # parseando los records de uniprot
         i += 1
         if i%50000 == 0:
-            print(str(i/54247468) + "\%")
+            print(str(i/54247468) + " %")
         data.clear()
         # Acá cargo los datos generales para las PTMs de una proteína/entrada de uniprot (instancias de entradas)
         # tienen que cargarse en el orden de las columnas en la ptmdb y el del insert
@@ -136,7 +136,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         data['FROM_AA'] = 'NOFT'
         data['TO_AA'] = 'NOFT'
         data['SQ'] = record.sequence
-        data['LENGTH'] = record.sequence_length
+        data['LENGTH'] = record.sequence_length  # todo acá hay un problema, no entran las de mas de 999 residuos
         data['ORG'] = record.organism  # el bicho
         data['OC'] = record.organism_classification[0]  # el dominio del bicho
         data['OX'] = record.taxonomy_id[0]  # Id taxonomica del bicho
