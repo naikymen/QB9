@@ -28,8 +28,8 @@ start_time = time.time()
 
 # Variables del script
 database = "ptmdb"
-tabla_cuentas = "sprot_count0"
-tabla_ptms = "sprot_ptms0"
+tabla_cuentas = "sprot_count1"
+tabla_ptms = "sprot_ptms1"
 file_name = "uniprot_sprot.dat"
 desde = 0
 hasta = 542800  # Hay 542782 entradas de AC?
