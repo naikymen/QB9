@@ -85,7 +85,11 @@ categories['inumber'] = "varchar(200) NOT NULL"
 empty_data = OrderedDict()
 for gato in categories:  # usando las keys de categories y un valor por defecto todo vacío no es nulo ¿cómo hago?
     empty_data[gato] = 'NOFT'
-data = empty_data  # este es el diccionario de registros vacío que voy a usar
+empty_data['FROM_RES'] = '?'
+empty_data['TO_RES'] = '?'
+empty_data['FROM_AA'] = '?'
+empty_data['TO_AA'] = '?'
+data = empty_data.copy()  # este es el diccionario de registros vacío que voy a usar
 
 # Crear la tabla de cuentas
 prot_dic_def_items = []
@@ -123,11 +127,12 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         i += 1
         if i%100 == 0:
             print(str(i) + " de " + str(hasta) + " en " + str(time.time() - start_time) + " segundos, a " + str(i/(int(time.time() - start_time))) + " registros por segundo")
-        data.clear()
+        data = empty_data.copy()  # en vez de vaciar el diccionario, le asigno el dafault sin enlazarlo al vacío
         # Acá cargo los datos generales para las PTMs de una proteína/entrada de uniprot (instancias de entradas)
         # tienen que cargarse en el orden de las columnas en la ptmdb y el del insert
         # print(record.accessions[0])
         data['AC'] = record.accessions[0]  # solo el principal, el resto nose.
+        """
         data['FT'] = 'NOFT'
         data['STATUS'] = 'NOFT'
         data['PTM'] = 'NOFT'
@@ -135,6 +140,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         data['TO_RES'] = 'NOFT'
         data['FROM_AA'] = 'NOFT'
         data['TO_AA'] = 'NOFT'
+        """
         data['SQ'] = record.sequence
         data['LENGTH'] = record.sequence_length  # todo acá hay un problema, no entran las de mas de 999 residuos
         data['ORG'] = record.organism  # el bicho
@@ -186,6 +192,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             D = feature[4]  # este aparece a veces? todo wtf?
 
                             # reiniciar FT, FROM y TO
+
                             data['FT'] = 'NOFT'
                             data['FROM_RES'] = '?'
                             data['TO_RES'] = '?'
@@ -211,6 +218,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                         C = C.replace(neq, '')
                                         # hay que sacar esta porquería si no aparece con paréntesis
                                         break  # esto corta con el loop más "cercano" en indentación
+
                                 ptm = ((C.split(" /"))[0].split(';')[0]). \
                                     rstrip(" ").rstrip(".").rstrip(" ")
                                 # Obs: a veces las mods tienen identificadores estables que empiezan con "/"

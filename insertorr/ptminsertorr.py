@@ -6,14 +6,18 @@ from ordereddict import OrderedDict
 #from collections import OrderedDict
 import MySQLdb as mdb
 
+database = "ptmdb"
+tabla_ptms = "sprot_ptmtable"
+file_name = "ptmlist"
+
 #Abrir el archivo con la lista de PTMs y el de output para guardar los querys
-ptmlist_file = expanduser("~") + '/QB9-git/QB9/ptmlist'
+ptmlist_file = expanduser("~") + '/QB9/QB9-VCS/ptmlist'
 ptmlist = open(ptmlist_file)
-output_file = expanduser("~") + '/QB9-git/QB9/resources/output.txt'
+output_file = expanduser("~") + '/QB9/QB9-VCS/resources/output.txt'
 output = open(output_file, 'w')
 
 #Configurar el cursor para la base de datos mysql
-con = mdb.connect('localhost', 'root', '', '')
+con = mdb.connect('localhost', 'nicolas', passwd="nicolaslfp", db=database)
 cur = con.cursor()
 cur.execute("SELECT VERSION()")
 print(cur.fetchone())
@@ -21,7 +25,7 @@ cur.execute("USE ptmdb")
 cur.execute("SHOW TABLES")
 
 
-#Las categorías están en un diccionario con su type de postgresql todo optimizar los campos
+#Las categorías están en un diccionario con su type de mysql todo optimizar los campos
 categories = OrderedDict()
 categories['ID'] = "varchar(80) PRIMARY KEY"
 categories['AC'] = "varchar(80)"
@@ -40,7 +44,8 @@ categories['DR'] = "varchar(80)"
 #variables del insert
 sql_insert_values = ''
 sql_insert_columns = ''
-i=0
+i = 0
+
 #crear la tabla
 table_def_items = []  # lista para concatenaciones de key y valor
 for cat, value in categories.items():  # concatenaciones key y valor
@@ -54,14 +59,15 @@ print("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB")
 empty_record = OrderedDict()
 for gato in categories:  # usando las keys de categories y un valor por defecto todo vacío no es nulo ¿cómo hago?
     empty_record[gato] = 'null'
-record = empty_record  # este es el diccionario de registros vacío que voy a usar
+record = empty_record.copy()  # este es el diccionario de registros vacío que voy a usar
+# el copy es para que no me los enlace
 
 line = ptmlist.readline()  # comienzo a leer lineas, asigno el valor de la primera a "line"
 while line != '':  # mientras la linea no sea la "última", o sea, el fin del archivo.
     if line[:2] == '//':  # si la nueva linea es un separador de PTMs "//" hacer un INSERT
         # output.write(str(record.items()))
         sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los elementos devalues con comas
-        tgs = (((sql_insert_values.replace("'", "").replace(".","")).split(", "))[3])
+        tgs = (((sql_insert_values.replace("'", "").replace(".", "")).split(", "))[3])
         tgs = tgs.split("-")
         print(len(tgs))
 
@@ -70,7 +76,7 @@ while line != '':  # mientras la linea no sea la "última", o sea, el fin del ar
         #cur.execute(("INSERT INTO ptm_table VALUES (%r);"
         #             % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
         #con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
-        record = empty_record  # después del insert, vaciar el registro.
+        record = empty_record.copy()
         line = ptmlist.readline()  # y cambiar de linea.
     for cat in categories.iterkeys():  # toma cada elemento de categoria (en orden)
         if cat == "TG" and cat == line[:2]:
