@@ -22,8 +22,9 @@ cur = con.cursor()
 cur.execute("SELECT VERSION()")
 print(cur.fetchone())
 cur.execute("USE ptmdb")
+print(cur.fetchone())
 cur.execute("SHOW TABLES")
-
+print(cur.fetchone())
 
 #Las categorías están en un diccionario con su type de mysql todo optimizar los campos
 categories = OrderedDict()
