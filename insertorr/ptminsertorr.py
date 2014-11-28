@@ -73,8 +73,8 @@ while line != '':  # mientras la linea no sea la "última", o sea, el fin del ar
 
         #output.write(("INSERT INTO ptm_table VALUES (%r);"
         #              % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
-        #cur.execute(("INSERT INTO ptm_table VALUES (%r);"
-        #             % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
+        print(("INSERT INTO ptm_table VALUES (%r);"
+                     % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
         #con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
         record = empty_record.copy()
         line = ptmlist.readline()  # y cambiar de linea.
