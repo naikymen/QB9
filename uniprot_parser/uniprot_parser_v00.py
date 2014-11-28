@@ -32,7 +32,7 @@ tabla_cuentas = "sprot_count1"
 tabla_ptms = "sprot_ptms1"
 file_name = "uniprot_sprot.dat"
 desde = 0
-hasta = 542800  # Hay 542782 entradas de AC?
+hasta = 542800  # Hay 542782 entradas de AC??
 
 # Conectar a la base de datos
 con = mdb.connect('localhost', 'nicolas', passwd="nicolaslfp", db=database)
