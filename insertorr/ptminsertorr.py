@@ -69,7 +69,7 @@ while line != '':  # mientras la linea no sea la "última", o sea, el fin del ar
         sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los elementos devalues con comas
         tgs = (((sql_insert_values.replace("'", "").replace(".", "")).split(", "))[3])
         tgs = tgs.split("-")
-        print(len(tgs))
+        #print(len(tgs))
 
         #output.write(("INSERT INTO ptm_table VALUES (%r);"
         #              % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
