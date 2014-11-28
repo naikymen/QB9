@@ -54,7 +54,7 @@ for cat, value in categories.items():  # concatenaciones key y valor
 table_def = ', '.join(table_def_items)  # definicion de la tabla
 #output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + "); \n")  # guardar el CREATE en output
 cur.execute("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB")
-#con.commit()
+con.commit()
 
 #Defino un modelo de diccionario donde cargar los valores que voy a extraer de la lista
 empty_record = OrderedDict()
@@ -76,7 +76,7 @@ while line != '':  # mientras la linea no sea la "última", o sea, el fin del ar
         #              % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
         cur.execute(("INSERT INTO ptm_table VALUES (%r);"
                      % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
-        #con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
+        con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
         record = empty_record.copy()
         line = ptmlist.readline()  # y cambiar de linea.
     for cat in categories.iterkeys():  # toma cada elemento de categoria (en orden)
