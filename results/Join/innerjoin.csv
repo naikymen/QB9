@@ -1,0 +1,395 @@
+$N-myristoyl glycine$
+$S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)$
+$GPI-anchor amidated aspartate$
+$Pyrrolidone carboxylic acid$
+$N-acetylalanine$
+$Phosphoserine$
+$Phosphothreonine$
+$N-acetylmethionine$
+$N-acetylthreonine$
+$N6-acetyllysine$
+$Nitrated tyrosine$
+$N-acetylglycine$
+$N-acetylvaline$
+$N-palmitoyl cysteine$
+$S-diacylglycerol cysteine$
+$Sulfotyrosine$
+$N6-(pyridoxal phosphate)lysine$
+$N-acetylserine$
+$Phosphotyrosine$
+$N6-carboxylysine$
+$N6-biotinyllysine$
+$D-tryptophan$
+$N6-succinyllysine$
+$S-palmitoyl cysteine$
+$GPI-anchor amidated serine$
+$GPI-anchor amidated asparagine$
+$S-cysteinyl cysteine$
+$Isoglutamyl cysteine thioester (Cys-Gln)$
+$Hydroxyproline$
+$Isoleucine derivative$
+$N-acetylcysteine$
+$O-(pantetheine 4'-phosphoryl)serine$
+$N6-methyllysine$
+$Tryptophylquinone$
+$Tryptophan tryptophylquinone (Trp-Trp)$
+$Pyruvic acid (Ser)$
+$S-nitrosocysteine$
+$N6-malonyllysine$
+$Blocked amino end (Met)$
+$D-phenylalanine$
+$Blocked amino end (Thr)$
+$N6,N6,N6-trimethyllysine$
+$N6,N6-dimethyllysine$
+$Lysine amide$
+$N6-lipoyllysine$
+$Proline amide$
+$N-acetylaspartate$
+$Methionine sulfoxide$
+$Methionine (R)-sulfoxide$
+$Tele-methylhistidine$
+$N-acetylglutamate$
+$Blocked amino end (Glu)$
+$Blocked amino end (Ser)$
+$4-aspartylphosphate$
+$ADP-ribosylarginine$
+$S-glutathionyl cysteine$
+$5-hydroxylysine$
+$4-hydroxyproline$
+$Tyrosine amide$
+$Arginine amide$
+$S-4a-FMN cysteine$
+$Glycine amide$
+$Leucine amide$
+$Phosphohistidine$
+$GPI-anchor amidated glycine$
+$Pyrrolidone carboxylic acid (Glu)$
+$Phenylalanine amide$
+$Symmetric dimethylarginine$
+$Threonine amide$
+$Tryptophan amide$
+$S-farnesyl cysteine$
+$Deamidated asparagine$
+$Methionine amide$
+$Isoleucine amide$
+$Pros-8alpha-FAD histidine$
+$Asymmetric dimethylarginine$
+$Omega-N-methylated arginine$
+$(3R,4R)-4,5-dihydroxyisoleucine$
+$(3R,4S)-4-hydroxyisoleucine$
+$Cyclopeptide (Ile-Pro)$
+$2'-cysteinyl-6'-hydroxytryptophan sulfoxide (Trp-Cys)$
+$2',4',5'-topaquinone$
+$Cysteine amide$
+$Isoaspartyl glycine isopeptide (Gly-Asn)$
+$D-leucine$
+$Beta-decarboxylated aspartate$
+$(3S)-3-hydroxyasparagine$
+$(3S)-3-hydroxyaspartate$
+$3-hydroxyasparagine$
+$Omega-N-methylarginine$
+$S-8alpha-FAD cysteine$
+$1'-histidyl-3'-tyrosine (His-Tyr)$
+$Histidine amide$
+$N4-methylasparagine$
+$Methylhistidine$
+$Blocked amino end (Ala)$
+$Citrulline$
+$Pentaglycyl murein peptidoglycan amidated threonine$
+$3-oxoalanine (Cys)$
+$Blocked amino end (Gln)$
+$2'-(S-cysteinyl)-histidine (Cys-His)$
+$Asparagine amide$
+$3-oxoalanine (Ser)$
+$Phosphatidylethanolamine amidated glycine$
+$N-formylmethionine$
+$GPI-anchor amidated alanine$
+$N6-(retinylidene)lysine$
+$Blocked amino end (Arg)$
+$Cysteine methyl ester$
+$Cysteine sulfenic acid (-SOH)$
+$N-methylleucine$
+$4-carboxyglutamate$
+$D-allo-isoleucine$
+$Valine amide$
+$6'-bromotryptophan$
+$Glycine radical$
+$Cysteinyl-selenocysteine (Cys-Sec)$
+$Glutamic acid 1-amide$
+$(3R)-3-hydroxyasparagine$
+$Serine amide$
+$Aspartic acid 1-amide$
+$Glutamine amide$
+$Allysine$
+$3-hydroxyproline$
+$N-acetylproline$
+$Dimethylated arginine$
+$3-(S-cysteinyl)-tyrosine (Cys-Tyr)$
+$Methionine sulfone$
+$Sulfothreonine$
+$3'-histidyl-3-tyrosine (His-Tyr)$
+$N2-acetylarginine$
+$Blocked amino end (Leu)$
+$Blocked amino end (Asp)$
+$N6-1-carboxyethyl lysine$
+$Cyclopeptide (Leu-Leu)$
+$S-geranylgeranyl cysteine$
+$O-AMP-tyrosine$
+$O-AMP-threonine$
+$3'-(S-cysteinyl)-tyrosine (Cys-Tyr)$
+$(3R)-3-hydroxyaspartate$
+$N,N,N-trimethylglycine$
+$N,N-dimethylglycine$
+$N-methylglycine$
+$Tele-8alpha-FAD histidine$
+$D-methionine$
+$Beta-methyllanthionine (Cys-Thr)$
+$Lanthionine (Ser-Cys)$
+$Lysinoalanine (Ser-Lys)$
+$Cyclopeptide (Gly-Asn)$
+$Cyclopeptide (Lys-Asp)$
+$Cyclopeptide (Ala-Arg)$
+$O-(phosphoribosyl dephospho-coenzyme A)serine$
+$Alanine amide$
+$Isoaspartyl lysine isopeptide (Lys-Asn)$
+$S-stearoyl cysteine$
+$N-acetyltyrosine$
+$N-methylphenylalanine$
+$3'-geranyl-2',N2-cyclotryptophan$
+$Tryptophan derivative$
+$D-4-hydroxyvaline$
+$D-valine$
+$N6-myristoyl lysine$
+$Blocked amino end (Xaa)$
+$Isoaspartyl lysine isopeptide (Lys-Asp)$
+$Glutamate methyl ester (Gln)$
+$Glutamate methyl ester (Glu)$
+$S-methylcysteine$
+$GPI-like-anchor amidated glycine$
+$GPI-like-anchor amidated asparagine$
+$Deamidated glutamine$
+$GPI-like-anchor amidated serine$
+$Blocked amino end (Asn)$
+$N-D-glucuronoyl glycine$
+$N6-palmitoyl lysine$
+$Cyclopeptide (Gly-Asp)$
+$Cyclopeptide (His-Asn)$
+$Cyclopeptide (Pro-Tyr)$
+$Cyclopeptide (Pro-Met)$
+$Cyclopeptide (His-Asp)$
+$Blocked amino end (Gly)$
+$N,N-dimethylproline$
+$Cyclopeptide (Ser-Asn)$
+$Cyclopeptide (Asp-Asn)$
+$N,N-dimethylalanine$
+$(E)-2,3-didehydrobutyrine$
+$L-allo-isoleucine$
+$S-(2-aminovinyl)-D-cysteine (Cys-Cys)$
+$1-thioglycine$
+$CysO-cysteine adduct$
+$D-alanine (Ala)$
+$4-hydroxyarginine$
+$Omega-hydroxyceramide glutamate ester$
+$O-8alpha-FAD tyrosine$
+$S-6-FMN cysteine$
+$ADP-ribosylcysteine$
+$Cholesterol glycine ester$
+$Cysteine sulfinic acid (-SO2H)$
+$N6-methylated lysine$
+$Cysteine derivative$
+$5-glutamyl glycerylphosphorylethanolamine$
+$Lysine methyl ester$
+$Diphthamide$
+$GPI-anchor amidated cysteine$
+$N6-(3,6-diaminohexanoyl)-5-hydroxylysine$
+$N5-methylglutamine$
+$N-(12-oxomyristoyl)cysteine$
+$N-[(12R)-12-hydroxymyristoyl]cysteine$
+$Aspartyl isopeptide (Asn)$
+$Cysteine methyl disulfide$
+$3-phenyllactic acid$
+$S-archaeol cysteine$
+$O-(2-aminoethylphosphoryl)serine$
+$O-(2-cholinephosphoryl)serine$
+$O-(sn-1-glycerophosphoryl)serine$
+$N-methylisoleucine$
+$3',4'-dihydroxyphenylalanine$
+$7'-hydroxytryptophan$
+$(3R,4S)-3,4-dihydroxyproline$
+$D-asparagine$
+$O-palmitoyl serine$
+$Cysteine persulfide$
+$GPI-like-anchor amidated alanine$
+$2,3-didehydrotyrosine$
+$5-imidazolinone (Asn-Gly)$
+$(Z)-2,3-didehydrotyrosine$
+$2-tetrahydro-2-pyridyl-5-imidazolinone (Lys-Gly)$
+$5-imidazolinone (Lys-Gly)$
+$2-iminomethyl-5-imidazolinone (Gln-Gly)$
+$5-imidazolinone (Ser-Gly)$
+$GPI-anchor amidated threonine$
+$O-decanoyl serine$
+$O-octanoyl serine$
+$O-decanoyl threonine$
+$O-octanoyl threonine$
+$Blocked amino end (Val)$
+$O-UMP-tyrosine$
+$N-palmitoyl glycine$
+$Pyruvic acid (Cys)$
+$N-methylmethionine$
+$N-methyltyrosine$
+$N6-crotonyl-L-lysine$
+$N,N,N-trimethylalanine$
+$N-methylalanine$
+$Blocked amino end (Pro)$
+$N-methylproline$
+$Phosphoarginine$
+$2,3-didehydroalanine (Ser)$
+$5-imidazolinone (Ala-Gly)$
+$N-pyruvate 2-iminyl-valine$
+$S-(dipyrrolylmethanemethyl)cysteine$
+$N-carbamoylalanine$
+$5-imidazolinone (Cys-Gly)$
+$Hypusine$
+$O-acetylthreonine$
+$Aspartate 1-(chondroitin 4-sulfate)-ester$
+$Cyclopeptide (Ser-Gly)$
+$Aspartyl isopeptide (Asp)$
+$Blocked amino end (Cys)$
+$PolyADP-ribosyl glutamic acid$
+$Cyclopeptide (Ala-Ile)$
+$3'-nitrotyrosine$
+$2,3-didehydrobutyrine$
+$D-alanine (Ser)$
+$Lactic acid$
+$Beta-methyllanthionine (Thr-Cys)$
+$(Z)-2,3-didehydrobutyrine$
+$6'-chlorotryptophan$
+$3,4-dihydroxyproline$
+$S-(2-aminovinyl)-D-cysteine (Ser-Cys)$
+$Lanthionine (Cys-Ser)$
+$2-oxobutanoic acid$
+$Blocked amino end (Ile)$
+$Phosphocysteine$
+$3-hydroxytryptophan$
+$Lysine tyrosylquinone (Lys-Tyr)$
+$N6-murein peptidoglycan lysine$
+$5-glutamyl 2-aminoadipic acid$
+$5-glutamyl glutamate$
+$5-glutamyl N2-lysine$
+$5-glutamyl N2-ornithine$
+$Proline 5-hydroxy-oxazole-4-carbothionic acid (Pro-Cys)$
+$Oxazole-4-carboxylic acid (Gly-Ser)$
+$Thiazole-4-carboxylic acid (Ser-Cys)$
+$Thiazole-4-carboxylic acid (Gly-Cys)$
+$Oxazole-4-carboxylic acid (Cys-Ser)$
+$N6-formyllysine$
+$Serine microcin E492 siderophore ester$
+$Isoglutamyl glycine isopeptide (Gly-Glu)$
+$Pros-methylhistidine$
+$5-methylarginine$
+$2-methylglutamine$
+$N-formylglycine$
+$N,N,N-trimethylserine$
+$Glycyl adenylate$
+$Bromohistidine$
+$O-acetylserine$
+$Blocked carboxyl end (Arg)$
+$S-(2-aminovinyl)-3-methyl-D-cysteine (Thr-Cys)$
+$O-palmitoyl threonine$
+$N-pyruvate 2-iminyl-cysteine$
+$(E)-2,3-didehydrotyrosine$
+$2-iminomethyl-5-imidazolinone (Met-Gly)$
+$2-iminomethyl-5-imidazolinone (Glu-Gly)$
+$4-hydroxyglutamate$
+$Thiazole-4-carboxylic acid (Thr-Cys)$
+$Thiazole-4-carboxylic acid (Glu-Cys)$
+$Thiazole-4-carboxylic acid (Cys-Cys)$
+$5-glutamyl polyglycine$
+$FMN phosphoryl threonine$
+$FMN phosphoryl serine$
+$D-serine (Ser)$
+$S-bacillithiol cysteine disulfide$
+$N,N-(cysteine-1,S-diyl)phenylalanine (Cys-Phe)$
+$Pentaglycyl murein peptidoglycan amidated alanine$
+$N6-(ADP-ribosyl)lysine$
+$O-(5'-phospho-RNA)-serine$
+$O-(5'-phospho-RNA)-tyrosine$
+$GPI-like-anchor amidated aspartate$
+$Leucine methyl ester$
+$Pyrroloquinoline quinone (Glu-Tyr)$
+$Aspartyl aldehyde$
+$Tele-phosphohistidine$
+$N,N-(cysteine-1,S-diyl)serine (Cys-Ser)$
+$S-(4-hydroxycinnamyl)cysteine$
+$N2,N2-dimethylarginine$
+$Thiazole-4-carboxylic acid (Arg-Cys)$
+$Oxazole-4-carboxylic acid (Ile-Ser)$
+$Oxazole-4-carboxylic acid (Ser-Ser)$
+$4-cysteinyl-glutamic acid (Cys-Glu)$
+$3-cysteinyl-aspartic acid (Cys-Asp)$
+$4'-cysteinyl-tryptophylquinone (Cys-Trp)$
+$ADP-ribosylasparagine$
+$Aminomalonic acid (Ser)$
+$Lysine tyrosylquinone (Tyr-Lys)$
+$ADP-ribosylserine$
+$Methionine derivative$
+$N,N-dimethylserine$
+$N-methylserine$
+$Sulfoserine$
+$3-(O4'-tyrosyl)-valine (Val-Tyr)$
+$N5-methylarginine$
+$(3R)-3-hydroxyarginine$
+$(3S)-3-hydroxyhistidine$
+$3-methylthioaspartic acid$
+$N4,N4-dimethylasparagine$
+$Cyclopeptide (Asn-Gly)$
+$2-cysteinyl-D-phenylalanine (Cys-Phe)$
+$2-cysteinyl-D-allo-threonine (Cys-Thr)$
+$2-cysteinyl-L-phenylalanine (Cys-Phe)$
+$Cysteinyl-selenocysteine (Sec-Cys)$
+$Lysine derivative$
+$N6-poly(methylaminopropyl)lysine$
+$N6,N6,N6-trimethyl-5-hydroxylysine$
+$N,N-dimethylleucine$
+$3'-(S-cysteinyl)-tyrosine (Tyr-Cys)$
+$Tele-8alpha-FMN histidine$
+$N2-succinyltryptophan$
+$Lysino-D-alanine (Lys)$
+$Isoglutamyl lysine isopeptide (Lys-Gln)$
+$3,4-dihydroxyarginine$
+$4,5-dihydroxylysine$
+$S-(coelenterazin-3a-yl)cysteine$
+$S-12-hydroxyfarnesyl cysteine$
+$O-(5'-phospho-DNA)-serine$
+$O-(5'-phospho-DNA)-tyrosine$
+$Glutamine derivative$
+$Cyclo[(prolylserin)-O-yl] cysteinate$
+$Thiazole-4-carboxylic acid (Val-Cys)$
+$Oxazoline-4-carboxylic acid (Cys-Ser)$
+$3-hydroxyvaline$
+$O-methylthreonine$
+$Decarboxylated threonine$
+$1-amino-2-propanone$
+$3-hydroxyphenylalanine$
+$5-(methoxymethyl)thiazole-4-carboxylic acid (Val-Cys)$
+$Thiazole-4-carboxylic acid (Phe-Cys)$
+$(3S,4R)-3,4-dihydroxyisoleucine$
+$Thiazole-4-carboxylic acid (Ile-Cys)$
+$5-hydroxy-3-methylproline (Ile)$
+$Thiazole-4-carboxylic acid (Asn-Cys)$
+$Thiazoline-4-carboxylic acid (Phe-Cys)$
+$2,3-didehydroalanine (Cys)$
+$Blocked carboxyl end (His)$
+$Thyroxine$
+$Triiodothyronine$
+$Isodityrosine (Tyr-Tyr)$
+$Cyclopeptide (Leu-Trp)$
+$2'-methylsulfonyltryptophan$
+$(4R)-4,5-dihydroxyleucine$
+$4,5,5'-trihydroxyleucine$
+$D-threonine$
+$D-serine (Cys)$
+$(3R,4R)-3,4-dihydroxyproline$
+$Cyclopeptide (Ala-Pro)$
+$S-selanylcysteine$
