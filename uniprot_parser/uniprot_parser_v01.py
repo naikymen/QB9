@@ -124,154 +124,156 @@ olista = []
 interes = []
 with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
     for record in SwissProt.parse(uniprot):  # parseando los records de uniprot
+        i += 1
+        if i % 1000 == 0:
+            print("Va: " + str(i/5428) + "% en: " + str(time.time() - start_time)[:(str(time.time() - start_time)).find(".")+2] + " segundos")
+        data = empty_data.copy()  # en vez de vaciar el diccionario, le asigno el dafault sin enlazarlo al vacío
+        # Acá cargo los datos generales para las PTMs de una proteína/entrada de uniprot (instancias de entradas)
+        # tienen que cargarse en el orden de las columnas en la ptmdb y el del insert
+        # print(record.accessions[0])
+        data['AC'] = record.accessions[0]  # solo el principal, el resto nose.
+        data['SQ'] = record.sequence
+        data['LENGTH'] = record.sequence_length  # todo acá hay un problema? no entran las de mas de 999 residuos
+        data['ORG'] = record.organism  # el bicho
+        data['OC'] = record.organism_classification[0]  # el dominio del bicho
+        data['OX'] = record.taxonomy_id[0]  # Id taxonomica del bicho
+
+        del olista[:]
+        if not record.host_organism:
+            data['HO'] = 'No host'
+        else:
+            for o in record.host_organism:
+                olista.append((o.split(";"))[0])
+            data['HO'] = ', '.join(olista)  # y esto el host del virus ¿o parásito?
+
+        data['inmuber'] = str(i)  # solo para debuguear =) ver hasta donde llegó
+
+        # Generar y guardar el insert del #AA en la secuencia
+        del listaq[:]
+        contenido_aa = count_amino_acids_ext(record.sequence)  # Guardo el dict con partes AA, #AA de la secuencia
+        for q in contenido_aa.itervalues():
+            listaq.append(str(q))  # y los pongo en una lista
+        sql_insert_values_q = ', '.join(listaq)
+        """
         if i >= desde:
-            i += 1
-            if i % 100 == 0:
-                print(str(i) + " de " + str(hasta) + " en " + str(time.time() - start_time) + " segundos, a " + str(i/(int(time.time() - start_time))) + " registros por segundo")
-            data = empty_data.copy()  # en vez de vaciar el diccionario, le asigno el dafault sin enlazarlo al vacío
-            # Acá cargo los datos generales para las PTMs de una proteína/entrada de uniprot (instancias de entradas)
-            # tienen que cargarse en el orden de las columnas en la ptmdb y el del insert
-            # print(record.accessions[0])
-            data['AC'] = record.accessions[0]  # solo el principal, el resto nose.
-            data['SQ'] = record.sequence
-            data['LENGTH'] = record.sequence_length  # todo acá hay un problema? no entran las de mas de 999 residuos
-            data['ORG'] = record.organism  # el bicho
-            data['OC'] = record.organism_classification[0]  # el dominio del bicho
-            data['OX'] = record.taxonomy_id[0]  # Id taxonomica del bicho
+            cur.execute("INSERT INTO " + tabla_cuentas + " VALUES ('"
+                        + record.accessions[0] + "', '"
+                        + record.organism_classification[0] + "', "
+                        + str(record.sequence_length)
+                        + ", " + sql_insert_values_q + ")")
+            con.commit()
+        """
+        # Acá empiezo con los features, hay alguno interesante?
+        features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
+        del out[:]
+        del interes[:]
+        for a in range(0, len(features)):  # guardar los campos "candidato" del FT en una lista llamada out
+            out.append(features[a][0])
+        interes = list(set(out).intersection(ptmrecords))  # armar un set con los interesantes y hacerlo lista interes
+        if interes:  # si interes no está vacía, entonces hay algo para cargar
+            # todo evitar duplicados de secuencia, relacion via AC?
+            # ahora cargo cada PTM en data (subinstancias de entrada)
+            for feature in features:  # iterar los features de la entrada
+                if feature[0] in interes:  # si el titulo del FT interesa, proseguir ¡mejora un poco! =D
+                    for tipo in interes:  # iterear los tipos interesantes encontrados en el feature
+                        if feature[0] in tipo:  # si el feature evaluado interesante, cargar los datos en data[]
+                            A = feature[1]  # de el residuo tal (va a ser el mismo que el siguiente si está solo)
+                            B = feature[2]  # hacia el otro. OJO hay algunos desconocidos indicados con un "?"
+                            C = feature[3]  # este tiene la posta?
+                            D = feature[4]  # este aparece a veces? todo wtf?
 
-            del olista[:]
-            if not record.host_organism:
-                data['HO'] = 'No host'
-            else:
-                for o in record.host_organism:
-                    olista.append((o.split(";"))[0])
-                data['HO'] = ', '.join(olista)  # y esto el host del virus ¿o parásito?
+                            # reiniciar FT, FROM y TO
 
-            data['inmuber'] = str(i)  # solo para debuguear =) ver hasta donde llegó
+                            data['FT'] = 'NOFT'
+                            data['FROM_RES'] = '?'
+                            data['TO_RES'] = '?'
+                            data['FROM_AA'] = '?'
+                            data['TO_AA'] = '?'
 
-            # Generar y guardar el insert del #AA en la secuencia
-            del listaq[:]
-            contenido_aa = count_amino_acids_ext(record.sequence)  # Guardo el dict con partes AA, #AA de la secuencia
-            for q in contenido_aa.itervalues():
-                listaq.append(str(q))  # y los pongo en una lista
-            sql_insert_values_q = ', '.join(listaq)
+                            # Asignar FT
+                            data['FT'] = feature[0]
+                            data['FROM_RES'] = A
+                            data['TO_RES'] = B
 
-            if i >= desde:
-                cur.execute("INSERT INTO " + tabla_cuentas + " VALUES ('"
-                            + record.accessions[0] + "', '"
-                            + record.organism_classification[0] + "', "
-                            + str(record.sequence_length)
-                            + ", " + sql_insert_values_q + ")")
+                            # reiniciar PTM y STATUS
+                            ptm = ''
+                            data['PTM'] = 'NOFT'
+                            data['STATUS'] = "Experimental"
+
+                            # Asignar STATUS y PTM
+                            if C:  # si C (el que tiene el nombre de la PTM y el STATUS) contiene algo
+                                for neq in neqs:  # iterar los STATUS posibles
+                                    if neq in C:  # si C contiene el STATUS pirulo
+                                        data['STATUS'] = neq  # asignar el valor a STATUS
+                                        C = C.replace('(' + neq + ")", '')  # hay que sacar esta porquería
+                                        C = C.replace(neq, '')
+                                        # hay que sacar esta porquería si no aparece con paréntesis
+                                        break  # esto corta con el loop más "cercano" en indentación
+
+                                ptm = ((C.split(" /"))[0].split(';')[0]). \
+                                    rstrip(" ").rstrip(".").rstrip(" ")
+                                # Obs: a veces las mods tienen identificadores estables que empiezan con "/"
+                                # así que hay que sacarlo. y otas cosas después de un ";" CHAU.
+                                # También hay CROSSLNKs con otras anotaciones, que los hace aparecer como únicas
+                                # al contarlas, pero en realidad son casi iguales todo quizás ocurre con otras?
+                                # Ver http://web.expasy.org/docs/userman.html#FT_line
+                                # También le saco espacios y puntos al final.
+                                # Odio esto del formato... todo no hay algo que lo haga mejor?
+                            if tipo == 'DISULFID':  # si el tipo es disulfuro, no hay mucho que decir.
+                                ptm = "S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)"
+                                data['FROM_AA'] = 'C'
+                                data['TO_AA'] = 'C'
+                            else:  # pero si no lo es, guardamos cosas normalmente.
+                                # Asignar target residue
+                                if A != '?':
+                                    data['FROM_AA'] = data['SQ'][int(data['FROM_RES'])-1]
+                                else:
+                                    data['FROM_AA'] = '?'
+                                if B != '?':
+                                    data['TO_AA'] = data['SQ'][int(data['TO_RES'])-1]
+                                else:
+                                    data['TO_AA'] = '?'
+
+                                if ptm.find("with") != -1:  # si la ptm contiene la palabra "with" (caso crosslink)
+                                    ptm = ptm.split(" (with")[0].split(" (int")[0]  # pero si la contiene, recortar
+
+                            data['PTM'] = ptm
+
+                            del listap[:]
+                            for p in data.itervalues():  # itero los valores de los datos que fui cargando al dict.
+                                listap.append(str(p).replace("'", "''"))  # y los pongo en una lista
+                            sql_insert_values_p = '\'' + \
+                                                  '\', \''.join(listap) + \
+                                                  '\''
+                            # Que después uno como van en el INSERT
+                            # El insert, en el que reemplazo ' por '', para escaparlas en sql
+                            # print('\n')
+                            # print(sql_insert_values_p)
+                            # print('\n')
+                            # print(record.features)
+                            """
+                            if i >= desde:  # para hacerlo en partes
+                                cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
+                                             % sql_insert_values_p + '\n').replace("-...", "").replace("\"", '').replace('.', ''))
+                                con.commit()
+                            """
+                            # unir los elementos de values con comas
+        else:
+            # Si, en cambio, la entrada no tiene FT insteresantes, solo cargo los datos generales y defaults
+            del listar[:]
+            for r in data.itervalues():
+                listar.append(str(r).replace("'", "''"))
+            sql_insert_values_r = '\'' + '\', \''.join(listar) + '\''
+            """
+            if i >= desde:  # para hacerlo en partes
+                cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
+                             % sql_insert_values_r + '\n').replace("\"", '').replace('.', ''))
                 con.commit()
-
-            # Acá empiezo con los features, hay alguno interesante?
-            features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
-            del out[:]
-            del interes[:]
-            for a in range(0, len(features)):  # guardar los campos "candidato" del FT en una lista llamada out
-                out.append(features[a][0])
-            interes = list(set(out).intersection(ptmrecords))  # armar un set con los interesantes y hacerlo lista interes
-            if interes:  # si interes no está vacía, entonces hay algo para cargar
-                # todo evitar duplicados de secuencia, relacion via AC?
-                # ahora cargo cada PTM en data (subinstancias de entrada)
-                for feature in features:  # iterar los features de la entrada
-                    if feature[0] in interes:  # si el titulo del FT interesa, proseguir ¡mejora un poco! =D
-                        for tipo in interes:  # iterear los tipos interesantes encontrados en el feature
-                            if feature[0] in tipo:  # si el feature evaluado interesante, cargar los datos en data[]
-                                A = feature[1]  # de el residuo tal (va a ser el mismo que el siguiente si está solo)
-                                B = feature[2]  # hacia el otro. OJO hay algunos desconocidos indicados con un "?"
-                                C = feature[3]  # este tiene la posta?
-                                D = feature[4]  # este aparece a veces? todo wtf?
-
-                                # reiniciar FT, FROM y TO
-
-                                data['FT'] = 'NOFT'
-                                data['FROM_RES'] = '?'
-                                data['TO_RES'] = '?'
-                                data['FROM_AA'] = '?'
-                                data['TO_AA'] = '?'
-
-                                # Asignar FT
-                                data['FT'] = feature[0]
-                                data['FROM_RES'] = A
-                                data['TO_RES'] = B
-
-                                # reiniciar PTM y STATUS
-                                ptm = ''
-                                data['PTM'] = 'NOFT'
-                                data['STATUS'] = "Experimental"
-
-                                # Asignar STATUS y PTM
-                                if C:  # si C (el que tiene el nombre de la PTM y el STATUS) contiene algo
-                                    for neq in neqs:  # iterar los STATUS posibles
-                                        if neq in C:  # si C contiene el STATUS pirulo
-                                            data['STATUS'] = neq  # asignar el valor a STATUS
-                                            C = C.replace('(' + neq + ")", '')  # hay que sacar esta porquería
-                                            C = C.replace(neq, '')
-                                            # hay que sacar esta porquería si no aparece con paréntesis
-                                            break  # esto corta con el loop más "cercano" en indentación
-
-                                    ptm = ((C.split(" /"))[0].split(';')[0]). \
-                                        rstrip(" ").rstrip(".").rstrip(" ")
-                                    # Obs: a veces las mods tienen identificadores estables que empiezan con "/"
-                                    # así que hay que sacarlo. y otas cosas después de un ";" CHAU.
-                                    # También hay CROSSLNKs con otras anotaciones, que los hace aparecer como únicas
-                                    # al contarlas, pero en realidad son casi iguales todo quizás ocurre con otras?
-                                    # Ver http://web.expasy.org/docs/userman.html#FT_line
-                                    # También le saco espacios y puntos al final.
-                                    # Odio esto del formato... todo no hay algo que lo haga mejor?
-                                if tipo == 'DISULFID':  # si el tipo es disulfuro, no hay mucho que decir.
-                                    ptm = "S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)"
-                                    data['FROM_AA'] = 'C'
-                                    data['TO_AA'] = 'C'
-                                else:  # pero si no lo es, guardamos cosas normalmente.
-                                    # Asignar target residue
-                                    if A != '?':
-                                        data['FROM_AA'] = data['SQ'][int(data['FROM_RES'])-1]
-                                    else:
-                                        data['FROM_AA'] = '?'
-                                    if B != '?':
-                                        data['TO_AA'] = data['SQ'][int(data['TO_RES'])-1]
-                                    else:
-                                        data['TO_AA'] = '?'
-
-                                    if ptm.find("with") != -1:  # si la ptm contiene la palabra "with" (caso crosslink)
-                                        ptm = ptm.split(" (with")[0].split(" (int")[0]  # pero si la contiene, recortar
-
-                                data['PTM'] = ptm
-
-                                del listap[:]
-                                for p in data.itervalues():  # itero los valores de los datos que fui cargando al dict.
-                                    listap.append(str(p).replace("'", "''"))  # y los pongo en una lista
-                                sql_insert_values_p = '\'' + \
-                                                      '\', \''.join(listap) + \
-                                                      '\''
-                                # Que después uno como van en el INSERT
-                                # El insert, en el que reemplazo ' por '', para escaparlas en sql
-                                # print('\n')
-                                # print(sql_insert_values_p)
-                                # print('\n')
-                                # print(record.features)
-                                if i >= desde:  # para hacerlo en partes
-                                    cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                                                 % sql_insert_values_p + '\n').replace("-...", "").replace("\"", '').replace('.', ''))
-                                    con.commit()
-                                # unir los elementos de values con comas
-            else:
-                # Si, en cambio, la entrada no tiene FT insteresantes, solo cargo los datos generales y defaults
-                del listar[:]
-                for r in data.itervalues():
-                    listar.append(str(r).replace("'", "''"))
-                sql_insert_values_r = '\'' + '\', \''.join(listar) + '\''
-                if i >= desde:  # para hacerlo en partes
-                    cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                                 % sql_insert_values_r + '\n').replace("\"", '').replace('.', ''))
-                    con.commit()
-
-            if i >= hasta:  # segun uniprot el número de entradas de secuencias es 54247468
-                print("\n")
-                print(i)
-                break
+            """
+        if i >= hasta:  # segun uniprot el número de entradas de secuencias es 54247468
+            print("\n")
+            print(i)
+            break
 # The sequence counts 60 amino acids per line, in groups of 10 amino acids, beginning in position 6 of the line.
 # http://www.uniprot.org/manual/
 # General Annotation: cofactores, mass spectrometry data, PTM (complementario al MOD_RES y otras PTMs..?)
