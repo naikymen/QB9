@@ -20,7 +20,9 @@ output = open(output_file, 'w')
 con = mdb.connect('localhost', 'nicolas', passwd="nicolaslfp", db=database)
 cur = con.cursor()
 cur.execute("SELECT VERSION()")
-print(str(cur.fetchone()) + " --- \n")
+fetchone = cur.fetchone()
+print(str(fetchone) + " --- \n")
+output.write(str(fetchone)[1:-2].strip("'")+"\n\n")
 cur.execute("USE ptmdb")
 print(str(cur.fetchone()) + " --- \n")
 cur.execute("SHOW TABLES;")
@@ -45,7 +47,7 @@ categories['DR'] = "varchar(80)"
 
 # Variables del insert
 sql_insert_values = ''
-sql_insert_columns = ''
+sql_insert_columns = ''  # no se usa en el insert al final todo borrar
 i = 0
 
 # Crear la tabla
@@ -64,22 +66,25 @@ for gato in categories:  # usando las keys de categories y un valor por defecto 
 record = empty_record.copy()  # este es el diccionario de registros vacío que voy a usar
 # el copy es para que no me los enlace
 
-output.write(sql_insert_columns + "\n")
-
 with open(ptmlist_file) as ptmlist:
     line = ptmlist.readline()  # comienzo a leer lineas, asigno el valor de la primera a "line"
     while line != '':  # mientras la linea no sea la "última", o sea, el fin del archivo.
         if line[:2] == '//':  # si la nueva linea es un separador de PTMs "//" hacer un INSERT
             # output.write(str(record.items()))
-            sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los elementos devalues con comas
-            tgs = (((sql_insert_values.replace("'", "").replace(".", "")).split(", "))[3])
-            tgs = tgs.split("-")
+            sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los values con comas
+            # y encerrarlos entre comillas simples
+
             if "with" in sql_insert_values:
                 output.write(sql_insert_values + "\n")
+                output.write(sql_insert_values.replace("putazo", ""))
+                # todo preguntar como manejar los "..." ¿qué hace python? ¿qué hace mysql?
+                output.write(sql_insert_values + "\n\n")
+            # tgs = (((sql_insert_values.replace("'", "").replace(".", "")).split(", "))[3])
+            # tgs = tgs.split("-")
             # output.write(("INSERT INTO ptm_table VALUES (%r);"
             #              % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
-            # cur.execute(("INSERT INTO ptm_table VALUES (%r);"
-            #             % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
+            cur.execute(("INSERT INTO ptm_table VALUES (%r);"
+                         % sql_insert_values + '\n').replace("-...", "").replace("\"", '').replace('.', ''))
             con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
             record = empty_record.copy()
             line = ptmlist.readline()  # y cambiar de linea.
@@ -89,11 +94,10 @@ with open(ptmlist_file) as ptmlist:
                     line = ptmlist.readline()
             elif line[:2] == cat:  # y si la linea corresponde a la categoria
                 record[cat] = line[5:-1].replace("'", "''")  # agrega su contenido al registro para esa categoria
-                # todo el hash!!
+                # todo averiguar por el manejo de las dobles comillas en sql que quiero insertar en mi insert
                 line = ptmlist.readline()  # y cambia a una nueva linea
                 while line[:2] == cat:  # mientras la linea nueva sea de la misma id que la anterior
                     record[cat] += ' --- ' + line[5:-1].replace("'", "''")  # agrega su contenido con un separador
-                    # todo el hash!!
                     line = ptmlist.readline()  # y cambia a una nueva linea
         # si la linea está vacía, es porque llegó al final del archivo y el while termina
 

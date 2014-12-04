@@ -78,8 +78,8 @@ categories['OC'] = "varchar(30) NOT NULL"  # organism classification, vamos solo
 categories['OX'] = "varchar(200) NOT NULL"  # taxonomic ID
 categories['HO'] = "text(500)"  # host organism
 categories['inumber'] = "varchar(200) NOT NULL"
-#categories['CC'] = "varchar(200)"  # comments section, nos interesa el campo "PTM"
-#categories['SQi'] = "varchar(200)"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
+# categories['CC'] = "varchar(200)"  # comments section, nos interesa el campo "PTM"
+# categories['SQi'] = "varchar(200)"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
 
 # Defino un diccionario modelo donde cargar los valores que voy a extraer de la lista
 empty_data = OrderedDict()
