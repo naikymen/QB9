@@ -1,17 +1,15 @@
 # coding=utf-8
 __author__ = 'nicolas'
 from os.path import expanduser
-import sys
 from ordereddict import OrderedDict
-# from collections import OrderedDict
 import MySQLdb as mdb
 
 database = "ptmdb"
-tabla_ptms = "sprot_ptmtable"
-file_name = "ptmlist"
+tabla_ptms = "sprot_ptmtable1"
+file_name = "ptmlist2"
 
 # Abrir el archivo con la lista de PTMs y el de output para guardar los querys
-ptmlist_file = expanduser("~") + '/QB9/QB9-VCS/ptmlist'
+ptmlist_file = expanduser("~") + '/QB9/QB9-VCS/' + file_name
 # ptmlist = open(ptmlist_file)
 output_file = expanduser("~") + '/QB9/QB9-VCS/resources/output.txt'
 output = open(output_file, 'w')
@@ -56,7 +54,8 @@ for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(table_def_items)  # definicion de la tabla
 # output.write("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + "); \n")  # guardar el CREATE en output
-cur.execute("CREATE TABLE IF NOT EXISTS ptm_table (" + table_def + ") ENGINE=InnoDB")
+cur.execute("DROP TABLE " + tabla_ptms + ";")
+cur.execute("CREATE TABLE IF NOT EXISTS " + tabla_ptms + " (" + table_def + ") ENGINE=InnoDB;")
 con.commit()
 
 # Defino un modelo de diccionario donde cargar los valores que voy a extraer de la lista
@@ -73,24 +72,32 @@ with open(ptmlist_file) as ptmlist:
             # output.write(str(record.items()))
             sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los values con comas
             # y encerrarlos entre comillas simples
-
+            """
             if "with" in sql_insert_values:
                 output.write(sql_insert_values + "\n")
                 output.write(sql_insert_values.replace("putazo", ""))
                 # todo preguntar como manejar los "..." ¿qué hace python? ¿qué hace mysql?
                 output.write(sql_insert_values + "\n\n")
+            """
             # tgs = (((sql_insert_values.replace("'", "").replace(".", "")).split(", "))[3])
             # tgs = tgs.split("-")
             # output.write(("INSERT INTO ptm_table VALUES (%r);"
             #              % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
-            cur.execute(("INSERT INTO ptm_table VALUES (%r);"
+            cur.execute(("INSERT INTO sprot_ptmtable1 VALUES (%r);"
                          % sql_insert_values + '\n').replace("-...", "").replace("\"", '').replace('.', ''))
             con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
             record = empty_record.copy()
             line = ptmlist.readline()  # y cambiar de linea.
         for cat in categories.iterkeys():  # toma cada elemento de categoria (en orden)
-            if cat == "TG" and cat == line[:2]:
-                    record[cat] = line[5:-1]
+            # if cat == "TG" and cat == line[:2]:
+                # record[cat] = line[5:-1]
+                # line = ptmlist.readline()
+            if cat == "ID" and cat == line[:2]:
+                if line.find("with") == -1:
+                    record[cat] = line[5:-1].replace("'", "''")
+                    line = ptmlist.readline()
+                else:
+                    record[cat] = line[5:-1].replace("'", "''").split(" (with")[0].split(" (int")[0]
                     line = ptmlist.readline()
             elif line[:2] == cat:  # y si la linea corresponde a la categoria
                 record[cat] = line[5:-1].replace("'", "''")  # agrega su contenido al registro para esa categoria

@@ -32,14 +32,14 @@ tabla_cuentas = "sprot_count1"
 tabla_ptms = "sprot_ptms1"
 file_name = "uniprot_sprot.dat"
 desde = 0
-hasta = 542800  # Hay 542782 entradas de AC??
+hasta = 542783  # Hay 542782 entradas de AC??
 
 # Conectar a la base de datos
 con = mdb.connect('localhost', 'nicolas', passwd="nicolaslfp", db=database)
 cur = con.cursor()
 cur.execute("SELECT VERSION()")
-print(cur.fetchone())
 cur.execute("USE " + database)
+print("USE ptmdb;")
 
 # Abrir el .dat de uniprot
 uniprot_file = expanduser("~") + '/QB9_Files/' + file_name
@@ -67,12 +67,15 @@ categories['AC'] = "varchar(30) NOT NULL"  # accesion number
 categories['FT'] = "varchar(30) NOT NULL"
 categories['STATUS'] = "varchar(30) NOT NULL"
 categories['PTM'] = "varchar(100) NOT NULL"
+
 categories['FROM_RES'] = "varchar(10) NOT NULL"
 categories['TO_RES'] = "varchar(10) NOT NULL"
 categories['FROM_AA'] = "varchar(10) NOT NULL"  # vamo a implementar el target directamente!!!! =D
 categories['TO_AA'] = "varchar(10) NOT NULL"
+
 categories['SQ'] = "text(45000) NOT NULL"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
 categories['LENGTH'] = "varchar(200) NOT NULL"  # SQ   SEQUENCE XXXX AA; XXXXX MW; XXXXXXXXXXXXXXXX CRC64;
+
 categories['ORG'] = "text(500) NOT NULL"  # organism
 categories['OC'] = "varchar(30) NOT NULL"  # organism classification, vamos solo con el dominio
 categories['OX'] = "varchar(200) NOT NULL"  # taxonomic ID
@@ -91,26 +94,31 @@ empty_data['FROM_AA'] = '?'
 empty_data['TO_AA'] = '?'
 data = empty_data.copy()  # este es el diccionario de registros vacío que voy a usar
 
+print("DROP TABLE " + tabla_cuentas + ";")
+print("DROP TABLE " + tabla_ptms + ";")
+
 # Crear la tabla de cuentas
 prot_dic_def_items = []
 prot_dic_def = OrderedDict((k, 'SMALLINT') for k in abc)
 for cat, value in prot_dic_def.items():  # concatenaciones key y valor
     prot_dic_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(prot_dic_def_items)  # definicion de la tabla
-cur.execute("CREATE TABLE IF NOT EXISTS "
+print("CREATE TABLE IF NOT EXISTS "
             + tabla_cuentas
             + " (AC VARCHAR(30) UNIQUE, OC_ID VARCHAR(30), LENGTH MEDIUMINT,"
             + table_def
-            + ") ENGINE=InnoDB")
-con.commit()
+            + ") ENGINE=InnoDB;")
+print("commit;")
+# con.commit()
 
 # Crear la tabla de ptms
 table_def_items = []  # lista para concatenaciones de key y valor
 for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def_2 = ', '.join(table_def_items)  # definicion de la tabla
-cur.execute("CREATE TABLE IF NOT EXISTS " + tabla_ptms + " (" + table_def_2 + ") ENGINE=InnoDB")
-con.commit()
+print("CREATE TABLE IF NOT EXISTS " + tabla_ptms + " (" + table_def_2 + ") ENGINE=InnoDB;")
+print("commit;")
+# con.commit()
 
 # Variables del loop
 i = 0
@@ -125,8 +133,8 @@ interes = []
 with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
     for record in SwissProt.parse(uniprot):  # parseando los records de uniprot
         i += 1
-        if i % 1000 == 0:
-            print("Va: " + str(i/5428) + "% en: " + str(time.time() - start_time)[:(str(time.time() - start_time)).find(".")+2] + " segundos")
+        if i % 100 == 0:
+            print("commit;")
         data = empty_data.copy()  # en vez de vaciar el diccionario, le asigno el dafault sin enlazarlo al vacío
         # Acá cargo los datos generales para las PTMs de una proteína/entrada de uniprot (instancias de entradas)
         # tienen que cargarse en el orden de las columnas en la ptmdb y el del insert
@@ -146,7 +154,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                 olista.append((o.split(";"))[0])
             data['HO'] = ', '.join(olista)  # y esto el host del virus ¿o parásito?
 
-        data['inmuber'] = str(i)  # solo para debuguear =) ver hasta donde llegó
+        data['inumber'] = str(i)  # solo para debuguear =) ver hasta donde llegó
 
         # Generar y guardar el insert del #AA en la secuencia
         del listaq[:]
@@ -154,15 +162,16 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         for q in contenido_aa.itervalues():
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
-        """
+
         if i >= desde:
-            cur.execute("INSERT INTO " + tabla_cuentas + " VALUES ('"
+            print("INSERT INTO " + tabla_cuentas + " VALUES ('"
                         + record.accessions[0] + "', '"
                         + record.organism_classification[0] + "', "
                         + str(record.sequence_length)
-                        + ", " + sql_insert_values_q + ")")
-            con.commit()
-        """
+                        + ", " + sql_insert_values_q + ");")
+            # print("commit;")
+            # con.commit()
+
         # Acá empiezo con los features, hay alguno interesante?
         features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
         del out[:]
@@ -247,16 +256,13 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                                   '\''
                             # Que después uno como van en el INSERT
                             # El insert, en el que reemplazo ' por '', para escaparlas en sql
-                            # print('\n')
-                            # print(sql_insert_values_p)
-                            # print('\n')
-                            # print(record.features)
-                            """
+
                             if i >= desde:  # para hacerlo en partes
-                                cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                                             % sql_insert_values_p + '\n').replace("-...", "").replace("\"", '').replace('.', ''))
-                                con.commit()
-                            """
+                                print(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
+                                             % sql_insert_values_p).replace("-...", "").replace("\"", '').replace('.', ''))
+                                # print("commit;")
+                                # con.commit()
+
                             # unir los elementos de values con comas
         else:
             # Si, en cambio, la entrada no tiene FT insteresantes, solo cargo los datos generales y defaults
@@ -264,15 +270,15 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
             for r in data.itervalues():
                 listar.append(str(r).replace("'", "''"))
             sql_insert_values_r = '\'' + '\', \''.join(listar) + '\''
-            """
             if i >= desde:  # para hacerlo en partes
-                cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                             % sql_insert_values_r + '\n').replace("\"", '').replace('.', ''))
-                con.commit()
-            """
+                print(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
+                             % sql_insert_values_r).replace("\"", '').replace('.', ''))
+                # print("commit;")
+                # con.commit()
+
         if i >= hasta:  # segun uniprot el número de entradas de secuencias es 54247468
-            print("\n")
-            print(i)
+            # print("\n")
+            # print(i)
             break
 # The sequence counts 60 amino acids per line, in groups of 10 amino acids, beginning in position 6 of the line.
 # http://www.uniprot.org/manual/
@@ -282,8 +288,8 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
 # todo consider PE "protein existence", KW contiene "glycoprotein" qué otros?
 # todo también dentro de FT
 
-#output.close()
-print('\n')
-print(time.time() - start_time)
+# output.close()
+# print('\n')
+# print(time.time() - start_time)
 
 # """
