@@ -88,11 +88,11 @@ with open(ptmlist_file) as ptmlist:
                     record[cat] = line[5:-1]
                     line = ptmlist.readline()
             elif line[:2] == cat:  # y si la linea corresponde a la categoria
-                record[cat] = line[5:-1].replace("'", "#")  # agrega su contenido al registro para esa categoria
+                record[cat] = line[5:-1].replace("'", "''")  # agrega su contenido al registro para esa categoria
                 # todo el hash!!
                 line = ptmlist.readline()  # y cambia a una nueva linea
                 while line[:2] == cat:  # mientras la linea nueva sea de la misma id que la anterior
-                    record[cat] += ' --- ' + line[5:-1].replace("'", "#")  # agrega su contenido con un separador
+                    record[cat] += ' --- ' + line[5:-1].replace("'", "''")  # agrega su contenido con un separador
                     # todo el hash!!
                     line = ptmlist.readline()  # y cambia a una nueva linea
         # si la linea está vacía, es porque llegó al final del archivo y el while termina
