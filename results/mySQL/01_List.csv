@@ -1,0 +1,482 @@
+%S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)%&%DISULFID%&%112631%
+%N-linked (GlcNAc)%&%CARBOHYD%&%103799%
+%Phosphoserine%&%MOD_RES%&%68484%
+%N6-acetyllysine%&%MOD_RES%&%21878%
+%Phosphothreonine%&%MOD_RES%&%16208%
+%Phosphotyrosine%&%MOD_RES%&%7952%
+%N6-succinyllysine%&%MOD_RES%&%6777%
+%N6-(pyridoxal phosphate)lysine%&%MOD_RES%&%6456%
+%Glycyl lysine isopeptide (Lys-Gly)%&%CROSSLNK%&%4519%
+%N-acetylalanine%&%MOD_RES%&%3925%
+%S-palmitoyl cysteine%&%LIPID%&%3769%
+%N-acetylmethionine%&%MOD_RES%&%3190%
+%N-acetylserine%&%MOD_RES%&%2404%
+%N-palmitoyl cysteine%&%LIPID%&%2046%
+%S-diacylglycerol cysteine%&%LIPID%&%2018%
+%O-linked (GalNAc)%&%CARBOHYD%&%2005%
+%4-hydroxyproline%&%MOD_RES%&%1807%
+%N6-carboxylysine%&%MOD_RES%&%1607%
+%Pyrrolidone carboxylic acid%&%MOD_RES%&%1607%
+%N-myristoyl glycine%&%LIPID%&%1445%
+%N5-methylglutamine%&%MOD_RES%&%1410%
+%N6,N6,N6-trimethyllysine%&%MOD_RES%&%1290%
+%4-carboxyglutamate%&%MOD_RES%&%1254%
+%Pyruvic acid (Ser)%&%MOD_RES%&%1210%
+%N6-methyllysine%&%MOD_RES%&%1117%
+%S-geranylgeranyl cysteine%&%LIPID%&%1098%
+%O-(pantetheine 4'-phosphoryl)serine%&%MOD_RES%&%1021%
+%Sulfotyrosine%&%MOD_RES%&%1020%
+%4-aspartylphosphate%&%MOD_RES%&%944%
+%Phenylalanine amide%&%MOD_RES%&%836%
+%Cysteine methyl ester%&%MOD_RES%&%830%
+%N6,N6-dimethyllysine%&%MOD_RES%&%785%
+%Asymmetric dimethylarginine%&%MOD_RES%&%775%
+%Leucine amide%&%MOD_RES%&%762%
+%3-methylthioaspartic acid%&%MOD_RES%&%743%
+%N-acetylthreonine%&%MOD_RES%&%732%
+%Phosphohistidine%&%MOD_RES%&%701%
+%O-linked (GlcNAc)%&%CARBOHYD%&%587%
+%N6-lipoyllysine%&%MOD_RES%&%585%
+%N6-crotonyl-L-lysine%&%MOD_RES%&%549%
+%2-(S-cysteinyl)pyruvic acid O- phosphothioketal%&%MOD_RES%&%530%
+%S-(dipyrrolylmethanemethyl)cysteine%&%MOD_RES%&%471%
+%S-nitrosocysteine%&%MOD_RES%&%468%
+%Citrulline%&%MOD_RES%&%434%
+%Valine amide%&%MOD_RES%&%417%
+%GPI-anchor amidated serine%&%LIPID%&%404%
+%N6-methylated lysine%&%MOD_RES%&%392%
+%S-farnesyl cysteine%&%LIPID%&%382%
+%Glycyl lysine isopeptide (Gly-Lys)%&%CROSSLNK%&%354%
+%Omega-N-methylated arginine%&%MOD_RES%&%344%
+%Tryptophyl-tyrosyl-methioninium (Tyr-Met)%&%CROSSLNK%&%340%
+%Tryptophyl-tyrosyl-methioninium (Trp-Tyr)%&%CROSSLNK%&%340%
+%Omega-N-methylarginine%&%MOD_RES%&%334%
+%Hydroxyproline%&%MOD_RES%&%323%
+%O-linked (Man)%&%CARBOHYD%&%316%
+%Nitrated tyrosine%&%MOD_RES%&%303%
+%N-acetylproline%&%MOD_RES%&%301%
+%2,3-didehydroalanine (Ser)%&%MOD_RES%&%293%
+%5-hydroxylysine%&%MOD_RES%&%280%
+%N-linked (GlcNAc) (complex)%&%CARBOHYD%&%276%
+%C-linked (Man)%&%CARBOHYD%&%259%
+%5-imidazolinone (Ala-Gly)%&%CROSSLNK%&%250%
+%N6-(retinylidene)lysine%&%MOD_RES%&%245%
+%Glycine amide%&%MOD_RES%&%238%
+%Deamidated asparagine%&%MOD_RES%&%233%
+%Cysteine sulfenic acid (-SOH)%&%MOD_RES%&%225%
+%1'-histidyl-3'-tyrosine (His-Tyr)%&%CROSSLNK%&%218%
+%N-acetylvaline%&%MOD_RES%&%215%
+%Arginine amide%&%MOD_RES%&%210%
+%Cysteine amide%&%MOD_RES%&%206%
+%Deamidated glutamine%&%MOD_RES%&%205%
+%N6-malonyllysine%&%MOD_RES%&%200%
+%Pentaglycyl murein peptidoglycan amidated threonine%&%MOD_RES%&%200%
+%Tryptophan amide%&%MOD_RES%&%196%
+%N-acetylglycine%&%MOD_RES%&%193%
+%GPI-anchor amidated glycine%&%LIPID%&%188%
+%GPI-anchor amidated asparagine%&%LIPID%&%187%
+%Methionine (R)-sulfoxide%&%MOD_RES%&%182%
+%N-formylmethionine%&%MOD_RES%&%175%
+%Symmetric dimethylarginine%&%MOD_RES%&%172%
+%Asparagine amide%&%MOD_RES%&%167%
+%O-palmitoyl serine%&%LIPID%&%166%
+%O-linked (Ara)%&%CARBOHYD%&%160%
+%Dimethylated arginine%&%MOD_RES%&%157%
+%Isoleucine amide%&%MOD_RES%&%156%
+%ADP-ribosylarginine%&%MOD_RES%&%155%
+%N6-(3,6-diaminohexanoyl)-5-hydroxylysine%&%MOD_RES%&%152%
+%O-(5'-phospho-RNA)-tyrosine%&%MOD_RES%&%151%
+%O-linked (Xyl) (glycosaminoglycan)%&%CARBOHYD%&%150%
+%Tyrosine amide%&%MOD_RES%&%146%
+%Allysine%&%MOD_RES%&%144%
+%Proline amide%&%MOD_RES%&%144%
+%O-linked (Gal)%&%CARBOHYD%&%144%
+%Methionine sulfoxide%&%MOD_RES%&%142%
+%O-linked (Xyl) (chondroitin sulfate)%&%CARBOHYD%&%139%
+%Methionine amide%&%MOD_RES%&%135%
+%Isoglutamyl lysine isopeptide (Lys-Gln)%&%CROSSLNK%&%133%
+%3',4'-dihydroxyphenylalanine%&%MOD_RES%&%130%
+%N-acetylaspartate%&%MOD_RES%&%125%
+%Glycine radical%&%MOD_RES%&%123%
+%5-glutamyl glycerylphosphorylethanolamine%&%MOD_RES%&%116%
+%O-(phosphoribosyl dephospho-coenzyme A)serine%&%MOD_RES%&%112%
+%O-linked (Xyl) (heparan sulfate)%&%CARBOHYD%&%112%
+%Lysine amide%&%MOD_RES%&%110%
+%Hypusine%&%MOD_RES%&%108%
+%PolyADP-ribosyl glutamic acid%&%MOD_RES%&%107%
+%Threonine amide%&%MOD_RES%&%105%
+%O-linked (Fuc)%&%CARBOHYD%&%104%
+%Aspartyl aldehyde%&%MOD_RES%&%104%
+%N4-methylasparagine%&%MOD_RES%&%104%
+%Serine amide%&%MOD_RES%&%103%
+%O-linked (Glc)%&%CARBOHYD%&%98%
+%7'-hydroxytryptophan%&%MOD_RES%&%94%
+%GPI-anchor amidated alanine%&%LIPID%&%92%
+%Diphthamide%&%MOD_RES%&%92%
+%N-linked (Glc) (glycation)%&%CARBOHYD%&%91%
+%6'-bromotryptophan%&%MOD_RES%&%89%
+%1-thioglycine%&%MOD_RES%&%88%
+%Cyclopeptide (Gly-Asn)%&%CROSSLNK%&%88%
+%Isoglutamyl lysine isopeptide (Gln-Lys)%&%CROSSLNK%&%83%
+%N6-biotinyllysine%&%MOD_RES%&%83%
+%N-linked (GlcNAc) (high mannose)%&%CARBOHYD%&%82%
+%S-8alpha-FAD cysteine%&%MOD_RES%&%81%
+%Phosphatidylethanolamine amidated glycine%&%LIPID%&%81%
+%Tele-methylhistidine%&%MOD_RES%&%79%
+%(3S)-3-hydroxyasparagine%&%MOD_RES%&%75%
+%N-methylphenylalanine%&%MOD_RES%&%74%
+%O-AMP-tyrosine%&%MOD_RES%&%67%
+%Beta-methyllanthionine (Thr-Cys)%&%CROSSLNK%&%65%
+%3-oxoalanine (Cys)%&%MOD_RES%&%63%
+%Alanine amide%&%MOD_RES%&%62%
+%Glutamate methyl ester (Glu)%&%MOD_RES%&%62%
+%Lanthionine (Ser-Cys)%&%CROSSLNK%&%61%
+%N-linked (GlcNAc) (keratan sulfate)%&%CARBOHYD%&%60%
+%S-glutathionyl cysteine%&%MOD_RES%&%59%
+%Tele-8alpha-FAD histidine%&%MOD_RES%&%59%
+%3-hydroxyproline%&%MOD_RES%&%58%
+%N6-myristoyl lysine%&%LIPID%&%56%
+%(3R,4S)-3,4-dihydroxyproline%&%MOD_RES%&%55%
+%N2-acetylarginine%&%MOD_RES%&%55%
+%FMN phosphoryl threonine%&%MOD_RES%&%54%
+%2',4',5'-topaquinone%&%MOD_RES%&%53%
+%Glutamine amide%&%MOD_RES%&%53%
+%GPI-anchor amidated aspartate%&%LIPID%&%53%
+%N,N,N-trimethylalanine%&%MOD_RES%&%50%
+%O-linked (HexNAc)%&%CARBOHYD%&%49%
+%(3R)-3-hydroxyaspartate%&%MOD_RES%&%48%
+%N-acetylcysteine%&%MOD_RES%&%48%
+%2'-(S-cysteinyl)-histidine (Cys-His)%&%CROSSLNK%&%43%
+%Pros-8alpha-FAD histidine%&%MOD_RES%&%42%
+%Isoglutamyl cysteine thioester (Cys-Gln)%&%CROSSLNK%&%42%
+%Cysteinyl-selenocysteine (Cys-Sec)%&%CROSSLNK%&%41%
+%N-linked (GalNAc)%&%CARBOHYD%&%38%
+%(3R)-3-hydroxyasparagine%&%MOD_RES%&%38%
+%O-UMP-tyrosine%&%MOD_RES%&%37%
+%Pyrroloquinoline quinone (Glu-Tyr)%&%CROSSLNK%&%37%
+%S-4a-FMN cysteine%&%MOD_RES%&%36%
+%2,3-didehydroalanine (Cys)%&%MOD_RES%&%35%
+%Leucine methyl ester%&%MOD_RES%&%34%
+%ADP-ribosylcysteine%&%MOD_RES%&%33%
+%Glutamate methyl ester (Gln)%&%MOD_RES%&%31%
+%Blocked amino end (Ala)%&%MOD_RES%&%30%
+%Glycyl adenylate%&%MOD_RES%&%30%
+%Cholesterol glycine ester%&%LIPID%&%30%
+%N-acetylglutamate%&%MOD_RES%&%30%
+%Glutamic acid 1-amide%&%MOD_RES%&%29%
+%2,3-didehydrobutyrine%&%MOD_RES%&%28%
+%O-linked (Hex)%&%CARBOHYD%&%27%
+%N-linked (Glc)%&%CARBOHYD%&%27%
+%(Z)-2,3-didehydrobutyrine%&%MOD_RES%&%26%
+%Peptide (Met-Gly)%&%CROSSLNK%&%25%
+%Blocked amino end (Met)%&%MOD_RES%&%25%
+%Histidine amide%&%MOD_RES%&%24%
+%Cyclopeptide (Gly-Asp)%&%CROSSLNK%&%23%
+%Cysteine persulfide%&%MOD_RES%&%23%
+%D-alanine (Ala)%&%MOD_RES%&%22%
+%N-methylalanine%&%MOD_RES%&%21%
+%Glycyl cysteine thioester (Cys-Gly)%&%CROSSLNK%&%20%
+%Isoglutamyl lysine isopeptide (Glu-Lys)%&%CROSSLNK%&%20%
+%N6-murein peptidoglycan lysine%&%MOD_RES%&%19%
+%S-methylcysteine%&%MOD_RES%&%19%
+%Pros-methylhistidine%&%MOD_RES%&%19%
+%Cysteine sulfinic acid (-SO2H)%&%MOD_RES%&%19%
+%Blocked amino end (Ser)%&%MOD_RES%&%18%
+%Methylhistidine%&%MOD_RES%&%18%
+%Lysine tyrosylquinone (Lys-Tyr)%&%CROSSLNK%&%18%
+%N-palmitoyl glycine%&%LIPID%&%18%
+%N-linked (GlcNAc) (high mannose or hybrid)%&%CARBOHYD%&%18%
+%D-phenylalanine%&%MOD_RES%&%18%
+%(3S)-3-hydroxyhistidine%&%MOD_RES%&%17%
+%GPI-like-anchor amidated serine%&%LIPID%&%16%
+%Thiazole-4-carboxylic acid (Ser-Cys)%&%CROSSLNK%&%16%
+%Cyclopeptide (Cys-Arg)%&%CROSSLNK%&%15%
+%3-(O4'-tyrosyl)-valine (Val-Tyr)%&%CROSSLNK%&%15%
+%GPI-like-anchor amidated asparagine%&%LIPID%&%15%
+%GPI-anchor amidated cysteine%&%LIPID%&%15%
+%O-(2-cholinephosphoryl)serine%&%MOD_RES%&%15%
+%Blocked amino end (Thr)%&%MOD_RES%&%15%
+%Cyclopeptide (Arg-Cys)%&%CROSSLNK%&%15%
+%N,N-dimethylproline%&%MOD_RES%&%15%
+%N-linked (GlcNAc) (hybrid)%&%CARBOHYD%&%14%
+%Thyroxine%&%MOD_RES%&%13%
+%O-(5'-phospho-DNA)-serine%&%MOD_RES%&%13%
+%N6-poly(methylaminopropyl)lysine%&%MOD_RES%&%13%
+%3'-(S-cysteinyl)-tyrosine (Cys-Tyr)%&%CROSSLNK%&%13%
+%O-linked (Xyl) (keratan sulfate)%&%CARBOHYD%&%13%
+%N6-palmitoyl lysine%&%LIPID%&%13%
+%N-methylmethionine%&%MOD_RES%&%13%
+%D-tryptophan%&%MOD_RES%&%13%
+%Aspartate 1-(chondroitin 4-sulfate)-ester%&%MOD_RES%&%13%
+%5-methylarginine%&%MOD_RES%&%12%
+%S-archaeol cysteine%&%LIPID%&%12%
+%O-octanoyl serine%&%LIPID%&%12%
+%Beta-methyllanthionine (Cys-Thr)%&%CROSSLNK%&%11%
+%S-stearoyl cysteine%&%LIPID%&%11%
+%N-methylproline%&%MOD_RES%&%11%
+%N,N-dimethylalanine%&%MOD_RES%&%11%
+%N-linked (GlcNAc) (polylactosaminoglycan)%&%CARBOHYD%&%11%
+%Isoaspartyl lysine isopeptide (Lys-Asn)%&%CROSSLNK%&%11%
+%D-leucine%&%MOD_RES%&%10%
+%S-(15-deoxy-Delta12,14-prostaglandin J2- 9-yl)cysteine%&%LIPID%&%10%
+%Thiazole-4-carboxylic acid (Thr-Cys)%&%CROSSLNK%&%10%
+%Aspartic acid 1-amide%&%MOD_RES%&%10%
+%S-cysteinyl cysteine%&%MOD_RES%&%9%
+%S-Lysyl-methionine sulfilimine (Lys-Met)%&%CROSSLNK%&%9%
+%O-(5'-phospho-RNA)-serine%&%MOD_RES%&%9%
+%Omega-hydroxyceramide glutamate ester%&%LIPID%&%9%
+%S-Lysyl-methionine sulfilimine (Met-Lys)%&%CROSSLNK%&%9%
+%Tryptophylquinone%&%MOD_RES%&%9%
+%5-glutamyl polyglycine%&%MOD_RES%&%8%
+%ADP-ribosylasparagine%&%MOD_RES%&%8%
+%Cysteine methyl disulfide%&%MOD_RES%&%8%
+%N-linked (Man)%&%CARBOHYD%&%8%
+%4,5-dihydroxylysine%&%MOD_RES%&%8%
+%2,3-didehydrotyrosine%&%MOD_RES%&%8%
+%GPI-like-anchor amidated alanine%&%LIPID%&%7%
+%ADP-ribosylserine%&%MOD_RES%&%7%
+%Thiazole-4-carboxylic acid (Cys-Cys)%&%CROSSLNK%&%7%
+%D-methionine%&%MOD_RES%&%7%
+%3-cysteinyl-aspartic acid (Cys-Asp)%&%CROSSLNK%&%6%
+%Pyridine-2,5-dicarboxylic acid (Ser-Cys)%&%CROSSLNK%&%6%
+%Pyrrolidone carboxylic acid (Glu)%&%MOD_RES%&%6%
+%O-decanoyl serine%&%LIPID%&%6%
+%3'-(S-cysteinyl)-tyrosine (Tyr-Cys)%&%CROSSLNK%&%6%
+%Blocked amino end (Gln)%&%MOD_RES%&%6%
+%Oxazole-4-carboxylic acid (Ser-Ser)%&%CROSSLNK%&%6%
+%Tryptophan tryptophylquinone (Trp-Trp)%&%CROSSLNK%&%6%
+%Pyridine-2,5-dicarboxylic acid (Ser-Ser)%&%CROSSLNK%&%6%
+%D-allo-isoleucine%&%MOD_RES%&%6%
+%2-oxobutanoic acid%&%MOD_RES%&%6%
+%N6-formyllysine%&%MOD_RES%&%6%
+%5-imidazolinone (Ser-Gly)%&%CROSSLNK%&%5%
+%N6,N6,N6-trimethyl-5-hydroxylysine%&%MOD_RES%&%5%
+%O-linked (Xyl) (dermatan sulfate)%&%CARBOHYD%&%5%
+%Lysinoalanine (Ser-Lys)%&%CROSSLNK%&%5%
+%Thiazole-4-carboxylic acid (Val-Cys)%&%CROSSLNK%&%5%
+%Cyclopeptide (Ser-Asn)%&%CROSSLNK%&%5%
+%O-linked (Man6P)%&%CARBOHYD%&%5%
+%3-hydroxyasparagine%&%MOD_RES%&%5%
+%N-linked (GlcNAc) (low mannose)%&%CARBOHYD%&%5%
+%Phosphocysteine%&%MOD_RES%&%5%
+%2-iminomethyl-5-imidazolinone (Gln-Gly)%&%CROSSLNK%&%5%
+%S-linked (Hex)%&%CARBOHYD%&%5%
+%S-(2-aminovinyl)-D-cysteine (Ser-Cys)%&%CROSSLNK%&%5%
+%O-palmitoyl threonine%&%LIPID%&%5%
+%N5-methylarginine%&%MOD_RES%&%5%
+%(E)-2,3-didehydrobutyrine%&%MOD_RES%&%5%
+%3-hydroxytryptophan%&%MOD_RES%&%5%
+%S-(4-hydroxycinnamyl)cysteine%&%MOD_RES%&%5%
+%Glycyl serine ester (Ser-Gly)%&%CROSSLNK%&%4%
+%Blocked amino end (Gly)%&%MOD_RES%&%4%
+%Thiazole-4-carboxylic acid (Gly-Cys)%&%CROSSLNK%&%4%
+%N6-1-carboxyethyl lysine%&%MOD_RES%&%4%
+%Pyruvic acid (Cys)%&%MOD_RES%&%4%
+%S-selanylcysteine%&%MOD_RES%&%4%
+%N-linked (GlcNAc or GlcNAc)%&%CARBOHYD%&%4%
+%5-imidazolinone (Cys-Gly)%&%CROSSLNK%&%4%
+%5-glutamyl 2-aminoadipic acid%&%MOD_RES%&%4%
+%5-methyloxazole-4-carboxylic acid (Cys- Thr)%&%CROSSLNK%&%4%
+%GPI-like-anchor amidated glycine%&%LIPID%&%4%
+%Phosphoarginine%&%MOD_RES%&%4%
+%Triiodothyronine%&%MOD_RES%&%4%
+%5-glutamyl N2-lysine%&%MOD_RES%&%4%
+%3-oxoalanine (Ser)%&%MOD_RES%&%4%
+%S-linked (Glc)%&%CARBOHYD%&%4%
+%Aspartate 1-(chondroitin 4-sulfate)- ester%&%MOD_RES%&%3%
+%Oxazole-4-carboxylic acid (Gly-Ser)%&%CROSSLNK%&%3%
+%Cysteine derivative%&%MOD_RES%&%3%
+%3-phenyllactic acid%&%MOD_RES%&%3%
+%D-alanine (Ser)%&%MOD_RES%&%3%
+%5-glutamyl glutamate%&%MOD_RES%&%3%
+%Isodityrosine (Tyr-Tyr)%&%CROSSLNK%&%3%
+%O-acetylthreonine%&%MOD_RES%&%3%
+%5-glutamyl N2-ornithine%&%MOD_RES%&%3%
+%3-hydroxyvaline%&%MOD_RES%&%3%
+%(E)-2,3-didehydrotyrosine%&%MOD_RES%&%3%
+%O-AMP-threonine%&%MOD_RES%&%3%
+%O-acetylserine%&%MOD_RES%&%3%
+%4-cysteinyl-glutamic acid (Cys-Glu)%&%CROSSLNK%&%3%
+%Decarboxylated threonine%&%MOD_RES%&%3%
+%N-methylleucine%&%MOD_RES%&%3%
+%Blocked amino end (Pro)%&%MOD_RES%&%3%
+%4'-cysteinyl-tryptophylquinone (Cys-Trp)%&%CROSSLNK%&%3%
+%Sulfoserine%&%MOD_RES%&%3%
+%N-linked (GlcNAc) (high mannose and complex)%&%CARBOHYD%&%3%
+%N,N,N-trimethylglycine%&%MOD_RES%&%3%
+%(Z)-2,3-didehydrotyrosine%&%MOD_RES%&%3%
+%O-(sn-1-glycerophosphoryl)serine%&%MOD_RES%&%3%
+%O-methylthreonine%&%MOD_RES%&%3%
+%Aspartyl isopeptide (Asn)%&%MOD_RES%&%3%
+%Lysine derivative%&%MOD_RES%&%3%
+%N-linked (GlcNAc) (high mannose or hybrid or polylactosaminoglycan)%&%CARBOHYD%&%2%
+%3,4-dihydroxyarginine%&%MOD_RES%&%2%
+%(3R,4R)-4,5-dihydroxyisoleucine%&%MOD_RES%&%2%
+%3'-nitrotyrosine%&%MOD_RES%&%2%
+%Cis-14-hydroxy-10,13-dioxo-7- heptadecenoic acid aspartate ester%&%LIPID%&%2%
+%Thiazole-4-carboxylic acid (Arg-Cys)%&%CROSSLNK%&%2%
+%FMN phosphoryl serine%&%MOD_RES%&%2%
+%O-linked (GlcA)%&%CARBOHYD%&%2%
+%Cyclopeptide (Ile-Pro)%&%CROSSLNK%&%2%
+%D-valine%&%MOD_RES%&%2%
+%CysO-cysteine adduct%&%MOD_RES%&%2%
+%5-methyloxazole-4-carboxylic acid (Thr- Thr)%&%CROSSLNK%&%2%
+%S-6-FMN cysteine%&%MOD_RES%&%2%
+%Tele-phosphohistidine%&%MOD_RES%&%2%
+%Isoaspartyl cysteine isopeptide (Cys- Asn)%&%CROSSLNK%&%2%
+%Cyclopeptide (Lys-Asp)%&%CROSSLNK%&%2%
+%Blocked amino end (Xaa)%&%MOD_RES%&%2%
+%N-methyltyrosine%&%MOD_RES%&%2%
+%N-acetyltyrosine%&%MOD_RES%&%2%
+%Glutamine derivative%&%MOD_RES%&%2%
+%Threonyl lysine isopeptide (Thr-Lys)%&%CROSSLNK%&%2%
+%3'-geranyl-2',N2-cyclotryptophan%&%LIPID%&%2%
+%L-allo-isoleucine%&%MOD_RES%&%2%
+%N2,N2-dimethylarginine%&%MOD_RES%&%2%
+%Thiazole-4-carboxylic acid (Ile-Cys)%&%CROSSLNK%&%2%
+%Cyclopeptide (Ser-Gly)%&%CROSSLNK%&%2%
+%(3R,4S)-4-hydroxyisoleucine%&%MOD_RES%&%2%
+%D-4-hydroxyvaline%&%MOD_RES%&%2%
+%5-methylthiazole-4-carboxylic acid (Asn- Cys)%&%CROSSLNK%&%2%
+%D-serine (Ser)%&%MOD_RES%&%2%
+%S-12-hydroxyfarnesyl cysteine%&%LIPID%&%2%
+%2'-cysteinyl-6'-hydroxytryptophan sulfoxide (Trp-Cys)%&%CROSSLNK%&%2%
+%Lactic acid%&%MOD_RES%&%2%
+%N,N,N-trimethylserine%&%MOD_RES%&%2%
+%Oxazole-4-carboxylic acid (Ile-Ser)%&%CROSSLNK%&%2%
+%Oxazoline-4-carboxylic acid (Cys-Ser)%&%CROSSLNK%&%2%
+%(3S)-3-hydroxyaspartate%&%MOD_RES%&%2%
+%O-linked (P-Man)%&%CARBOHYD%&%2%
+%5-methyloxazoline-4-carboxylic acid (Ser- Thr)%&%CROSSLNK%&%2%
+%O-linked (GlcNAc6P)%&%CARBOHYD%&%2%
+%2-iminomethyl-5-imidazolinone (Met-Gly)%&%CROSSLNK%&%2%
+%N6-(ADP-ribosyl)lysine%&%MOD_RES%&%2%
+%Cyclopeptide (Pro-Met)%&%CROSSLNK%&%1%
+%4-hydroxyarginine%&%MOD_RES%&%1%
+%3,4-dihydroxyproline%&%MOD_RES%&%1%
+%Blocked carboxyl end (Arg)%&%MOD_RES%&%1%
+%1-amino-2-propanone%&%MOD_RES%&%1%
+%Blocked carboxyl end (His)%&%MOD_RES%&%1%
+%Blocked amino end (Leu)%&%MOD_RES%&%1%
+%Tryptophan derivative%&%MOD_RES%&%1%
+%S-(2-aminovinyl)-D-cysteine (Cys-Cys)%&%CROSSLNK%&%1%
+%S-linked (Gal)%&%CARBOHYD%&%1%
+%N-carbamoylalanine%&%MOD_RES%&%1%
+%N-methylserine%&%MOD_RES%&%1%
+%5-hydroxy-3-methylproline (Ile)%&%MOD_RES%&%1%
+%D-threonine%&%MOD_RES%&%1%
+%O-8alpha-FAD tyrosine%&%MOD_RES%&%1%
+%Aspartyl isopeptide (Asp)%&%MOD_RES%&%1%
+%Lanthionine (Cys-Ser)%&%CROSSLNK%&%1%
+%Cyclopeptide (Asn-Gly)%&%CROSSLNK%&%1%
+%S-(coelenterazin-3a-yl)cysteine%&%MOD_RES%&%1%
+%5-(methoxymethyl)thiazole-4-carboxylic acid (Val-Cys)%&%CROSSLNK%&%1%
+%N-D-glucuronoyl glycine%&%MOD_RES%&%1%
+%Lysine methyl ester%&%MOD_RES%&%1%
+%O-linked (FucNAc)%&%CARBOHYD%&%1%
+%5-imidazolinone (Asn-Gly)%&%CROSSLNK%&%1%
+%N-formylglycine%&%MOD_RES%&%1%
+%3-hydroxypyridine-2,5-dicarboxylic acid (Ser-Ser)%&%CROSSLNK%&%1%
+%Threonyl lysine isopeptide (Lys-Thr)%&%CROSSLNK%&%1%
+%Thiazole-4-carboxylic acid (Asn-Cys)%&%CROSSLNK%&%1%
+%(3R,4R)-3,4-dihydroxyproline%&%MOD_RES%&%1%
+%3-(S-cysteinyl)-tyrosine (Cys-Tyr)%&%CROSSLNK%&%1%
+%N,N-dimethylglycine%&%MOD_RES%&%1%
+%N-(12-oxomyristoyl)cysteine%&%LIPID%&%1%
+%O-decanoyl threonine%&%LIPID%&%1%
+%Blocked amino end (Cys)%&%MOD_RES%&%1%
+%Beta-methyllanthionine sulfoxide (Thr- Cys)%&%CROSSLNK%&%1%
+%Aspartic acid 1-[(3-aminopropyl)(5'- adenosyl)phosphono]amide%&%MOD_RES%&%1%
+%N-pyruvate 2-iminyl-cysteine%&%MOD_RES%&%1%
+%S-bacillithiol cysteine disulfide%&%MOD_RES%&%1%
+%Lysine tyrosylquinone (Tyr-Lys)%&%CROSSLNK%&%1%
+%2-cysteinyl-D-allo-threonine (Cys-Thr)%&%CROSSLNK%&%1%
+%(3S,4R)-3,4-dihydroxyisoleucine%&%MOD_RES%&%1%
+%2-tetrahydro-2-pyridyl-5-imidazolinone (Lys-Gly)%&%CROSSLNK%&%1%
+%(3R)-3-hydroxyarginine%&%MOD_RES%&%1%
+%Tele-8alpha-FMN histidine%&%MOD_RES%&%1%
+%Sulfothreonine%&%MOD_RES%&%1%
+%Blocked amino end (Val)%&%MOD_RES%&%1%
+%N-pyruvate 2-iminyl-valine%&%MOD_RES%&%1%
+%Serine microcin E492 siderophore ester%&%MOD_RES%&%1%
+%Pentaglycyl murein peptidoglycan amidated alanine%&%MOD_RES%&%1%
+%Cysteinyl-selenocysteine (Sec-Cys)%&%CROSSLNK%&%1%
+%5-amino-piperideine-2,5-dicarboxylic acid (Ser-Cys)%&%CROSSLNK%&%1%
+%2'-methylsulfonyltryptophan%&%MOD_RES%&%1%
+%Isoaspartyl glycine isopeptide (Gly-Asn)%&%CROSSLNK%&%1%
+%Cyclopeptide (Pro-Tyr)%&%CROSSLNK%&%1%
+%O-linked (DADDGlc)%&%CARBOHYD%&%1%
+%6'-chlorotryptophan%&%MOD_RES%&%1%
+%Proline 5-hydroxy-oxazole-4-carbothionic acid (Pro-Cys)%&%CROSSLNK%&%1%
+%GPI-like-anchor amidated aspartate%&%LIPID%&%1%
+%Lysino-D-alanine (Lys)%&%MOD_RES%&%1%
+%Glycyl cysteine dithioester (Gly-Cys)%&%CROSSLNK%&%1%
+%N-linked (GalNAc) (glycosaminoglycan)%&%CARBOHYD%&%1%
+%S-linked (GlcNAc)%&%CARBOHYD%&%1%
+%Cyclopeptide (Ala-Ile)%&%CROSSLNK%&%1%
+%2-iminomethyl-5-imidazolinone (Glu-Gly)%&%CROSSLNK%&%1%
+%N,N-dimethylserine%&%MOD_RES%&%1%
+%4,5,5'-trihydroxyleucine%&%MOD_RES%&%1%
+%Blocked amino end (Glu)%&%MOD_RES%&%1%
+%Alanine isoaspartyl cyclopeptide (Ala- Asn)%&%CROSSLNK%&%1%
+%Cyclopeptide (His-Asp)%&%CROSSLNK%&%1%
+%N-linked (GlcNAc) (high mannose or polylactosaminoglycan)%&%CARBOHYD%&%1%
+%N-methylisoleucine%&%MOD_RES%&%1%
+%GPI-anchor amidated threonine%&%LIPID%&%1%
+%S-(2-aminovinyl)-3-methyl-D-cysteine (Thr-Cys)%&%CROSSLNK%&%1%
+%N4,N4-dimethylasparagine%&%MOD_RES%&%1%
+%3-hydroxyphenylalanine%&%MOD_RES%&%1%
+%N-linked (GlcNAc) (high mannose or complex)%&%CARBOHYD%&%1%
+%Isoleucine derivative%&%MOD_RES%&%1%
+%Blocked amino end (Asp)%&%MOD_RES%&%1%
+%Blocked amino end (Asn)%&%MOD_RES%&%1%
+%2-methylglutamine%&%MOD_RES%&%1%
+%4-hydroxyglutamate%&%MOD_RES%&%1%
+%N,N-dimethylleucine%&%MOD_RES%&%1%
+%5-methyloxazole-4-carboxylic acid (Ser- Thr)%&%CROSSLNK%&%1%
+%D-serine (Cys)%&%MOD_RES%&%1%
+%Beta-decarboxylated aspartate%&%MOD_RES%&%1%
+%Tele-(1,2,3-trihydroxypropan-2- yl)histidine%&%MOD_RES%&%1%
+%(2-aminosuccinimidyl)acetic acid (Asp- Gly)%&%CROSSLNK%&%1%
+%Oxazole-4-carboxylic acid (Cys-Ser)%&%CROSSLNK%&%1%
+%Aminomalonic acid (Ser)%&%MOD_RES%&%1%
+%2-cysteinyl-D-phenylalanine (Cys-Phe)%&%CROSSLNK%&%1%
+%Thiazole-4-carboxylic acid (Phe-Cys)%&%CROSSLNK%&%1%
+%Cyclopeptide (Leu-Leu)%&%CROSSLNK%&%1%
+%O-(2-aminoethylphosphoryl)serine%&%MOD_RES%&%1%
+%3-hydroxypyridine-2,5-dicarboxylic acid (Ser-Cys)%&%CROSSLNK%&%1%
+%1-(tryptophan-3-yl)-tryptophan (Trp-Trp)%&%CROSSLNK%&%1%
+%Thiazoline-4-carboxylic acid (Phe-Cys)%&%CROSSLNK%&%1%
+%Cyclopeptide (Ala-Pro)%&%CROSSLNK%&%1%
+%Methionine sulfone%&%MOD_RES%&%1%
+%N-methylglycine%&%MOD_RES%&%1%
+%Isoaspartyl lysine isopeptide (Asn-Lys)%&%CROSSLNK%&%1%
+%Cyclopeptide (Asp-Asn)%&%CROSSLNK%&%1%
+%N-[(12R)-12-hydroxymyristoyl]cysteine%&%LIPID%&%1%
+%D-asparagine%&%MOD_RES%&%1%
+%O-octanoyl threonine%&%LIPID%&%1%
+%Blocked amino end (Ile)%&%MOD_RES%&%1%
+%N,N-(cysteine-1,S-diyl)phenylalanine (Cys-Phe)%&%CROSSLNK%&%1%
+%N,N-(cysteine-1,S-diyl)serine (Cys-Ser)%&%CROSSLNK%&%1%
+%5'-tyrosyl-5'-aminotyrosine (Tyr-Tyr)%&%CROSSLNK%&%1%
+%2-cysteinyl-L-phenylalanine (Cys-Phe)%&%CROSSLNK%&%1%
+%O-(5'-phospho-DNA)-tyrosine%&%MOD_RES%&%1%
+%5-amino-piperideine-2,5-dicarboxylic acid (Ser-Ser)%&%CROSSLNK%&%1%
+%Cyclopeptide (Leu-Trp)%&%CROSSLNK%&%1%
+%Blocked amino end (Arg)%&%MOD_RES%&%1%
+%Cyclopeptide (Ala-Arg)%&%CROSSLNK%&%1%
+%Isoaspartyl lysine isopeptide (Lys-Asp)%&%CROSSLNK%&%1%
+%Cyclopeptide (His-Asn)%&%CROSSLNK%&%1%
+%5-imidazolinone (Lys-Gly)%&%CROSSLNK%&%1%
+%2-(3-methylbutanoyl)-5-hydroxyoxazole-4- carbothionic acid (Leu-Cys)%&%CROSSLNK%&%1%
+%Bromohistidine%&%MOD_RES%&%1%
+%Thiazole-4-carboxylic acid (Glu-Cys)%&%CROSSLNK%&%1%
+%N2-succinyltryptophan%&%MOD_RES%&%1%
+%Glycyl cysteine dithioester (Cys-Gly)%&%CROSSLNK%&%1%
+%3'-histidyl-3-tyrosine (His-Tyr)%&%CROSSLNK%&%1%
+%N-linked (Glc) (glycation), alternate%&%CARBOHYD%&%1%
+%Isoglutamyl glycine isopeptide (Gly-Glu)%&%CROSSLNK%&%1%
+%Methionine derivative%&%MOD_RES%&%1%
+%Cyclo[(prolylserin)-O-yl] cysteinate%&%MOD_RES%&%1%
+%(4S)-thiazoline-4-carboxylic acid (Thr- Cys)%&%CROSSLNK%&%1%
+%(4R)-4,5-dihydroxyleucine%&%MOD_RES%&%1%
