@@ -5,10 +5,14 @@ import sys
 from ordereddict import OrderedDict
 #from collections import OrderedDict
 import MySQLdb as mdb
+import time
 
 database = "ptmdb"
 tabla_ptms = "sprot_ptmtable"
 file_name = "ptmlist"
+
+# Establecer el tiempo de inicio del script
+start_time = time.time()
 
 #Abrir el archivo con la lista de PTMs y el de output para guardar los querys
 ptmlist_file = expanduser("~") + '/QB9/QB9-VCS/ptmlist'
@@ -98,3 +102,6 @@ if con:
     con.close()
 
 # Ta-da! """
+
+print('\n')
+print(time.time() - start_time)
