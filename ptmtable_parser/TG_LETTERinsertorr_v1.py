@@ -29,11 +29,13 @@ with open(aa_file) as aminoa:
         diccionario_aa[record[2]] = record[0]
 print(diccionario_aa.items())
 
+# Cosas que use
 # http://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-fetchone.html
 # http://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-fetchall.html
 # http://www.tutorialspoint.com/mysql/mysql-update-query.htm
 
-# Traer los posibles TG y cargarlos en un vector
+# Traer los posibles TG y iterarlos y actualizar la tabla usando
+# el diccionario de arriba para traducir entre nomenclaturas chinpum
 cur.execute("select distinct tg from " + tabla_ptms + ";")
 for row in cur:
     name_tg = row[0].split('-')
@@ -42,5 +44,6 @@ for row in cur:
     new_value = "-".join(letter_tg)
     cur.execute('UPDATE ' + tabla_ptms + ' SET ' + columna_aa_letra + '=\'' + new_value + '\' where TG like \'' + row[0] + '\';')
     del letter_tg[:]
+cur.execute('commit;')
 
 # """

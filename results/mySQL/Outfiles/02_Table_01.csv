@@ -1,0 +1,464 @@
+%(2-aminosuccinimidyl)acetic acid (Asn-Gly)%&%CROSSLNK%&%null%&%Asparagine-Glycine%&%N-G%&%PTM-0450%&%RESID; AA0441 --- PSI-MOD; 01624%
+%(2-aminosuccinimidyl)acetic acid (Asp-Gly)%&%CROSSLNK%&%null%&%Aspartate-Glycine%&%D-G%&%PTM-0312%&%RESID; AA0441 --- PSI-MOD; 00952%
+%(3R)-3-hydroxyarginine%&%MOD_RES%&%Hydroxylation%&%Arginine%&%R%&%PTM-0476%&%PSI-MOD; 01956%
+%(3R)-3-hydroxyasparagine%&%MOD_RES%&%Hydroxylation%&%Asparagine%&%N%&%PTM-0369%&%RESID; AA0026 --- PSI-MOD; 00035%
+%(3R)-3-hydroxyaspartate%&%MOD_RES%&%Hydroxylation%&%Aspartate%&%D%&%PTM-0371%&%RESID; AA0027 --- PSI-MOD; 00036%
+%(3R,4R)-3,4-dihydroxyproline%&%MOD_RES%&%Hydroxylation%&%Proline%&%P%&%PTM-0368%&%RESID; AA0479 --- PSI-MOD; 01402%
+%(3R,4R)-4,5-dihydroxyisoleucine%&%MOD_RES%&%Hydroxylation%&%Isoleucine%&%I%&%PTM-0336%&%RESID; AA0449 --- PSI-MOD; 01378%
+%(3R,4S)-3,4-dihydroxyproline%&%MOD_RES%&%Hydroxylation%&%Proline%&%P%&%PTM-0306%&%RESID; AA0282 --- PSI-MOD; 00287%
+%(3R,4S)-4-hydroxyisoleucine%&%MOD_RES%&%Hydroxylation%&%Isoleucine%&%I%&%PTM-0337%&%RESID; AA0448 --- PSI-MOD; 01377%
+%(3S)-3-hydroxyasparagine%&%MOD_RES%&%Hydroxylation%&%Asparagine%&%N%&%PTM-0370%&%RESID; AA0478 --- PSI-MOD; 01401%
+%(3S)-3-hydroxyaspartate%&%MOD_RES%&%Hydroxylation%&%Aspartate%&%D%&%PTM-0473%&%PSI-MOD; 01919%
+%(3S)-3-hydroxyhistidine%&%MOD_RES%&%Hydroxylation%&%Histidine%&%H%&%PTM-0477%&%PSI-MOD; 01920%
+%(3S,4R)-3,4-dihydroxyisoleucine%&%MOD_RES%&%Hydroxylation%&%Isoleucine%&%I%&%PTM-0343%&%RESID; AA0447 --- PSI-MOD; 01376%
+%(4R)-4,5-dihydroxyleucine%&%MOD_RES%&%Hydroxylation%&%Leucine%&%L%&%PTM-0340%&%RESID; AA0445 --- PSI-MOD; 01375%
+%(4S)-thiazoline-4-carboxylic acid (Thr-Cys)%&%CROSSLNK%&%Thioether bond%&%Threonine-Cysteine%&%T-C%&%PTM-0392%&%RESID; AA0485 --- PSI-MOD; 01408%
+%(5R)-5-hydroxylysine%&%MOD_RES%&%Hydroxylation%&%Lysine%&%K%&%PTM-0471%&%RESID; AA0028 --- PSI-MOD; 01925%
+%(5S)-5-hydroxylysine%&%MOD_RES%&%Hydroxylation%&%Lysine%&%K%&%PTM-0472%&%PSI-MOD; 01918%
+%(E)-2,3-didehydrobutyrine%&%MOD_RES%&%null%&%Threonine%&%T%&%PTM-0441%&%RESID; AA0547 --- PSI-MOD; 01841%
+%(E)-2,3-didehydrotyrosine%&%MOD_RES%&%null%&%Tyrosine%&%Y%&%PTM-0001%&%RESID; AA0365 --- PSI-MOD; 00370%
+%(Z)-2,3-didehydrobutyrine%&%MOD_RES%&%null%&%Threonine%&%T%&%PTM-0440%&%RESID; AA0182 --- PSI-MOD; 00190%
+%(Z)-2,3-didehydrotyrosine%&%MOD_RES%&%null%&%Tyrosine%&%Y%&%PTM-0002%&%RESID; AA0183 --- PSI-MOD; 00191%
+%1'-histidyl-3'-tyrosine (His-Tyr)%&%CROSSLNK%&%null%&%Histidine-Tyrosine%&%H-Y%&%PTM-0003%&%RESID; AA0270 --- PSI-MOD; 00275%
+%1-(tryptophan-3-yl)-tryptophan (Trp-Trp)%&%CROSSLNK%&%null%&%Tryptophan-Tryptophan%&%W-W%&%PTM-0445%&%RESID; AA0544 --- PSI-MOD; 01818%
+%1-amino-2-propanone%&%MOD_RES%&%null%&%Threonine%&%T%&%PTM-0379%&%RESID; AA0486 --- PSI-MOD; 01433%
+%1-thioglycine%&%MOD_RES%&%null%&%Glycine%&%G%&%PTM-0004%&%RESID; AA0265 --- PSI-MOD; 00270%
+%2',4',5'-topaquinone%&%MOD_RES%&%TPQ%&%Tyrosine%&%Y%&%PTM-0009%&%RESID; AA0147 --- PSI-MOD; 00156%
+%2'-(S-cysteinyl)-histidine (Cys-His)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Histidine%&%C-H%&%PTM-0005%&%RESID; AA0109 --- PSI-MOD; 00118%
+%2'-cysteinyl-6'-hydroxytryptophan sulfoxide (Trp-Cys)%&%CROSSLNK%&%Thioether bond%&%Tryptophan-Cysteine%&%W-C%&%PTM-0338%&%RESID; AA0451 --- PSI-MOD; 01380%
+%2'-methylsulfonyltryptophan%&%MOD_RES%&%Methylation%&%Tryptophan%&%W%&%PTM-0304%&%RESID; AA0450 --- PSI-MOD; 01379%
+%2,3-didehydroalanine (Cys)%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0468%&%RESID; AA0181 --- PSI-MOD; 00793%
+%2,3-didehydroalanine (Ser)%&%MOD_RES%&%null%&%Serine%&%S%&%PTM-0006%&%RESID; AA0181 --- PSI-MOD; 00189%
+%2,3-didehydrobutyrine%&%MOD_RES%&%null%&%Threonine%&%T%&%PTM-0007%&%RESID; AA0182 --- RESID; AA0547 --- PSI-MOD; 00190 --- PSI-MOD; 01841%
+%2,3-didehydrotyrosine%&%MOD_RES%&%null%&%Tyrosine%&%Y%&%PTM-0008%&%PSI-MOD; 00706%
+%2-(3-methylbutanoyl)-5-hydroxyoxazole-4-carbothionic acid (Leu-Cys)%&%CROSSLNK%&%null%&%Leucine-Cysteine%&%L-C%&%PTM-0448%&%RESID; AA0550 --- PSI-MOD; 01844%
+%2-(4-guanidinobutanoyl)-5-hydroxyimidazole-4-carbothionic acid (Arg-Cys)%&%CROSSLNK%&%null%&%Arginine-Cysteine%&%R-C%&%PTM-0457%&%RESID; AA0553 --- PSI-MOD; 01877%
+%2-(S-cysteinyl)pyruvic acid O-phosphothioketal%&%MOD_RES%&%Pyruvate%&%Cysteine%&%C%&%PTM-0424%&%RESID; AA0391 --- PSI-MOD; 00797%
+%2-cysteinyl-D-allo-threonine (Cys-Thr)%&%CROSSLNK%&%D-amino acid; Thioether bond%&%Cysteine-Threonine%&%C-T%&%PTM-0010%&%RESID; AA0342 --- PSI-MOD; 00347%
+%2-cysteinyl-D-phenylalanine (Cys-Phe)%&%CROSSLNK%&%D-amino acid; Thioether bond%&%Cysteine-Phenylalanine%&%C-F%&%PTM-0011%&%RESID; AA0341 --- PSI-MOD; 00346%
+%2-cysteinyl-L-phenylalanine (Cys-Phe)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Phenylalanine%&%C-F%&%PTM-0012%&%RESID; AA0340 --- PSI-MOD; 00345%
+%2-iminomethyl-5-imidazolinone (Gln-Gly)%&%CROSSLNK%&%null%&%Glutamine-Glycine%&%Q-G%&%PTM-0013%&%RESID; AA0189 --- PSI-MOD; 00197%
+%2-iminomethyl-5-imidazolinone (Glu-Gly)%&%CROSSLNK%&%null%&%Glutamate-Glycine%&%E-G%&%PTM-0014%&%RESID; AA0378 --- PSI-MOD; 00383%
+%2-iminomethyl-5-imidazolinone (Met-Gly)%&%CROSSLNK%&%null%&%Methionine-Glycine%&%M-G%&%PTM-0015%&%RESID; AA0379 --- PSI-MOD; 00384%
+%2-methylglutamine%&%MOD_RES%&%Methylation%&%Glutamine%&%Q%&%PTM-0016%&%RESID; AA0273 --- PSI-MOD; 00278%
+%2-oxobutanoic acid%&%MOD_RES%&%null%&%Threonine%&%T%&%PTM-0017%&%RESID; AA0129 --- PSI-MOD; 00138%
+%2-tetrahydro-2-pyridyl-5-imidazolinone (Lys-Gly)%&%CROSSLNK%&%null%&%Lysine-Glycine%&%K-G%&%PTM-0018%&%RESID; AA0382 --- PSI-MOD; 00387%
+%3',4'-dihydroxyphenylalanine%&%MOD_RES%&%Hydroxylation%&%Tyrosine%&%Y%&%PTM-0023%&%RESID; AA0146 --- PSI-MOD; 00155%
+%3'-(S-cysteinyl)-tyrosine (Cys-Tyr)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Tyrosine%&%C-Y%&%PTM-0019%&%RESID; AA0113 --- PSI-MOD; 00122%
+%3'-(S-cysteinyl)-tyrosine (Tyr-Cys)%&%CROSSLNK%&%Thioether bond%&%Tyrosine-Cysteine%&%Y-C%&%PTM-0021%&%RESID; AA0113 --- PSI-MOD; 00122%
+%3'-geranyl-2',N2-cyclotryptophan%&%LIPID%&%Prenylation%&%Tryptophan%&%W%&%PTM-0026%&%RESID; AA0408 --- PSI-MOD; 00817%
+%3'-histidyl-3-tyrosine (His-Tyr)%&%CROSSLNK%&%null%&%Histidine-Tyrosine%&%H-Y%&%PTM-0027%&%RESID; AA0250 --- PSI-MOD; 00255%
+%3'-nitrotyrosine%&%MOD_RES%&%Nitration%&%Tyrosine%&%Y%&%PTM-0434%&%RESID; AA0537 --- PSI-MOD; 01786%
+%3,4-dihydroxyarginine%&%MOD_RES%&%Hydroxylation%&%Arginine%&%R%&%PTM-0022%&%RESID; AA0369 --- PSI-MOD; 00374%
+%3,4-dihydroxyproline%&%MOD_RES%&%Hydroxylation%&%Proline%&%P%&%PTM-0024%&%RESID; AA0282 --- PSI-MOD; 00287%
+%3-(O4'-tyrosyl)-valine (Val-Tyr)%&%CROSSLNK%&%null%&%Valine-Tyrosine%&%V-Y%&%PTM-0390%&%RESID; AA0490 --- PSI-MOD; 01442%
+%3-(S-cysteinyl)-tyrosine (Cys-Tyr)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Tyrosine%&%C-Y%&%PTM-0020%&%RESID; AA0396 --- PSI-MOD; 00803%
+%3-cysteinyl-aspartic acid (Cys-Asp)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Aspartate%&%C-D%&%PTM-0025%&%RESID; AA0314 --- PSI-MOD; 00319%
+%3-hydroxyasparagine%&%MOD_RES%&%Hydroxylation%&%Asparagine%&%N%&%PTM-0028%&%RESID; AA0026 --- PSI-MOD; 00035%
+%3-hydroxyaspartate%&%MOD_RES%&%Hydroxylation%&%Aspartate%&%D%&%PTM-0029%&%RESID; AA0027 --- PSI-MOD; 00036%
+%3-hydroxyphenylalanine%&%MOD_RES%&%Hydroxylation%&%Phenylalanine%&%F%&%PTM-0346%&%RESID; AA0462 --- PSI-MOD; 01385%
+%3-hydroxyproline%&%MOD_RES%&%Hydroxylation%&%Proline%&%P%&%PTM-0030%&%RESID; AA0029 --- PSI-MOD; 00038%
+%3-hydroxypyridine-2,5-dicarboxylic acid (Ser-Cys)%&%CROSSLNK%&%null%&%Serine-Cysteine-Serine%&%S-C-S%&%PTM-0454%&%RESID; AA0540 --- PSI-MOD; 01814%
+%3-hydroxypyridine-2,5-dicarboxylic acid (Ser-Ser)%&%CROSSLNK%&%null%&%Serine-Serine-Cysteine%&%S-S-C%&%PTM-0455%&%RESID; AA0540 --- PSI-MOD; 01814%
+%3-hydroxytryptophan%&%MOD_RES%&%Hydroxylation%&%Tryptophan%&%W%&%PTM-0031%&%RESID; AA0322 --- PSI-MOD; 00327%
+%3-hydroxyvaline%&%MOD_RES%&%Hydroxylation%&%Valine%&%V%&%PTM-0347%&%RESID; AA0463 --- PSI-MOD; 01386%
+%3-methylthioaspartic acid%&%MOD_RES%&%null%&%Aspartate%&%D%&%PTM-0032%&%RESID; AA0232 --- PSI-MOD; 00237%
+%3-oxoalanine (Cys)%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0033%&%RESID; AA0185 --- PSI-MOD; 00193%
+%3-oxoalanine (Ser)%&%MOD_RES%&%null%&%Serine%&%S%&%PTM-0034%&%RESID; AA0185 --- PSI-MOD; 00835%
+%3-phenyllactic acid%&%MOD_RES%&%null%&%Phenylalanine%&%F%&%PTM-0035%&%RESID; AA0128 --- PSI-MOD; 00137%
+%4'-cysteinyl-tryptophylquinone (Cys-Trp)%&%CROSSLNK%&%CTQ; Thioether bond%&%Cysteine-Tryptophan%&%C-W%&%PTM-0041%&%RESID; AA0313 --- PSI-MOD; 00318%
+%4,5,5'-trihydroxyleucine%&%MOD_RES%&%Hydroxylation%&%Leucine%&%L%&%PTM-0372%&%RESID; AA0480 --- PSI-MOD; 01403%
+%4,5-dihydroxylysine%&%MOD_RES%&%Hydroxylation%&%Lysine%&%K%&%PTM-0036%&%RESID; AA0370 --- PSI-MOD; 00375%
+%4-aspartylphosphate%&%MOD_RES%&%Phosphoprotein%&%Aspartate%&%D%&%PTM-0038%&%RESID; AA0033 --- PSI-MOD; 00042%
+%4-carboxyglutamate%&%MOD_RES%&%Gamma-carboxyglutamic acid%&%Glutamate%&%E%&%PTM-0039%&%RESID; AA0032 --- PSI-MOD; 00041%
+%4-cysteinyl-glutamic acid (Cys-Glu)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Glutamate%&%C-E%&%PTM-0040%&%RESID; AA0315 --- PSI-MOD; 00320%
+%4-hydroxyarginine%&%MOD_RES%&%Hydroxylation%&%Arginine%&%R%&%PTM-0042%&%RESID; AA0215 --- PSI-MOD; 00220%
+%4-hydroxyglutamate%&%MOD_RES%&%Hydroxylation%&%Glutamate%&%E%&%PTM-0453%&%RESID; AA0487 --- PSI-MOD; 01434%
+%4-hydroxyproline%&%MOD_RES%&%Hydroxylation%&%Proline%&%P%&%PTM-0043%&%RESID; AA0030 --- PSI-MOD; 00039%
+%5'-chlorotryptophan%&%MOD_RES%&%null%&%Tryptophan%&%W%&%PTM-0444%&%RESID; AA0180 --- PSI-MOD; 00180%
+%5'-tyrosyl-5'-aminotyrosine (Tyr-Tyr)%&%CROSSLNK%&%null%&%Tyrosine-Tyrosine%&%Y-Y%&%PTM-0320%&%RESID; AA0459 --- PSI-MOD; 01787%
+%5-(methoxymethyl)thiazole-4-carboxylic acid (Val-Cys)%&%CROSSLNK%&%Methylation; Thioether bond%&%Valine-Cysteine%&%V-C%&%PTM-0373%&%RESID; AA0468 --- PSI-MOD; 01391%
+%5-amino-piperideine-2,5-dicarboxylic acid (Ser-Cys)%&%CROSSLNK%&%null%&%Serine-Cysteine-Serine%&%S-C-S%&%PTM-0348%&%RESID; AA0471 --- PSI-MOD; 01394%
+%5-amino-piperideine-2,5-dicarboxylic acid (Ser-Ser)%&%CROSSLNK%&%null%&%Serine-Serine-Cysteine%&%S-S-C%&%PTM-0349%&%RESID; AA0471 --- PSI-MOD; 01395%
+%5-glutamyl 2-aminoadipic acid%&%MOD_RES%&%null%&%Glutamate%&%E%&%PTM-0406%&%RESID; AA0502 --- PSI-MOD; 01605%
+%5-glutamyl glutamate%&%MOD_RES%&%Isopeptide bond%&%Glutamate%&%E%&%PTM-0479%&%PSI-MOD; 01970%
+%5-glutamyl glycerylphosphorylethanolamine%&%MOD_RES%&%Phosphoprotein%&%Glutamate%&%E%&%PTM-0403%&%RESID; AA0170 --- PSI-MOD; 00179%
+%5-glutamyl N2-lysine%&%MOD_RES%&%Isopeptide bond%&%Glutamate%&%E%&%PTM-0407%&%RESID; AA0505 --- PSI-MOD; 01608%
+%5-glutamyl N2-ornithine%&%MOD_RES%&%Isopeptide bond%&%Glutamate%&%E%&%PTM-0478%&%PSI-MOD; 01971%
+%5-glutamyl polyglutamate%&%MOD_RES%&%null%&%Glutamate%&%E%&%PTM-0395%&%RESID; AA0202 --- PSI-MOD; 00207%
+%5-glutamyl polyglycine%&%MOD_RES%&%null%&%Glutamate%&%E%&%PTM-0394%&%RESID; AA0201 --- PSI-MOD; 00206%
+%5-hydroxy-3-methylproline (Ile)%&%MOD_RES%&%Hydroxylation; Methylation%&%Isoleucine%&%I%&%PTM-0466%&%RESID; AA0473 --- PSI-MOD; 01897%
+%5-hydroxylysine%&%MOD_RES%&%Hydroxylation%&%Lysine%&%K%&%PTM-0044%&%RESID; AA0028 --- PSI-MOD; 00037%
+%5-imidazolinone (Ala-Gly)%&%CROSSLNK%&%null%&%Alanine-Glycine%&%A-G%&%PTM-0045%&%RESID; AA0187 --- PSI-MOD; 00195%
+%5-imidazolinone (Asn-Gly)%&%CROSSLNK%&%null%&%Asparagine-Glycine%&%N-G%&%PTM-0046%&%RESID; AA0380 --- PSI-MOD; 00385%
+%5-imidazolinone (Cys-Gly)%&%CROSSLNK%&%null%&%Cysteine-Glycine%&%C-G%&%PTM-0047%&%RESID; AA0188 --- PSI-MOD; 00196%
+%5-imidazolinone (Lys-Gly)%&%CROSSLNK%&%null%&%Lysine-Glycine%&%K-G%&%PTM-0048%&%RESID; AA0381 --- PSI-MOD; 00386%
+%5-imidazolinone (Ser-Gly)%&%CROSSLNK%&%null%&%Serine-Glycine%&%S-G%&%PTM-0049%&%RESID; AA0184 --- PSI-MOD; 00192%
+%5-methoxythiazole-4-carboxylic acid (Val-Cys)%&%CROSSLNK%&%Methylation; Thioether bond%&%Valine-Cysteine%&%V-C%&%PTM-0350%&%RESID; AA0468 --- PSI-MOD; 01391%
+%5-methylarginine%&%MOD_RES%&%Methylation%&%Arginine%&%R%&%PTM-0050%&%RESID; AA0272 --- PSI-MOD; 00277%
+%5-methyloxazole-4-carboxylic acid (Cys-Thr)%&%CROSSLNK%&%null%&%Cysteine-Threonine%&%C-T%&%PTM-0461%&%RESID; AA0571 --- PSI-MOD; 01900%
+%5-methyloxazole-4-carboxylic acid (Ser-Thr)%&%CROSSLNK%&%Methylation%&%Serine-Threonine%&%S-T%&%PTM-0386%&%RESID; AA0474 --- PSI-MOD; 01397%
+%5-methyloxazole-4-carboxylic acid (Thr-Thr)%&%CROSSLNK%&%null%&%Threonine-Threonine%&%T-T%&%PTM-0462%&%RESID; AA0572 --- PSI-MOD; 01901%
+%5-methyloxazoline-4-carboxylic acid (Ser-Thr)%&%CROSSLNK%&%null%&%Serine-Threonine%&%S-T%&%PTM-0465%&%RESID; AA0575 --- PSI-MOD; 01904%
+%5-methylthiazole-4-carboxylic acid (Asn-Cys)%&%CROSSLNK%&%Methylation; Thioether bond%&%Asparagine-Cysteine%&%N-C%&%PTM-0352%&%RESID; AA0469 --- PSI-MOD; 01392%
+%6'-bromotryptophan%&%MOD_RES%&%Bromination%&%Tryptophan%&%W%&%PTM-0051%&%RESID; AA0179 --- PSI-MOD; 00188%
+%6'-chlorotryptophan%&%MOD_RES%&%null%&%Tryptophan%&%W%&%PTM-0052%&%RESID; AA0180 --- PSI-MOD; 00180%
+%7'-hydroxytryptophan%&%MOD_RES%&%Hydroxylation%&%Tryptophan%&%W%&%PTM-0427%&%RESID; AA0520 --- PSI-MOD; 01664%
+%ADP-ribosylarginine%&%MOD_RES%&%ADP-ribosylation%&%Arginine%&%R%&%PTM-0053%&%RESID; AA0168 --- PSI-MOD; 00177%
+%ADP-ribosylasparagine%&%MOD_RES%&%ADP-ribosylation%&%Asparagine%&%N%&%PTM-0054%&%RESID; AA0231 --- PSI-MOD; 00236%
+%ADP-ribosylcysteine%&%MOD_RES%&%ADP-ribosylation%&%Cysteine%&%C%&%PTM-0055%&%RESID; AA0169 --- PSI-MOD; 00178%
+%ADP-ribosylserine%&%MOD_RES%&%ADP-ribosylation%&%Serine%&%S%&%PTM-0056%&%RESID; AA0237 --- PSI-MOD; 00242%
+%Alanine amide%&%MOD_RES%&%Amidation%&%Alanine%&%A%&%PTM-0057%&%RESID; AA0081 --- PSI-MOD; 00090%
+%Alanine derivative%&%MOD_RES%&%null%&%Alanine%&%A%&%PTM-0058%&%PSI-MOD; 00901%
+%Alanine isoaspartyl cyclopeptide (Ala-Asn)%&%CROSSLNK%&%null%&%Alanine-Asparagine%&%A-N%&%PTM-0418%&%RESID; AA0515 --- PSI-MOD; 01618%
+%Allysine%&%MOD_RES%&%null%&%Lysine%&%K%&%PTM-0059%&%RESID; AA0121 --- PSI-MOD; 00130%
+%Aminomalonic acid (Ser)%&%MOD_RES%&%null%&%Serine%&%S%&%PTM-0321%&%RESID; AA0458 --- PSI-MOD; 01384%
+%Arginine amide%&%MOD_RES%&%Amidation%&%Arginine%&%R%&%PTM-0060%&%RESID; AA0082 --- PSI-MOD; 00091%
+%Arginine derivative%&%MOD_RES%&%null%&%Arginine%&%R%&%PTM-0061%&%PSI-MOD; 00902%
+%Asparagine amide%&%MOD_RES%&%Amidation%&%Asparagine%&%N%&%PTM-0062%&%RESID; AA0083 --- PSI-MOD; 00092%
+%Aspartate 1-(chondroitin 4-sulfate)-ester%&%MOD_RES%&%Proteoglycan%&%Aspartate%&%D%&%PTM-0334%&%RESID; AA0219 --- PSI-MOD; 00224%
+%Aspartic acid 1-amide%&%MOD_RES%&%Amidation%&%Aspartate%&%D%&%PTM-0063%&%RESID; AA0084 --- PSI-MOD; 00093%
+%Aspartic acid 1-[(3-aminopropyl)(5'-adenosyl)phosphono]amide%&%MOD_RES%&%Phosphoprotein%&%Asparagine%&%N%&%PTM-0335%&%RESID; AA0328 --- PSI-MOD; 00333%
+%Aspartyl aldehyde%&%MOD_RES%&%null%&%Aspartate%&%D%&%PTM-0064%&%RESID; AA0373 --- PSI-MOD; 00378%
+%Aspartyl isopeptide (Asn)%&%MOD_RES%&%null%&%Asparagine%&%N%&%PTM-0065%&%null%
+%Aspartyl isopeptide (Asp)%&%MOD_RES%&%null%&%Aspartate%&%D%&%PTM-0313%&%null%
+%Asymmetric dimethylarginine%&%MOD_RES%&%Methylation%&%Arginine%&%R%&%PTM-0066%&%RESID; AA0068 --- PSI-MOD; 00077%
+%Beta-decarboxylated aspartate%&%MOD_RES%&%null%&%Aspartate%&%D%&%PTM-0314%&%RESID; AA0001 --- PSI-MOD; 00869%
+%Beta-methyllanthionine (Cys-Thr)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Threonine%&%C-T%&%PTM-0067%&%RESID; AA0112 --- PSI-MOD; 00121%
+%Beta-methyllanthionine (Thr-Cys)%&%CROSSLNK%&%Thioether bond%&%Threonine-Cysteine%&%T-C%&%PTM-0068%&%RESID; AA0112 --- PSI-MOD; 00121%
+%Beta-methyllanthionine sulfoxide (Thr-Cys)%&%CROSSLNK%&%null%&%Threonine-Cysteine%&%T-C%&%PTM-0069%&%RESID; AA0330 --- PSI-MOD; 00335%
+%Blocked amino end (Ala)%&%MOD_RES%&%null%&%Alanine%&%A%&%PTM-0070%&%null%
+%Blocked amino end (Arg)%&%MOD_RES%&%null%&%Arginine%&%R%&%PTM-0071%&%null%
+%Blocked amino end (Asn)%&%MOD_RES%&%null%&%Asparagine%&%N%&%PTM-0072%&%null%
+%Blocked amino end (Asp)%&%MOD_RES%&%null%&%Aspartate%&%D%&%PTM-0073%&%null%
+%Blocked amino end (Asx)%&%MOD_RES%&%null%&%Asparagine or Aspartate%&%B%&%PTM-0074%&%null%
+%Blocked amino end (Cys)%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0075%&%null%
+%Blocked amino end (Gln)%&%MOD_RES%&%null%&%Glutamine%&%Q%&%PTM-0076%&%null%
+%Blocked amino end (Glu)%&%MOD_RES%&%null%&%Glutamate%&%E%&%PTM-0077%&%null%
+%Blocked amino end (Gly)%&%MOD_RES%&%null%&%Glycine%&%G%&%PTM-0078%&%null%
+%Blocked amino end (Ile)%&%MOD_RES%&%null%&%Isoleucine%&%I%&%PTM-0079%&%null%
+%Blocked amino end (Leu)%&%MOD_RES%&%null%&%Leucine%&%L%&%PTM-0080%&%null%
+%Blocked amino end (Met)%&%MOD_RES%&%null%&%Methionine%&%M%&%PTM-0081%&%null%
+%Blocked amino end (Pro)%&%MOD_RES%&%null%&%Proline%&%P%&%PTM-0082%&%null%
+%Blocked amino end (Ser)%&%MOD_RES%&%null%&%Serine%&%S%&%PTM-0083%&%null%
+%Blocked amino end (Thr)%&%MOD_RES%&%null%&%Threonine%&%T%&%PTM-0084%&%null%
+%Blocked amino end (Val)%&%MOD_RES%&%null%&%Valine%&%V%&%PTM-0085%&%null%
+%Blocked amino end (Xaa)%&%MOD_RES%&%null%&%Undefined%&%X%&%PTM-0086%&%null%
+%Blocked carboxyl end (Arg)%&%MOD_RES%&%null%&%Arginine%&%R%&%PTM-0087%&%null%
+%Blocked carboxyl end (His)%&%MOD_RES%&%null%&%Histidine%&%H%&%PTM-0088%&%null%
+%Bromohistidine%&%MOD_RES%&%Bromination%&%Histidine%&%H%&%PTM-0089%&%RESID; AA0173 --- PSI-MOD; 00182%
+%Cholesterol glycine ester%&%LIPID%&%Lipoprotein%&%Glycine%&%G%&%PTM-0090%&%RESID; AA0309 --- PSI-MOD; 00314%
+%Cis-14-hydroxy-10,13-dioxo-7-heptadecenoic acid aspartate ester%&%LIPID%&%Lipoprotein%&%Aspartate%&%D%&%PTM-0091%&%RESID; AA0316 --- PSI-MOD; 00321%
+%Citrulline%&%MOD_RES%&%Citrullination%&%Arginine%&%R%&%PTM-0092%&%RESID; AA0214 --- PSI-MOD; 00219%
+%Cyclopeptide (Ala-Arg)%&%CROSSLNK%&%null%&%Alanine-Arginine%&%A-R%&%PTM-0093%&%null%
+%Cyclopeptide (Ala-Ile)%&%CROSSLNK%&%null%&%Alanine-Isoleucine%&%A-I%&%PTM-0315%&%null%
+%Cyclopeptide (Ala-Pro)%&%CROSSLNK%&%null%&%Alanine-Proline%&%A-P%&%PTM-0307%&%null%
+%Cyclopeptide (Arg-Cys)%&%CROSSLNK%&%null%&%Arginine-Cysteine%&%R-C%&%PTM-0094%&%null%
+%Cyclopeptide (Asn-Gly)%&%CROSSLNK%&%null%&%Asparagine-Glycine%&%N-G%&%PTM-0095%&%null%
+%Cyclopeptide (Asp-Asn)%&%CROSSLNK%&%null%&%Aspartate-Asparagine%&%D-N%&%PTM-0096%&%null%
+%Cyclopeptide (Cys-Arg)%&%CROSSLNK%&%null%&%Cysteine-Arginine%&%C-R%&%PTM-0097%&%null%
+%Cyclopeptide (Gly-Asn)%&%CROSSLNK%&%null%&%Glycine-Asparagine%&%G-N%&%PTM-0098%&%null%
+%Cyclopeptide (Gly-Asp)%&%CROSSLNK%&%null%&%Glycine-Aspartate%&%G-D%&%PTM-0099%&%null%
+%Cyclopeptide (His-Asn)%&%CROSSLNK%&%null%&%Histidine-Asparagine%&%H-N%&%PTM-0436%&%null%
+%Cyclopeptide (His-Asp)%&%CROSSLNK%&%null%&%Histidine-Aspartate%&%H-D%&%PTM-0437%&%null%
+%Cyclopeptide (Ile-Pro)%&%CROSSLNK%&%null%&%Isoleucine-Proline%&%I-P%&%PTM-0339%&%null%
+%Cyclopeptide (Leu-Leu)%&%CROSSLNK%&%null%&%Leucine-Leucine%&%L-L%&%PTM-0353%&%null%
+%Cyclopeptide (Leu-Trp)%&%CROSSLNK%&%null%&%Leucine-Tryptophan%&%L-W%&%PTM-0319%&%null%
+%Cyclopeptide (Lys-Asp)%&%CROSSLNK%&%null%&%Lysine-Aspartate%&%K-D%&%PTM-0100%&%null%
+%Cyclopeptide (Pro-Met)%&%CROSSLNK%&%null%&%Proline-Methionine%&%P-M%&%PTM-0316%&%null%
+%Cyclopeptide (Pro-Tyr)%&%CROSSLNK%&%null%&%Proline-Tyrosine%&%P-Y%&%PTM-0317%&%null%
+%Cyclopeptide (Ser-Asn)%&%CROSSLNK%&%null%&%Serine-Asparagine%&%S-N%&%PTM-0101%&%null%
+%Cyclopeptide (Ser-Gly)%&%CROSSLNK%&%null%&%Serine-Glycine%&%S-G%&%PTM-0318%&%null%
+%Cyclo[(prolylserin)-O-yl] cysteinate%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0380%&%PSI-MOD; 01437%
+%CysO-cysteine adduct%&%MOD_RES%&%null%&%Glycine%&%G%&%PTM-0433%&%RESID; AA0529 --- PSI-MOD; 01778%
+%Cysteine amide%&%MOD_RES%&%Amidation%&%Cysteine%&%C%&%PTM-0102%&%RESID; AA0085 --- PSI-MOD; 00094%
+%Cysteine derivative%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0103%&%PSI-MOD; 00905%
+%Cysteine methyl disulfide%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0104%&%RESID; AA0101 --- PSI-MOD; 00110%
+%Cysteine methyl ester%&%MOD_RES%&%Methylation%&%Cysteine%&%C%&%PTM-0105%&%RESID; AA0105 --- PSI-MOD; 00114%
+%Cysteine persulfide%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0106%&%RESID; AA0269 --- PSI-MOD; 00274%
+%Cysteine sulfenic acid (-SOH)%&%MOD_RES%&%Oxidation%&%Cysteine%&%C%&%PTM-0107%&%RESID; AA0205 --- PSI-MOD; 00210%
+%Cysteine sulfinic acid (-SO2H)%&%MOD_RES%&%Oxidation%&%Cysteine%&%C%&%PTM-0108%&%RESID; AA0262 --- PSI-MOD; 00267%
+%Cysteinyl-selenocysteine (Cys-Sec)%&%CROSSLNK%&%Selenocysteine%&%Cysteine-Selenocysteine%&%C-U%&%PTM-0109%&%RESID; AA0358 --- PSI-MOD; 00363%
+%Cysteinyl-selenocysteine (Sec-Cys)%&%CROSSLNK%&%Selenocysteine%&%Selenocysteine-Cysteine%&%U-C%&%PTM-0110%&%RESID; AA0358 --- PSI-MOD; 00363%
+%D-4-hydroxyvaline%&%MOD_RES%&%D-amino acid; Hydroxylation%&%Valine%&%V%&%PTM-0111%&%RESID; AA0388 --- PSI-MOD; 00756%
+%D-alanine (Ala)%&%MOD_RES%&%D-amino acid%&%Alanine%&%A%&%PTM-0112%&%RESID; AA0191 --- PSI-MOD; 00198%
+%D-alanine (Ser)%&%MOD_RES%&%D-amino acid%&%Serine%&%S%&%PTM-0113%&%RESID; AA0191 --- PSI-MOD; 00858%
+%D-allo-isoleucine%&%MOD_RES%&%D-amino acid%&%Isoleucine%&%I%&%PTM-0114%&%RESID; AA0192 --- PSI-MOD; 00199%
+%D-asparagine%&%MOD_RES%&%D-amino acid%&%Asparagine%&%N%&%PTM-0115%&%RESID; AA0196 --- PSI-MOD; 00203%
+%D-leucine%&%MOD_RES%&%D-amino acid%&%Leucine%&%L%&%PTM-0119%&%RESID; AA0197 --- PSI-MOD; 00204%
+%D-methionine%&%MOD_RES%&%D-amino acid%&%Methionine%&%M%&%PTM-0120%&%RESID; AA0193 --- PSI-MOD; 00200%
+%D-phenylalanine%&%MOD_RES%&%D-amino acid%&%Phenylalanine%&%F%&%PTM-0121%&%RESID; AA0194 --- PSI-MOD; 00201%
+%D-serine (Cys)%&%MOD_RES%&%D-amino acid%&%Cysteine%&%C%&%PTM-0309%&%RESID; AA0195 --- PSI-MOD; 00892%
+%D-serine (Ser)%&%MOD_RES%&%D-amino acid%&%Serine%&%S%&%PTM-0308%&%RESID; AA0195 --- PSI-MOD; 00202%
+%D-threonine%&%MOD_RES%&%D-amino acid%&%Threonine%&%T%&%PTM-0310%&%RESID; AA0199 --- PSI-MOD; 00863%
+%D-tryptophan%&%MOD_RES%&%D-amino acid%&%Tryptophan%&%W%&%PTM-0123%&%RESID; AA0198 --- PSI-MOD; 00205%
+%D-valine%&%MOD_RES%&%D-amino acid%&%Valine%&%V%&%PTM-0124%&%RESID; AA0200 --- PSI-MOD; 00705%
+%Deamidated asparagine%&%MOD_RES%&%null%&%Asparagine%&%N%&%PTM-0116%&%RESID; AA0004 --- PSI-MOD; 00684%
+%Deamidated glutamine%&%MOD_RES%&%null%&%Glutamine%&%Q%&%PTM-0117%&%RESID; AA0006 --- PSI-MOD; 00685%
+%Decarboxylated threonine%&%MOD_RES%&%null%&%Threonine%&%T%&%PTM-0354%&%RESID; AA0465 --- PSI-MOD; 01388%
+%Diiodotyrosine%&%MOD_RES%&%Iodination%&%Tyrosine%&%Y%&%PTM-0408%&%RESID; AA0510 --- PSI-MOD; 01613%
+%Dimethylated arginine%&%MOD_RES%&%Methylation%&%Arginine%&%R%&%PTM-0341%&%PSI-MOD; 00783%
+%Diphthamide%&%MOD_RES%&%null%&%Histidine%&%H%&%PTM-0118%&%RESID; AA0040 --- PSI-MOD; 00049%
+%FMN phosphoryl serine%&%MOD_RES%&%FMN; Phosphoprotein%&%Serine%&%S%&%PTM-0125%&%RESID; AA0350 --- PSI-MOD; 00355%
+%FMN phosphoryl threonine%&%MOD_RES%&%FMN; Phosphoprotein%&%Threonine%&%T%&%PTM-0126%&%RESID; AA0349 --- PSI-MOD; 00354%
+%Glutamate methyl ester (Gln)%&%MOD_RES%&%Methylation%&%Glutamine%&%Q%&%PTM-0127%&%RESID; AA0072 --- PSI-MOD; 00657%
+%Glutamate methyl ester (Glu)%&%MOD_RES%&%Methylation%&%Glutamate%&%E%&%PTM-0128%&%RESID; AA0072 --- PSI-MOD; 00081%
+%Glutamic acid 1-amide%&%MOD_RES%&%Amidation%&%Glutamate%&%E%&%PTM-0129%&%RESID; AA0087 --- PSI-MOD; 00096%
+%Glutamine amide%&%MOD_RES%&%Amidation%&%Glutamine%&%Q%&%PTM-0130%&%RESID; AA0086 --- PSI-MOD; 00095%
+%Glutamine derivative%&%MOD_RES%&%null%&%Glutamine%&%Q%&%PTM-0131%&%PSI-MOD; 00907%
+%Glycine amide%&%MOD_RES%&%Amidation%&%Glycine%&%G%&%PTM-0132%&%RESID; AA0088 --- PSI-MOD; 00097%
+%Glycine radical%&%MOD_RES%&%Organic radical%&%Glycine%&%G%&%PTM-0133%&%RESID; AA0008 --- PSI-MOD; 00017%
+%Glycyl adenylate%&%MOD_RES%&%Nucleotide-binding%&%Glycine%&%G%&%PTM-0409%&%RESID; AA0511 --- PSI-MOD; 01614%
+%Glycyl cysteine dithioester (Cys-Gly)%&%CROSSLNK%&%Thioester bond%&%Cysteine-Glycine%&%C-G%&%PTM-0413%&%RESID; AA0512 --- PSI-MOD; 01615%
+%Glycyl cysteine dithioester (Gly-Cys)%&%CROSSLNK%&%Thioester bond%&%Glycine-Cysteine%&%G-C%&%PTM-0410%&%RESID; AA0512 --- PSI-MOD; 01615%
+%Glycyl cysteine thioester (Cys-Gly)%&%CROSSLNK%&%Thioester bond%&%Cysteine-Glycine%&%C-G%&%PTM-0429%&%RESID; AA0206 --- PSI-MOD; 00211%
+%Glycyl lysine isopeptide (Gly-Lys)%&%CROSSLNK%&%Isopeptide bond%&%Glycine-Lysine%&%G-K%&%PTM-0134%&%RESID; AA0125 --- PSI-MOD; 00134%
+%Glycyl lysine isopeptide (Lys-Gly)%&%CROSSLNK%&%Isopeptide bond%&%Lysine-Glycine%&%K-G%&%PTM-0135%&%RESID; AA0125 --- PSI-MOD; 00134%
+%Glycyl serine ester (Gly-Ser)%&%CROSSLNK%&%null%&%Glycine-Serine%&%G-S%&%PTM-0425%&%RESID; AA0495 --- PSI-MOD; 01585%
+%Glycyl serine ester (Ser-Gly)%&%CROSSLNK%&%null%&%Serine-Glycine%&%S-G%&%PTM-0422%&%RESID; AA0495 --- PSI-MOD; 01585%
+%Glycyl threonine ester (Gly-Thr)%&%CROSSLNK%&%null%&%Glycine-Threonine%&%G-T%&%PTM-0426%&%RESID; AA0496 --- PSI-MOD; 01586%
+%Glycyl threonine ester (Thr-Gly)%&%CROSSLNK%&%null%&%Threonine-Glycine%&%T-G%&%PTM-0423%&%RESID; AA0496 --- PSI-MOD; 01586%
+%GPI-anchor amidated alanine%&%LIPID%&%GPI-anchor%&%Alanine%&%A%&%PTM-0136%&%RESID; AA0163 --- PSI-MOD; 00172%
+%GPI-anchor amidated asparagine%&%LIPID%&%GPI-anchor%&%Asparagine%&%N%&%PTM-0137%&%RESID; AA0158 --- PSI-MOD; 00167%
+%GPI-anchor amidated aspartate%&%LIPID%&%GPI-anchor%&%Aspartate%&%D%&%PTM-0138%&%RESID; AA0159 --- PSI-MOD; 00168%
+%GPI-anchor amidated carboxyl end%&%LIPID%&%GPI-anchor%&%Undefined%&%X%&%PTM-0139%&%PSI-MOD; 00818%
+%GPI-anchor amidated cysteine%&%LIPID%&%GPI-anchor%&%Cysteine%&%C%&%PTM-0140%&%RESID; AA0160 --- PSI-MOD; 00169%
+%GPI-anchor amidated glycine%&%LIPID%&%GPI-anchor%&%Glycine%&%G%&%PTM-0141%&%RESID; AA0161 --- PSI-MOD; 00170%
+%GPI-anchor amidated serine%&%LIPID%&%GPI-anchor%&%Serine%&%S%&%PTM-0142%&%RESID; AA0162 --- PSI-MOD; 00171%
+%GPI-anchor amidated threonine%&%LIPID%&%GPI-anchor%&%Threonine%&%T%&%PTM-0143%&%RESID; AA0164 --- PSI-MOD; 00173%
+%GPI-like-anchor amidated alanine%&%LIPID%&%GPI-anchor%&%Alanine%&%A%&%PTM-0144%&%RESID; AA0424 --- PSI-MOD; 01172%
+%GPI-like-anchor amidated asparagine%&%LIPID%&%GPI-anchor%&%Asparagine%&%N%&%PTM-0145%&%RESID; AA0425 --- PSI-MOD; 01173%
+%GPI-like-anchor amidated aspartate%&%LIPID%&%GPI-anchor%&%Aspartate%&%D%&%PTM-0322%&%RESID; AA0439 --- PSI-MOD; 00865%
+%GPI-like-anchor amidated glycine%&%LIPID%&%GPI-anchor%&%Glycine%&%G%&%PTM-0146%&%RESID; AA0165 --- PSI-MOD; 00174%
+%GPI-like-anchor amidated serine%&%LIPID%&%GPI-anchor%&%Serine%&%S%&%PTM-0147%&%RESID; AA0166 --- PSI-MOD; 00175%
+%Histidine amide%&%MOD_RES%&%Amidation%&%Histidine%&%H%&%PTM-0148%&%RESID; AA0089 --- PSI-MOD; 00098%
+%Hydroxyproline%&%MOD_RES%&%Hydroxylation%&%Proline%&%P%&%PTM-0149%&%PSI-MOD; 00678%
+%Hypusine%&%MOD_RES%&%Hypusine%&%Lysine%&%K%&%PTM-0150%&%RESID; AA0116 --- PSI-MOD; 00125%
+%Iodotyrosine%&%MOD_RES%&%Iodination%&%Tyrosine%&%Y%&%PTM-0411%&%RESID; AA0509 --- PSI-MOD; 01612%
+%Isoaspartyl cysteine isopeptide (Cys-Asn)%&%CROSSLNK%&%Isopeptide bond%&%Cysteine-Asparagine%&%C-N%&%PTM-0151%&%RESID; AA0216 --- PSI-MOD; 00221%
+%Isoaspartyl glycine isopeptide (Gly-Asn)%&%CROSSLNK%&%Isopeptide bond%&%Glycine-Asparagine%&%G-N%&%PTM-0152%&%RESID; AA0126 --- PSI-MOD; 00135%
+%Isoaspartyl lysine isopeptide (Asn-Lys)%&%CROSSLNK%&%Isopeptide bond%&%Asparagine-Lysine%&%N-K%&%PTM-0153%&%RESID; AA0294 --- PSI-MOD; 00299%
+%Isoaspartyl lysine isopeptide (Lys-Asn)%&%CROSSLNK%&%Isopeptide bond%&%Lysine-Asparagine%&%K-N%&%PTM-0330 --- PTM-0154%&%RESID; AA0294 --- PSI-MOD; 00299%
+%Isoaspartyl lysine isopeptide (Lys-Asp)%&%CROSSLNK%&%Isopeptide bond%&%Lysine-Aspartate%&%K-D%&%PTM-0486%&%RESID; AA0294 --- PSI-MOD; 01917%
+%Isodityrosine (Tyr-Tyr)%&%CROSSLNK%&%null%&%Tyrosine-Tyrosine%&%Y-Y%&%PTM-0155%&%RESID; AA0368 --- PSI-MOD; 00373%
+%Isoglutamyl cysteine thioester (Cys-Gln)%&%CROSSLNK%&%Thioester bond%&%Cysteine-Glutamine%&%C-Q%&%PTM-0156%&%RESID; AA0108 --- PSI-MOD; 00117%
+%Isoglutamyl glycine isopeptide (Gly-Glu)%&%CROSSLNK%&%Isopeptide bond%&%Glycine-Glutamate%&%G-E%&%PTM-0157%&%RESID; AA0360 --- PSI-MOD; 00365%
+%Isoglutamyl lysine isopeptide (Gln-Lys)%&%CROSSLNK%&%Isopeptide bond%&%Glutamine-Lysine%&%Q-K%&%PTM-0158%&%RESID; AA0124 --- PSI-MOD; 00133%
+%Isoglutamyl lysine isopeptide (Glu-Lys)%&%CROSSLNK%&%Isopeptide bond%&%Glutamate-Lysine%&%E-K%&%PTM-0397%&%RESID; AA0124 --- PSI-MOD; 01630%
+%Isoglutamyl lysine isopeptide (Lys-Gln)%&%CROSSLNK%&%Isopeptide bond%&%Lysine-Glutamine%&%K-Q%&%PTM-0159 --- PTM-0160%&%RESID; AA0124 --- PSI-MOD; 00133%
+%Isoglutamyl lysine isopeptide (Lys-Glu)%&%CROSSLNK%&%Isopeptide bond%&%Lysine-Glutamate%&%K-E%&%PTM-0398%&%RESID; AA0124 --- PSI-MOD; 01630%
+%Isoleucine amide%&%MOD_RES%&%Amidation%&%Isoleucine%&%I%&%PTM-0161%&%RESID; AA0090 --- PSI-MOD; 00099%
+%Isoleucine derivative%&%MOD_RES%&%null%&%Isoleucine%&%I%&%PTM-0162%&%PSI-MOD; 00910%
+%L-allo-isoleucine%&%MOD_RES%&%null%&%Isoleucine%&%I%&%PTM-0442%&%RESID; AA0546 --- PSI-MOD; 01840%
+%Lactic acid%&%MOD_RES%&%null%&%Serine%&%S%&%PTM-0163%&%RESID; AA0186 --- PSI-MOD; 00194%
+%Lanthionine (Cys-Ser)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Serine%&%C-S%&%PTM-0164%&%RESID; AA0110 --- PSI-MOD; 00120%
+%Lanthionine (Ser-Cys)%&%CROSSLNK%&%Thioether bond%&%Serine-Cysteine%&%S-C%&%PTM-0165%&%RESID; AA0110 --- PSI-MOD; 00120%
+%Leucine amide%&%MOD_RES%&%Amidation%&%Leucine%&%L%&%PTM-0166%&%RESID; AA0091 --- PSI-MOD; 00100%
+%Leucine methyl ester%&%MOD_RES%&%Methylation%&%Leucine%&%L%&%PTM-0167%&%RESID; AA0299 --- PSI-MOD; 00304%
+%Lysine amide%&%MOD_RES%&%Amidation%&%Lysine%&%K%&%PTM-0168%&%RESID; AA0092 --- PSI-MOD; 00101%
+%Lysine derivative%&%MOD_RES%&%null%&%Lysine%&%K%&%PTM-0169%&%PSI-MOD; 00912%
+%Lysine methyl ester%&%MOD_RES%&%Methylation%&%Lysine%&%K%&%PTM-0170%&%RESID; AA0318 --- PSI-MOD; 00323%
+%Lysine tyrosylquinone (Lys-Tyr)%&%CROSSLNK%&%LTQ%&%Lysine-Tyrosine%&%K-Y%&%PTM-0171%&%RESID; AA0233 --- PSI-MOD; 00238%
+%Lysine tyrosylquinone (Tyr-Lys)%&%CROSSLNK%&%LTQ%&%Tyrosine-Lysine%&%Y-K%&%PTM-0323%&%RESID; AA0233 --- PSI-MOD; 00238%
+%Lysino-D-alanine (Lys)%&%MOD_RES%&%null%&%Lysine%&%K%&%PTM-0439%&%RESID; AA0123 --- PSI-MOD; 01838%
+%Lysinoalanine (Ser-Lys)%&%CROSSLNK%&%null%&%Serine-Lysine%&%S-K%&%PTM-0172%&%RESID; AA0123 --- PSI-MOD; 00132%
+%Methionine (R)-sulfoxide%&%MOD_RES%&%Oxidation%&%Methionine%&%M%&%PTM-0480%&%RESID; AA0581 --- PSI-MOD; 00720%
+%Methionine (S)-sulfoxide%&%MOD_RES%&%Oxidation%&%Methionine%&%M%&%PTM-0481%&%PSI-MOD; 00721%
+%Methionine amide%&%MOD_RES%&%Amidation%&%Methionine%&%M%&%PTM-0173%&%RESID; AA0093 --- PSI-MOD; 00102%
+%Methionine derivative%&%MOD_RES%&%null%&%Methionine%&%M%&%PTM-0174%&%PSI-MOD; 00913%
+%Methionine sulfone%&%MOD_RES%&%Oxidation%&%Methionine%&%M%&%PTM-0175%&%RESID; AA0251 --- PSI-MOD; 00256%
+%Methionine sulfoxide%&%MOD_RES%&%Oxidation%&%Methionine%&%M%&%PTM-0469%&%PSI-MOD; 00719%
+%Methylhistidine%&%MOD_RES%&%Methylation%&%Histidine%&%H%&%PTM-0176%&%PSI-MOD; 00661%
+%N,N,N-trimethylalanine%&%MOD_RES%&%Methylation%&%Alanine%&%A%&%PTM-0177%&%RESID; AA0062 --- PSI-MOD; 00071%
+%N,N,N-trimethylglycine%&%MOD_RES%&%Methylation%&%Glycine%&%G%&%PTM-0485%&%RESID; AA0619 --- PSI-MOD; 01982%
+%N,N,N-trimethylserine%&%MOD_RES%&%Methylation%&%Serine%&%S%&%PTM-0430%&%RESID; AA0535 --- PSI-MOD; 01784%
+%N,N-(cysteine-1,S-diyl)phenylalanine (Cys-Phe)%&%CROSSLNK%&%null%&%Cysteine-Phenylalanine%&%C-F%&%PTM-0451%&%RESID; AA0562 --- PSI-MOD; 01859%
+%N,N-(cysteine-1,S-diyl)serine (Cys-Ser)%&%CROSSLNK%&%null%&%Cysteine-Serine%&%C-S%&%PTM-0037%&%RESID; AA0344 --- PSI-MOD; 00349%
+%N,N-dimethylalanine%&%MOD_RES%&%Methylation%&%Alanine%&%A%&%PTM-0178%&%RESID; AA0433 --- PSI-MOD; 01179%
+%N,N-dimethylglycine%&%MOD_RES%&%Methylation%&%Glycine%&%G%&%PTM-0484%&%RESID; AA0620 --- PSI-MOD; 01983%
+%N,N-dimethylleucine%&%MOD_RES%&%Methylation%&%Leucine%&%L%&%PTM-0435%&%RESID; AA0538 --- PSI-MOD; 01806%
+%N,N-dimethylproline%&%MOD_RES%&%Methylation%&%Proline%&%P%&%PTM-0179%&%RESID; AA0066 --- PSI-MOD; 00075%
+%N,N-dimethylserine%&%MOD_RES%&%Methylation%&%Serine%&%S%&%PTM-0431%&%RESID; AA0534 --- PSI-MOD; 01783%
+%N-(12-oxomyristoyl)cysteine%&%LIPID%&%Myristate%&%Cysteine%&%C%&%PTM-0420%&%RESID; AA0517 --- PSI-MOD; 01691%
+%N-acetylalanine%&%MOD_RES%&%Acetylation%&%Alanine%&%A%&%PTM-0199%&%RESID; AA0041 --- PSI-MOD; 00050%
+%N-acetylaspartate%&%MOD_RES%&%Acetylation%&%Aspartate%&%D%&%PTM-0200%&%RESID; AA0042 --- PSI-MOD; 00051%
+%N-acetylated lysine%&%MOD_RES%&%Acetylation%&%Lysine%&%K%&%PTM-0482%&%PSI-MOD; 00723%
+%N-acetylcysteine%&%MOD_RES%&%Acetylation%&%Cysteine%&%C%&%PTM-0201%&%RESID; AA0043 --- PSI-MOD; 00052%
+%N-acetylglutamate%&%MOD_RES%&%Acetylation%&%Glutamate%&%E%&%PTM-0202%&%RESID; AA0044 --- PSI-MOD; 00053%
+%N-acetylglycine%&%MOD_RES%&%Acetylation%&%Glycine%&%G%&%PTM-0203%&%RESID; AA0046 --- PSI-MOD; 00055%
+%N-acetylisoleucine%&%MOD_RES%&%Acetylation%&%Isoleucine%&%I%&%PTM-0204%&%RESID; AA0047 --- PSI-MOD; 00056%
+%N-acetylmethionine%&%MOD_RES%&%Acetylation%&%Methionine%&%M%&%PTM-0205%&%RESID; AA0049 --- PSI-MOD; 00058%
+%N-acetylproline%&%MOD_RES%&%Acetylation%&%Proline%&%P%&%PTM-0206%&%RESID; AA0050 --- PSI-MOD; 00059%
+%N-acetylserine%&%MOD_RES%&%Acetylation%&%Serine%&%S%&%PTM-0207%&%RESID; AA0051 --- PSI-MOD; 00060%
+%N-acetylthreonine%&%MOD_RES%&%Acetylation%&%Threonine%&%T%&%PTM-0208%&%RESID; AA0052 --- PSI-MOD; 00061%
+%N-acetyltyrosine%&%MOD_RES%&%Acetylation%&%Tyrosine%&%Y%&%PTM-0209%&%RESID; AA0053 --- PSI-MOD; 00062%
+%N-acetylvaline%&%MOD_RES%&%Acetylation%&%Valine%&%V%&%PTM-0210%&%RESID; AA0054 --- PSI-MOD; 00063%
+%N-carbamoylalanine%&%MOD_RES%&%null%&%Alanine%&%A%&%PTM-0374%&%RESID; AA0343 --- PSI-MOD; 00348%
+%N-D-glucuronoyl glycine%&%MOD_RES%&%Glycoprotein%&%Glycine%&%G%&%PTM-0331%&%RESID; AA0058 --- PSI-MOD; 00067%
+%N-formylglycine%&%MOD_RES%&%Formylation%&%Glycine%&%G%&%PTM-0211%&%RESID; AA0057 --- PSI-MOD; 00066%
+%N-formylmethionine%&%MOD_RES%&%Formylation%&%Methionine%&%M%&%PTM-0212%&%RESID; AA0021 --- PSI-MOD; 00030%
+%N-methylalanine%&%MOD_RES%&%Methylation%&%Alanine%&%A%&%PTM-0214%&%RESID; AA0061 --- PSI-MOD; 00070%
+%N-methylglycine%&%MOD_RES%&%Methylation%&%Glycine%&%G%&%PTM-0483%&%RESID; AA0063 --- PSI-MOD; 00072%
+%N-methylisoleucine%&%MOD_RES%&%Methylation%&%Isoleucine%&%I%&%PTM-0215%&%RESID; AA0336 --- PSI-MOD; 00341%
+%N-methylleucine%&%MOD_RES%&%Methylation%&%Leucine%&%L%&%PTM-0216%&%RESID; AA0337 --- PSI-MOD; 00342%
+%N-methylmethionine%&%MOD_RES%&%Methylation%&%Methionine%&%M%&%PTM-0217%&%RESID; AA0064 --- PSI-MOD; 00073%
+%N-methylphenylalanine%&%MOD_RES%&%Methylation%&%Phenylalanine%&%F%&%PTM-0218%&%RESID; AA0065 --- PSI-MOD; 00074%
+%N-methylproline%&%MOD_RES%&%Methylation%&%Proline%&%P%&%PTM-0219%&%RESID; AA0419 --- PSI-MOD; 00830%
+%N-methylserine%&%MOD_RES%&%Methylation%&%Serine%&%S%&%PTM-0432%&%RESID; AA0533 --- PSI-MOD; 01782%
+%N-methyltyrosine%&%MOD_RES%&%Methylation%&%Tyrosine%&%Y%&%PTM-0220%&%RESID; AA0338 --- PSI-MOD; 00343%
+%N-myristoyl glycine%&%LIPID%&%Myristate%&%Glycine%&%G%&%PTM-0221%&%RESID; AA0059 --- PSI-MOD; 00068%
+%N-palmitoyl cysteine%&%LIPID%&%Palmitate%&%Cysteine%&%C%&%PTM-0222%&%RESID; AA0060 --- PSI-MOD; 00069%
+%N-palmitoyl glycine%&%LIPID%&%Palmitate%&%Glycine%&%G%&%PTM-0223%&%RESID; AA0339 --- PSI-MOD; 00344%
+%N-pyruvate 2-iminyl-cysteine%&%MOD_RES%&%Pyruvate%&%Cysteine%&%C%&%PTM-0224%&%RESID; AA0274 --- PSI-MOD; 00279%
+%N-pyruvate 2-iminyl-valine%&%MOD_RES%&%Pyruvate%&%Valine%&%V%&%PTM-0225%&%RESID; AA0275 --- PSI-MOD; 00280%
+%N-[(12R)-12-hydroxymyristoyl]cysteine%&%LIPID%&%Myristate%&%Cysteine%&%C%&%PTM-0419%&%RESID; AA0516 --- PSI-MOD; 01690%
+%N2,N2-dimethylarginine%&%MOD_RES%&%Methylation%&%Arginine%&%R%&%PTM-0459%&%RESID; AA0569 --- PSI-MOD; 01898%
+%N2-acetylarginine%&%MOD_RES%&%Acetylation%&%Arginine%&%R%&%PTM-0180%&%RESID; AA0354 --- PSI-MOD; 00359%
+%N2-succinyltryptophan%&%MOD_RES%&%null%&%Tryptophan%&%W%&%PTM-0181%&%RESID; AA0130 --- PSI-MOD; 00139%
+%N4,N4-dimethylasparagine%&%MOD_RES%&%Methylation%&%Asparagine%&%N%&%PTM-0182%&%RESID; AA0311 --- PSI-MOD; 00316%
+%N4-methylasparagine%&%MOD_RES%&%Methylation%&%Asparagine%&%N%&%PTM-0183%&%RESID; AA0070 --- PSI-MOD; 00079%
+%N5-methylarginine%&%MOD_RES%&%Methylation%&%Arginine%&%R%&%PTM-0184%&%RESID; AA0305 --- PSI-MOD; 00310%
+%N5-methylglutamine%&%MOD_RES%&%Methylation%&%Glutamine%&%Q%&%PTM-0185%&%RESID; AA0071 --- PSI-MOD; 00080%
+%N6,N6,N6-trimethyl-5-hydroxylysine%&%MOD_RES%&%Hydroxylation; Methylation%&%Lysine%&%K%&%PTM-0186%&%RESID; AA0359 --- PSI-MOD; 00364%
+%N6,N6,N6-trimethyllysine%&%MOD_RES%&%Methylation%&%Lysine%&%K%&%PTM-0187%&%RESID; AA0074 --- PSI-MOD; 00083%
+%N6,N6-dimethyllysine%&%MOD_RES%&%Methylation%&%Lysine%&%K%&%PTM-0188%&%RESID; AA0075 --- PSI-MOD; 00084%
+%N6-(3,6-diaminohexanoyl)-5-hydroxylysine%&%MOD_RES%&%Hydroxylation%&%Lysine%&%K%&%PTM-0474%&%PSI-MOD; 01780%
+%N6-(ADP-ribosyl)lysine%&%MOD_RES%&%ADP-ribosylation%&%Lysine%&%K%&%PTM-0355%&%RESID; AA0476 --- PSI-MOD; 01399%
+%N6-(pyridoxal phosphate)lysine%&%MOD_RES%&%Pyridoxal phosphate%&%Lysine%&%K%&%PTM-0387%&%RESID; AA0119 --- PSI-MOD; 00128%
+%N6-(retinylidene)lysine%&%MOD_RES%&%Retinal protein%&%Lysine%&%K%&%PTM-0388%&%RESID; AA0120 --- PSI-MOD; 00129%
+%N6-1-carboxyethyl lysine%&%MOD_RES%&%null%&%Lysine%&%K%&%PTM-0189%&%RESID; AA0115 --- PSI-MOD; 00124%
+%N6-acetyllysine%&%MOD_RES%&%Acetylation%&%Lysine%&%K%&%PTM-0190%&%RESID; AA0055 --- PSI-MOD; 00064%
+%N6-biotinyllysine%&%MOD_RES%&%Biotin%&%Lysine%&%K%&%PTM-0382%&%RESID; AA0117 --- PSI-MOD; 00126%
+%N6-carboxylysine%&%MOD_RES%&%null%&%Lysine%&%K%&%PTM-0191%&%RESID; AA0114 --- PSI-MOD; 00123%
+%N6-crotonyl-L-lysine%&%MOD_RES%&%null%&%Lysine%&%K%&%PTM-0475%&%RESID; AA0567 --- PSI-MOD; 01892%
+%N6-formyllysine%&%MOD_RES%&%Formylation%&%Lysine%&%K%&%PTM-0192%&%RESID; AA0211 --- PSI-MOD; 00216%
+%N6-lipoyllysine%&%MOD_RES%&%Lipoyl%&%Lysine%&%K%&%PTM-0383%&%RESID; AA0118 --- PSI-MOD; 00127%
+%N6-malonyllysine%&%MOD_RES%&%null%&%Lysine%&%K%&%PTM-0467%&%RESID; AA0568 --- PSI-MOD; 01893%
+%N6-methylated lysine%&%MOD_RES%&%Methylation%&%Lysine%&%K%&%PTM-0193%&%PSI-MOD; 00663%
+%N6-methyllysine%&%MOD_RES%&%Methylation%&%Lysine%&%K%&%PTM-0194%&%RESID; AA0076 --- PSI-MOD; 00085%
+%N6-murein peptidoglycan lysine%&%MOD_RES%&%Peptidoglycan-anchor%&%Lysine%&%K%&%PTM-0195%&%RESID; AA0218 --- PSI-MOD; 00223%
+%N6-myristoyl lysine%&%LIPID%&%Myristate%&%Lysine%&%K%&%PTM-0196%&%RESID; AA0078 --- PSI-MOD; 00087%
+%N6-palmitoyl lysine%&%LIPID%&%Palmitate%&%Lysine%&%K%&%PTM-0197%&%RESID; AA0077 --- PSI-MOD; 00086%
+%N6-poly(methylaminopropyl)lysine%&%MOD_RES%&%Methylation%&%Lysine%&%K%&%PTM-0198%&%RESID; AA0278 --- PSI-MOD; 00283%
+%N6-succinyllysine%&%MOD_RES%&%null%&%Lysine%&%K%&%PTM-0438%&%RESID; AA0545 --- PSI-MOD; 01819%
+%Nitrated tyrosine%&%MOD_RES%&%Nitration%&%Tyrosine%&%Y%&%PTM-0213%&%PSI-MOD; 01352%
+%O-(2-aminoethylphosphoryl)serine%&%MOD_RES%&%Phosphoprotein%&%Serine%&%S%&%PTM-0399%&%RESID; AA0497 --- PSI-MOD; 01587%
+%O-(2-cholinephosphoryl)serine%&%MOD_RES%&%Phosphoprotein%&%Serine%&%S%&%PTM-0400%&%RESID; AA0498 --- PSI-MOD; 01588%
+%O-(5'-phospho-DNA)-serine%&%MOD_RES%&%Covalent protein-DNA linkage; Phosphoprotein%&%Serine%&%S%&%PTM-0226%&%RESID; AA0246 --- PSI-MOD; 00251%
+%O-(5'-phospho-DNA)-tyrosine%&%MOD_RES%&%Covalent protein-DNA linkage; Phosphoprotein%&%Tyrosine%&%Y%&%PTM-0228%&%RESID; AA0254 --- PSI-MOD; 00259%
+%O-(5'-phospho-RNA)-serine%&%MOD_RES%&%Covalent protein-RNA linkage; Phosphoprotein%&%Serine%&%S%&%PTM-0227%&%RESID; AA0213 --- PSI-MOD; 00218%
+%O-(5'-phospho-RNA)-tyrosine%&%MOD_RES%&%Covalent protein-RNA linkage; Phosphoprotein%&%Tyrosine%&%Y%&%PTM-0229%&%RESID; AA0249 --- PSI-MOD; 00254%
+%O-(pantetheine 4'-phosphoryl)serine%&%MOD_RES%&%Phosphopantetheine; Phosphoprotein%&%Serine%&%S%&%PTM-0391%&%RESID; AA0150 --- PSI-MOD; 00159%
+%O-(phosphoribosyl dephospho-coenzyme A)serine%&%MOD_RES%&%Phosphoprotein%&%Serine%&%S%&%PTM-0389%&%RESID; AA0167 --- PSI-MOD; 00176%
+%O-(sn-1-glycerophosphoryl)serine%&%MOD_RES%&%Phosphoprotein%&%Serine%&%S%&%PTM-0230%&%RESID; AA0264 --- PSI-MOD; 00269%
+%O-8alpha-FAD tyrosine%&%MOD_RES%&%FAD%&%Tyrosine%&%Y%&%PTM-0231%&%RESID; AA0145 --- PSI-MOD; 00154%
+%O-acetylserine%&%MOD_RES%&%Acetylation%&%Serine%&%S%&%PTM-0232%&%RESID; AA0364 --- PSI-MOD; 00369%
+%O-acetylthreonine%&%MOD_RES%&%Acetylation%&%Threonine%&%T%&%PTM-0233%&%RESID; AA0423 --- PSI-MOD; 01171%
+%O-AMP-threonine%&%MOD_RES%&%Nucleotide-binding%&%Threonine%&%T%&%PTM-0393%&%RESID; AA0267 --- PSI-MOD; 00272%
+%O-AMP-tyrosine%&%MOD_RES%&%Nucleotide-binding%&%Tyrosine%&%Y%&%PTM-0332%&%RESID; AA0203 --- PSI-MOD; 00208%
+%O-decanoyl serine%&%LIPID%&%Lipoprotein%&%Serine%&%S%&%PTM-0234%&%RESID; AA0385 --- PSI-MOD; 00390%
+%O-decanoyl threonine%&%LIPID%&%Lipoprotein%&%Threonine%&%T%&%PTM-0235%&%RESID; AA0387 --- PSI-MOD; 00392%
+%O-methylthreonine%&%MOD_RES%&%Methylation%&%Threonine%&%T%&%PTM-0356%&%RESID; AA0464 --- PSI-MOD; 01387%
+%O-octanoyl serine%&%LIPID%&%Lipoprotein%&%Serine%&%S%&%PTM-0239%&%RESID; AA0290 --- PSI-MOD; 00295%
+%O-octanoyl threonine%&%LIPID%&%Lipoprotein%&%Threonine%&%T%&%PTM-0240%&%RESID; AA0386 --- PSI-MOD; 00391%
+%O-palmitoyl serine%&%LIPID%&%Palmitate%&%Serine%&%S%&%PTM-0241%&%RESID; AA0080 --- PSI-MOD; 00089%
+%O-palmitoyl threonine%&%LIPID%&%Palmitate%&%Threonine%&%T%&%PTM-0242%&%RESID; AA0079 --- PSI-MOD; 00088%
+%O-UMP-tyrosine%&%MOD_RES%&%Nucleotide-binding%&%Tyrosine%&%Y%&%PTM-0333%&%RESID; AA0256 --- PSI-MOD; 00261%
+%Omega-hydroxyceramide glutamate ester%&%LIPID%&%Lipoprotein%&%Glutamine%&%Q%&%PTM-0236%&%RESID; AA0347 --- PSI-MOD; 00352%
+%Omega-N-methylarginine%&%MOD_RES%&%Methylation%&%Arginine%&%R%&%PTM-0237%&%RESID; AA0069 --- PSI-MOD; 00078%
+%Omega-N-methylated arginine%&%MOD_RES%&%Methylation%&%Arginine%&%R%&%PTM-0238%&%PSI-MOD; 00658%
+%Oxazole-4-carboxylic acid (Cys-Ser)%&%CROSSLNK%&%null%&%Cysteine-Serine%&%C-S%&%PTM-0376%&%RESID; AA0238 --- PSI-MOD; 00243%
+%Oxazole-4-carboxylic acid (Gly-Ser)%&%CROSSLNK%&%null%&%Glycine-Serine%&%G-S%&%PTM-0377%&%RESID; AA0240 --- PSI-MOD; 00245%
+%Oxazole-4-carboxylic acid (Ile-Ser)%&%CROSSLNK%&%null%&%Isoleucine-Serine%&%I-S%&%PTM-0463%&%RESID; AA0573 --- PSI-MOD; 01902%
+%Oxazole-4-carboxylic acid (Ser-Ser)%&%CROSSLNK%&%null%&%Serine-Serine%&%S-S%&%PTM-0464%&%RESID; AA0574 --- PSI-MOD; 01903%
+%Oxazoline-4-carboxylic acid (Cys-Ser)%&%CROSSLNK%&%null%&%Cysteine-Serine%&%C-S%&%PTM-0381%&%RESID; AA0239 --- PSI-MOD; 00244%
+%Pentaglycyl murein peptidoglycan amidated alanine%&%MOD_RES%&%Peptidoglycan-anchor%&%Alanine%&%A%&%PTM-0245%&%RESID; AA0383 --- PSI-MOD; 00388%
+%Pentaglycyl murein peptidoglycan amidated threonine%&%MOD_RES%&%Peptidoglycan-anchor%&%Threonine%&%T%&%PTM-0246%&%RESID; AA0345 --- PSI-MOD; 00350%
+%Peptide (Met-Gly)%&%CROSSLNK%&%null%&%Methionine-Glycine%&%M-G%&%PTM-0247%&%null%
+%Phenylalanine amide%&%MOD_RES%&%Amidation%&%Phenylalanine%&%F%&%PTM-0248%&%RESID; AA0094 --- PSI-MOD; 00103%
+%Phosphatidylethanolamine amidated glycine%&%LIPID%&%Lipoprotein%&%Glycine%&%G%&%PTM-0249%&%RESID; AA0346 --- PSI-MOD; 00351%
+%Phosphoarginine%&%MOD_RES%&%Phosphoprotein%&%Arginine%&%R%&%PTM-0250%&%RESID; AA0222 --- PSI-MOD; 00227%
+%Phosphocysteine%&%MOD_RES%&%Phosphoprotein%&%Cysteine%&%C%&%PTM-0251%&%RESID; AA0034 --- PSI-MOD; 00043%
+%Phosphohistidine%&%MOD_RES%&%Phosphoprotein%&%Histidine%&%H%&%PTM-0252%&%PSI-MOD; 00890%
+%Phosphoserine%&%MOD_RES%&%Phosphoprotein%&%Serine%&%S%&%PTM-0253%&%RESID; AA0037 --- PSI-MOD; 00046%
+%Phosphothreonine%&%MOD_RES%&%Phosphoprotein%&%Threonine%&%T%&%PTM-0254%&%RESID; AA0038 --- PSI-MOD; 00047%
+%Phosphotyrosine%&%MOD_RES%&%Phosphoprotein%&%Tyrosine%&%Y%&%PTM-0255%&%RESID; AA0039 --- PSI-MOD; 00048%
+%PolyADP-ribosyl glutamic acid%&%MOD_RES%&%ADP-ribosylation%&%Glutamate%&%E%&%PTM-0256%&%RESID; AA0295 --- PSI-MOD; 00300%
+%Proline 5-hydroxy-oxazole-4-carbothionic acid (Pro-Cys)%&%CROSSLNK%&%null%&%Proline-Cysteine%&%P-C%&%PTM-0449%&%RESID; AA0551 --- PSI-MOD; 01845%
+%Proline amide%&%MOD_RES%&%Amidation%&%Proline%&%P%&%PTM-0257%&%RESID; AA0095 --- PSI-MOD; 00104%
+%Pros-8alpha-FAD histidine%&%MOD_RES%&%FAD%&%Histidine%&%H%&%PTM-0258%&%RESID; AA0144 --- PSI-MOD; 00153%
+%Pros-methylhistidine%&%MOD_RES%&%Methylation%&%Histidine%&%H%&%PTM-0259%&%RESID; AA0073 --- PSI-MOD; 00082%
+%Pros-phosphohistidine%&%MOD_RES%&%Phosphoprotein%&%Histidine%&%H%&%PTM-0260%&%RESID; AA0036 --- PSI-MOD; 00045%
+%Pyridine-2,5-dicarboxylic acid (Ser-Cys)%&%CROSSLNK%&%null%&%Serine-Cysteine-Serine%&%S-C-S%&%PTM-0357%&%RESID; AA0470 --- PSI-MOD; 01393%
+%Pyridine-2,5-dicarboxylic acid (Ser-Ser)%&%CROSSLNK%&%null%&%Serine-Serine-Cysteine%&%S-S-C%&%PTM-0358%&%RESID; AA0470 --- PSI-MOD; 01393%
+%Pyrrolidone carboxylic acid%&%MOD_RES%&%Pyrrolidone carboxylic acid%&%Glutamine%&%Q%&%PTM-0261%&%RESID; AA0031 --- PSI-MOD; 00040%
+%Pyrrolidone carboxylic acid (Glu)%&%MOD_RES%&%Pyrrolidone carboxylic acid%&%Glutamate%&%E%&%PTM-0262%&%RESID; AA0031 --- PSI-MOD; 00420%
+%Pyrroloquinoline quinone (Glu-Tyr)%&%CROSSLNK%&%null%&%Glutamate-Tyrosine%&%E-Y%&%PTM-0263%&%RESID; AA0283 --- PSI-MOD; 00288%
+%Pyruvic acid (Cys)%&%MOD_RES%&%Pyruvate%&%Cysteine%&%C%&%PTM-0265%&%RESID; AA0127 --- PSI-MOD; 00136%
+%Pyruvic acid (Ser)%&%MOD_RES%&%Pyruvate%&%Serine%&%S%&%PTM-0266%&%RESID; AA0127 --- PSI-MOD; 00807%
+%S-(15-deoxy-Delta12,14-prostaglandin J2-9-yl)cysteine%&%LIPID%&%Lipoprotein%&%Cysteine%&%C%&%PTM-0447%&%RESID; AA0426 --- PSI-MOD; 01174%
+%S-(2-aminovinyl)-3-methyl-D-cysteine (Thr-Cys)%&%CROSSLNK%&%D-amino acid; Thioether bond%&%Threonine-Cysteine%&%T-C%&%PTM-0267%&%RESID; AA0253 --- PSI-MOD; 00258%
+%S-(2-aminovinyl)-D-cysteine (Cys-Cys)%&%CROSSLNK%&%D-amino acid; Thioether bond%&%Cysteine-Cysteine%&%C-C%&%PTM-0446%&%RESID; AA0204 --- PSI-MOD; 01849%
+%S-(2-aminovinyl)-D-cysteine (Ser-Cys)%&%CROSSLNK%&%D-amino acid; Thioether bond%&%Serine-Cysteine%&%S-C%&%PTM-0268%&%RESID; AA0204 --- PSI-MOD; 00209%
+%S-(2-aminovinyl)-L-cysteine (Cys-Cys)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Cysteine%&%C-C%&%PTM-0443%&%RESID; AA0548 --- PSI-MOD; 01842%
+%S-(4-hydroxycinnamyl)cysteine%&%MOD_RES%&%Chromophore%&%Cysteine%&%C%&%PTM-0414%&%RESID; AA0207 --- PSI-MOD; 00212%
+%S-(coelenterazin-3a-yl)cysteine%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0428%&%PSI-MOD; 01694%
+%S-(dipyrrolylmethanemethyl)cysteine%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0421%&%RESID; AA0252 --- PSI-MOD; 00257%
+%S-12-hydroxyfarnesyl cysteine%&%LIPID%&%Prenylation%&%Cysteine%&%C%&%PTM-0269%&%RESID; AA0103 --- PSI-MOD; 00112%
+%S-4a-FMN cysteine%&%MOD_RES%&%FMN%&%Cysteine%&%C%&%PTM-0270%&%RESID; AA0351 --- PSI-MOD; 00356%
+%S-6-FMN cysteine%&%MOD_RES%&%FMN%&%Cysteine%&%C%&%PTM-0271%&%RESID; AA0220 --- PSI-MOD; 00225%
+%S-8alpha-FAD cysteine%&%MOD_RES%&%FAD%&%Cysteine%&%C%&%PTM-0272%&%RESID; AA0143 --- PSI-MOD; 00152%
+%S-archaeol cysteine%&%LIPID%&%Lipoprotein%&%Cysteine%&%C%&%PTM-0273%&%RESID; AA0223 --- PSI-MOD; 00228%
+%S-bacillithiol cysteine disulfide%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0452%&%RESID; AA0563 --- PSI-MOD; 01860%
+%S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)%&%CROSSLNK%&%Disulfide bond%&%Cysteine-Cysteine%&%C-C%&%PTM-0324%&%RESID; AA0457 --- PSI-MOD; 01383%
+%S-cysteinyl cysteine%&%MOD_RES%&%null%&%Cysteine%&%C%&%PTM-0415%&%RESID; AA0025 --- PSI-MOD; 00765%
+%S-diacylglycerol cysteine%&%LIPID%&%Lipoprotein%&%Cysteine%&%C%&%PTM-0274%&%RESID; AA0107 --- PSI-MOD; 00116%
+%S-farnesyl cysteine%&%LIPID%&%Prenylation%&%Cysteine%&%C%&%PTM-0277%&%RESID; AA0102 --- PSI-MOD; 00111%
+%S-geranylgeranyl cysteine%&%LIPID%&%Prenylation%&%Cysteine%&%C%&%PTM-0278%&%RESID; AA0104 --- PSI-MOD; 00113%
+%S-glutathionyl cysteine%&%MOD_RES%&%Glutathionylation%&%Cysteine%&%C%&%PTM-0311%&%RESID; AA0229 --- PSI-MOD; 00234%
+%S-Lysyl-methionine sulfilimine (Lys-Met)%&%CROSSLNK%&%null%&%Lysine-Methionine%&%K-M%&%PTM-0402%&%RESID; AA0501 --- PSI-MOD; 01602%
+%S-Lysyl-methionine sulfilimine (Met-Lys)%&%CROSSLNK%&%null%&%Methionine-Lysine%&%M-K%&%PTM-0401%&%RESID; AA0501 --- PSI-MOD; 01602%
+%S-methylcysteine%&%MOD_RES%&%Methylation%&%Cysteine%&%C%&%PTM-0279%&%RESID; AA0234 --- PSI-MOD; 00239%
+%S-nitrosocysteine%&%MOD_RES%&%S-nitrosylation%&%Cysteine%&%C%&%PTM-0280%&%RESID; AA0230 --- PSI-MOD; 00235%
+%S-palmitoyl cysteine%&%LIPID%&%Palmitate%&%Cysteine%&%C%&%PTM-0281%&%RESID; AA0106 --- PSI-MOD; 00115%
+%S-selanylcysteine%&%MOD_RES%&%Selenium%&%Cysteine%&%C%&%PTM-0282%&%RESID; AA0277 --- PSI-MOD; 00282%
+%S-stearoyl cysteine%&%LIPID%&%Lipoprotein%&%Cysteine%&%C%&%PTM-0283%&%RESID; AA0407 --- PSI-MOD; 00816%
+%Serine amide%&%MOD_RES%&%Amidation%&%Serine%&%S%&%PTM-0275%&%RESID; AA0096 --- PSI-MOD; 00105%
+%Serine microcin E492 siderophore ester%&%MOD_RES%&%null%&%Serine%&%S%&%PTM-0276%&%RESID; AA0374 --- PSI-MOD; 00379%
+%Sulfoserine%&%MOD_RES%&%Sulfation%&%Serine%&%S%&%PTM-0284%&%RESID; AA0361 --- PSI-MOD; 00366%
+%Sulfothreonine%&%MOD_RES%&%Sulfation%&%Threonine%&%T%&%PTM-0285%&%RESID; AA0362 --- PSI-MOD; 00367%
+%Sulfotyrosine%&%MOD_RES%&%Sulfation%&%Tyrosine%&%Y%&%PTM-0286%&%RESID; AA0172 --- PSI-MOD; 00181%
+%Symmetric dimethylarginine%&%MOD_RES%&%Methylation%&%Arginine%&%R%&%PTM-0287%&%RESID; AA0067 --- PSI-MOD; 00076%
+%Tele-(1,2,3-trihydroxypropan-2-yl)histidine%&%MOD_RES%&%null%&%Histidine%&%H%&%PTM-0416%&%RESID; AA0431 --- PSI-MOD; 01177%
+%Tele-8alpha-FAD histidine%&%MOD_RES%&%FAD%&%Histidine%&%H%&%PTM-0288%&%RESID; AA0221 --- PSI-MOD; 00226%
+%Tele-8alpha-FMN histidine%&%MOD_RES%&%FMN%&%Histidine%&%H%&%PTM-0289%&%RESID; AA0352 --- PSI-MOD; 00357%
+%Tele-methylhistidine%&%MOD_RES%&%Methylation%&%Histidine%&%H%&%PTM-0290%&%RESID; AA0317 --- PSI-MOD; 00322%
+%Tele-phosphohistidine%&%MOD_RES%&%Phosphoprotein%&%Histidine%&%H%&%PTM-0325%&%RESID; AA0035 --- PSI-MOD; 00044%
+%Thiazole-4-carboxylic acid (Arg-Cys)%&%CROSSLNK%&%Thioether bond%&%Arginine-Cysteine%&%R-C%&%PTM-0460%&%RESID; AA0570 --- PSI-MOD; 01899%
+%Thiazole-4-carboxylic acid (Asn-Cys)%&%CROSSLNK%&%Thioether bond%&%Asparagine-Cysteine%&%N-C%&%PTM-0359%&%RESID; AA0481 --- PSI-MOD; 01404%
+%Thiazole-4-carboxylic acid (Cys-Cys)%&%CROSSLNK%&%Thioether bond%&%Cysteine-Cysteine%&%C-C%&%PTM-0360%&%RESID; AA0244 --- PSI-MOD; 00249%
+%Thiazole-4-carboxylic acid (Glu-Cys)%&%CROSSLNK%&%Thioether bond%&%Glutamate-Cysteine%&%E-C%&%PTM-0456%&%RESID; AA0541 --- PSI-MOD; 01815%
+%Thiazole-4-carboxylic acid (Gly-Cys)%&%CROSSLNK%&%Thioether bond%&%Glycine-Cysteine%&%G-C%&%PTM-0378%&%RESID; AA0241 --- PSI-MOD; 00246%
+%Thiazole-4-carboxylic acid (Ile-Cys)%&%CROSSLNK%&%Thioether bond%&%Isoleucine-Cysteine%&%I-C%&%PTM-0361%&%RESID; AA0466 --- PSI-MOD; 01389%
+%Thiazole-4-carboxylic acid (Phe-Cys)%&%CROSSLNK%&%Thioether bond%&%Phenylalanine-Cysteine%&%F-C%&%PTM-0375%&%RESID; AA0243 --- PSI-MOD; 00248%
+%Thiazole-4-carboxylic acid (Pro-Cys)%&%CROSSLNK%&%Thioether bond%&%Proline-Cysteine%&%P-C%&%PTM-0362%&%RESID; AA0282 --- PSI-MOD; 00287%
+%Thiazole-4-carboxylic acid (Ser-Cys)%&%CROSSLNK%&%Thioether bond%&%Serine-Cysteine%&%S-C%&%PTM-0363%&%RESID; AA0242 --- PSI-MOD; 00247%
+%Thiazole-4-carboxylic acid (Thr-Cys)%&%CROSSLNK%&%Thioether bond%&%Threonine-Cysteine%&%T-C%&%PTM-0364%&%RESID; AA0283 --- PSI-MOD; 00288%
+%Thiazole-4-carboxylic acid (Val-Cys)%&%CROSSLNK%&%Thioether bond%&%Valine-Cysteine%&%V-C%&%PTM-0365%&%RESID; AA0467 --- PSI-MOD; 01390%
+%Thiazoline-4-carboxylic acid (Phe-Cys)%&%CROSSLNK%&%Thioether bond%&%Phenylalanine-Cysteine%&%F-C%&%PTM-0366%&%RESID; AA0484 --- PSI-MOD; 01407%
+%Threonine 5-hydroxy-oxazole-4-carbonthionic acid (Thr-Cys)%&%CROSSLNK%&%null%&%Threonine-Cysteine%&%T-C%&%PTM-0458%&%RESID; AA0554 --- PSI-MOD; 01878%
+%Threonine amide%&%MOD_RES%&%Amidation%&%Threonine%&%T%&%PTM-0293%&%RESID; AA0097 --- PSI-MOD; 00106%
+%Threonine methyl ester%&%MOD_RES%&%Methylation%&%Threonine%&%T%&%PTM-0412%&%RESID; AA0507 --- PSI-MOD; 01610%
+%Threonyl lysine isopeptide (Lys-Thr)%&%CROSSLNK%&%Isopeptide bond%&%Lysine-Threonine%&%K-T%&%PTM-0326%&%RESID; AA0440 --- PSI-MOD; 00924%
+%Threonyl lysine isopeptide (Thr-Lys)%&%CROSSLNK%&%Isopeptide bond%&%Threonine-Lysine%&%T-K%&%PTM-0327%&%RESID; AA0440 --- PSI-MOD; 00924%
+%Thyroxine%&%MOD_RES%&%Iodination%&%Tyrosine%&%Y%&%PTM-0294%&%RESID; AA0178 --- PSI-MOD; 00187%
+%Triiodothyronine%&%MOD_RES%&%Iodination%&%Tyrosine%&%Y%&%PTM-0295%&%RESID; AA0177 --- PSI-MOD; 00186%
+%Trithiocysteine (Cys-Cys)%&%CROSSLNK%&%null%&%Cysteine-Cysteine%&%C-C%&%PTM-0417%&%RESID; AA0513 --- PSI-MOD; 01616%
+%Tryptophan amide%&%MOD_RES%&%Amidation%&%Tryptophan%&%W%&%PTM-0296%&%RESID; AA0098 --- PSI-MOD; 00107%
+%Tryptophan derivative%&%MOD_RES%&%null%&%Tryptophan%&%W%&%PTM-0297%&%PSI-MOD; 00918%
+%Tryptophan tryptophylquinone (Trp-Trp)%&%CROSSLNK%&%TTQ%&%Tryptophan-Tryptophan%&%W-W%&%PTM-0298%&%RESID; AA0149 --- PSI-MOD; 00158%
+%Tryptophyl-tyrosyl-methioninium (Trp-Tyr)%&%CROSSLNK%&%null%&%Tryptophan-Tyrosine-Methionine%&%W-Y-M%&%PTM-0328%&%RESID; AA0348 --- PSI-MOD; 00353%
+%Tryptophyl-tyrosyl-methioninium (Tyr-Met)%&%CROSSLNK%&%null%&%Tyrosine-Methionine-Tryptophan%&%Y-M-W%&%PTM-0329%&%RESID; AA0348 --- PSI-MOD; 00353%
+%Tryptophylquinone%&%MOD_RES%&%null%&%Tryptophan%&%W%&%PTM-0299%&%RESID; AA0148 --- PSI-MOD; 00157%
+%Tyrosine amide%&%MOD_RES%&%Amidation%&%Tyrosine%&%Y%&%PTM-0302%&%RESID; AA0099 --- PSI-MOD; 00108%
+%Valine amide%&%MOD_RES%&%Amidation%&%Valine%&%V%&%PTM-0303%&%RESID; AA0100 --- PSI-MOD; 00109%
