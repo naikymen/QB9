@@ -44,11 +44,11 @@ for nombre in aas:
             + " OR TG LIKE '" + nombre + "-%'"
             + " OR TG LIKE '%-" + nombre + "-%'"
             + " OR TG LIKE '%-" + nombre + "')")
-
+    """
     variable tg=
     vars(
 
-    )
+    )"""
     print("INSERT INTO dist_aa (nombre, ID, TG) VALUES ("
             + "'" + nombre + "',"
             + " (SELECT ID, TG FROM ptm_table WHERE"

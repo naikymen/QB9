@@ -1,0 +1,25 @@
+R;Arg;Arginine
+N;Asn;Asparagine
+D;Asp;Aspartate
+H;His;Histidine
+P;Pro;Proline
+I;Ile;Isoleucine
+L;Leu;Leucine
+Y;Tyr;Tyrosine
+T;Thr;Threonine
+G;Gly;Glycine
+C;Cys;Cysteine
+S;Ser;Serine
+Q;Gln;Glutamine
+W;Trp;Tryptophan
+F;Phe;Phenylalanine
+V;Val;Valine
+K;Lys;Lysine
+E;Glu;Glutamate
+A;Ala;Alanine
+M;Met;Methionine
+X;Xaa;Undefined
+Z;Glx;Glutamine or Glutamate
+B;Asx;Asparagine or Aspartate
+U;Sec;Selenocysteine
+O;Pyl;Pyrrolysine

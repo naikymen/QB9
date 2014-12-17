@@ -61,7 +61,7 @@ prot_dic = OrderedDict((k, 0) for k in abc)
 ptmrecords = ["MOD_RES", "LIPID", "CARBOHYD", "DISULFID", "CROSSLNK"]
 # Non-experimental qualifiers for feature annotations
 neqs = ["Probable", "Potential", "By similarity"]  # Y "Experimental"
-# Las categorías están en un diccionario con su type de mysql todo optimizar los campos
+# Las categorías están en un diccionario con su type de mysql todo volar
 categories = OrderedDict()
 categories['AC'] = "varchar(30) NOT NULL"  # accesion number
 categories['FT'] = "varchar(30) NOT NULL"
