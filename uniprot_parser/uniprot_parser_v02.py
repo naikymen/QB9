@@ -254,8 +254,8 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                 listar.append(str(r).replace("'", "''"))
             sql_insert_values_r = '\'' + '\', \''.join(listar) + '\''
             if i >= desde:  # para hacerlo en partes
-                print(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                             % sql_insert_values_r).replace("\"", '').replace('.', ''))
+                #print(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
+                #             % sql_insert_values_r).replace("\"", '').replace('.', ''))
                 # print("commit;")
                 # con.commit()
 
