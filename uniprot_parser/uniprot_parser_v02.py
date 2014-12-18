@@ -66,7 +66,7 @@ empty_data['FROM_AA'] = '?'
 empty_data['TO_AA'] = '?'
 data = empty_data.copy()  # este es el diccionario de registros vacío que voy a usar
 
-cur.execute("DROP TABLE " + tabla_ptms + ";")
+# cur.execute("DROP TABLE " + tabla_ptms + ";")
 
 # Crear la tabla de ptms
 table_def_items = []  # lista para concatenaciones de key y valor
