@@ -140,7 +140,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             data['TO_AA'] = '?'
 
                             # Asignar FT
-                            print(type(A), type(B))
+
                             if (type(A) is str) or (type(B) is str):
                                 print(A,B)
                                 print(features)
