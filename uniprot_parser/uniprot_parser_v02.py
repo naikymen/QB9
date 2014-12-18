@@ -77,22 +77,22 @@ empty_data['TO_RES'] = '?'
 empty_data['FROM_AA'] = '?'
 empty_data['TO_AA'] = '?'
 data = empty_data.copy()  # este es el diccionario de registros vacío que voy a usar
-
+"""
 print("DROP TABLE " + tabla_cuentas + ";")
 print("DROP TABLE " + tabla_ptms + ";")
-
+"""
 # Crear la tabla de cuentas
 prot_dic_def_items = []
 prot_dic_def = OrderedDict((k, 'SMALLINT') for k in abc)
 for cat, value in prot_dic_def.items():  # concatenaciones key y valor
     prot_dic_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def = ', '.join(prot_dic_def_items)  # definicion de la tabla
-print("CREATE TABLE IF NOT EXISTS "
+"""print("CREATE TABLE IF NOT EXISTS "
             + tabla_cuentas
             + " (AC VARCHAR(30) UNIQUE, OC_ID VARCHAR(30), LENGTH MEDIUMINT,"
             + table_def
             + ") ENGINE=InnoDB;")
-print("commit;")
+print("commit;")"""
 # con.commit()
 
 # Crear la tabla de ptms
@@ -100,8 +100,8 @@ table_def_items = []  # lista para concatenaciones de key y valor
 for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def_2 = ', '.join(table_def_items)  # definicion de la tabla
-print("CREATE TABLE IF NOT EXISTS " + tabla_ptms + " (" + table_def_2 + ") ENGINE=InnoDB;")
-print("commit;")
+"""print("CREATE TABLE IF NOT EXISTS " + tabla_ptms + " (" + table_def_2 + ") ENGINE=InnoDB;")
+#print("commit;")"""
 # con.commit()
 
 # Variables del loop
@@ -145,16 +145,16 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         for q in contenido_aa.itervalues():
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
-
-        #if i >= desde:
-        #    print("INSERT INTO " + tabla_cuentas + " VALUES ('"
-        #                + record.accessions[0] + "', '"
-        #                + record.organism_classification[0] + "', "
-        #                + str(record.sequence_length)
-        #                + ", " + sql_insert_values_q + ");")
+        """
+        if i >= desde:
+            print("INSERT INTO " + tabla_cuentas + " VALUES ('"
+                        + record.accessions[0] + "', '"
+                        + record.organism_classification[0] + "', "
+                        + str(record.sequence_length)
+                        + ", " + sql_insert_values_q + ");")
             # print("commit;")
             # con.commit()
-
+        """
         # Acá empiezo con los features, hay alguno interesante?
         features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
         del out[:]
@@ -253,12 +253,13 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
             for r in data.itervalues():
                 listar.append(str(r).replace("'", "''"))
             sql_insert_values_r = '\'' + '\', \''.join(listar) + '\''
-            #if i >= desde:  # para hacerlo en partes
-                #print(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                #             % sql_insert_values_r).replace("\"", '').replace('.', ''))
-                # print("commit;")
-                # con.commit()
-
+            """
+            if i >= desde:  # para hacerlo en partes
+                print(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
+                             % sql_insert_values_r).replace("\"", '').replace('.', ''))
+                print("commit;")
+                con.commit()
+            """
         if i >= hasta:  # segun uniprot el número de entradas de secuencias es 54247468
             # print("\n")
             # print(i)
