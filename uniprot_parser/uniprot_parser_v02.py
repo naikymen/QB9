@@ -193,8 +193,14 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             sql_insert_values_p = '\'' + \
                                                   '\', \''.join(listap) + \
                                                   '\''
-
+                            """
                             if (type(A) is str) or (type(B) is str):
+                                print(A,B)
+                                print(feature)
+                                print(i)
+                                print(sql_insert_values_p + '\n')
+                            """
+                            if D != '':
                                 print(A,B)
                                 print(feature)
                                 print(i)
