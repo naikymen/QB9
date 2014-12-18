@@ -12,11 +12,11 @@ start_time = time.time()
 
 # Variables del script
 database = "ptmdb"
-tabla_cuentas = "sprot_count1"
-tabla_ptms = "sprot_ptms1"
+tabla_cuentas = "sprot_count2"
+tabla_ptms = "sprot_ptms2"
 file_name = "uniprot_sprot.dat"
 desde = 0
-hasta = 12  # Hay 542782 entradas de AC??
+hasta = 542783  # Hay 542782 entradas de AC??
 
 # Conectar a la base de datos
 con = mdb.connect('localhost', 'nicolas', passwd="nicolaslfp", db=database)
@@ -28,18 +28,6 @@ print("USE ptmdb;")
 # Abrir el .dat de uniprot
 uniprot_file = expanduser("~") + '/QB9_Files/' + file_name
 output_file = expanduser("~") + '/QB9-git/QB9/resources/output.txt'
-
-
-def count_amino_acids_ext(seq):  # Defino una  función que toma una secuencia y los cuenta
-    prot_dic2 = prot_dic.copy()
-    for aa in prot_dic2:
-        prot_dic2[aa] = seq.count(aa)
-    return prot_dic2  # y devuelve un dict ordenado con pares AA, #AA
-
-
-# Armo un diccionario con los AAs que voy a contar
-abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-prot_dic = OrderedDict((k, 0) for k in abc)
 
 # Interesting feature types
 ptmrecords = ["MOD_RES", "LIPID", "CARBOHYD", "DISULFID", "CROSSLNK"]
@@ -77,23 +65,8 @@ empty_data['TO_RES'] = '?'
 empty_data['FROM_AA'] = '?'
 empty_data['TO_AA'] = '?'
 data = empty_data.copy()  # este es el diccionario de registros vacío que voy a usar
-"""
-print("DROP TABLE " + tabla_cuentas + ";")
-print("DROP TABLE " + tabla_ptms + ";")
-"""
-# Crear la tabla de cuentas
-prot_dic_def_items = []
-prot_dic_def = OrderedDict((k, 'SMALLINT') for k in abc)
-for cat, value in prot_dic_def.items():  # concatenaciones key y valor
-    prot_dic_def_items.append(cat + ' ' + value)  # guardadaes en la lista
-table_def = ', '.join(prot_dic_def_items)  # definicion de la tabla
-"""print("CREATE TABLE IF NOT EXISTS "
-            + tabla_cuentas
-            + " (AC VARCHAR(30) UNIQUE, OC_ID VARCHAR(30), LENGTH MEDIUMINT,"
-            + table_def
-            + ") ENGINE=InnoDB;")
-print("commit;")"""
-# con.commit()
+
+cur.execute("DROP TABLE " + tabla_ptms + ";")
 
 # Crear la tabla de ptms
 table_def_items = []  # lista para concatenaciones de key y valor
@@ -114,17 +87,18 @@ listaq = []
 listar = []
 olista = []
 interes = []
+# El loop
 with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
     for record in SwissProt.parse(uniprot):  # parseando los records de uniprot
         i += 1
         if i % 1000 == 0:
             print("lero lero lerooo: " + i/1000)
         data = empty_data.copy()  # en vez de vaciar el diccionario, le asigno el dafault sin enlazarlo al vacío
+        sequence = record.sequence
         # Acá cargo los datos generales para las PTMs de una proteína/entrada de uniprot (instancias de entradas)
         # tienen que cargarse en el orden de las columnas en la ptmdb y el del insert
         data['AC'] = record.accessions[0]  # solo el principal, el resto nose.
-        # data['SQ'] = record.sequence
-        data['LENGTH'] = record.sequence_length  # todo acá hay un problema? no entran las de mas de 999 residuos
+        data['LENGTH'] = record.sequence_length  # todo acá hay un problema? no entran las de mas de 999 residuos?
         data['ORG'] = record.organism  # el bicho
         data['OC'] = record.organism_classification[0]  # el dominio del bicho
         data['OX'] = record.taxonomy_id[0]  # Id taxonomica del bicho
@@ -141,7 +115,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
 
         # Generar y guardar el insert del #AA en la secuencia
         del listaq[:]
-        contenido_aa = count_amino_acids_ext(record.sequence)  # Guardo el dict con partes AA, #AA de la secuencia
+        contenido_aa = count_amino_acids_ext(sequence)  # Guardo el dict con partes AA, #AA de la secuencia
         for q in contenido_aa.itervalues():
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
@@ -218,11 +192,11 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             else:  # pero si no lo es, guardamos cosas normalmente.
                                 # Asignar target residue
                                 if A != '?':
-                                    data['FROM_AA'] = record.sequence[int(data['FROM_RES'])-1]
+                                    data['FROM_AA'] = sequence[int(data['FROM_RES'])-1]
                                 else:
                                     data['FROM_AA'] = '?'
                                 if B != '?':
-                                    data['TO_AA'] = record.sequence[int(data['TO_RES'])-1]
+                                    data['TO_AA'] = sequence[int(data['TO_RES'])-1]
                                 else:
                                     data['TO_AA'] = '?'
 
@@ -247,19 +221,6 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                 # con.commit()
 
                             # unir los elementos de values con comas
-        else:
-            # Si, en cambio, la entrada no tiene FT insteresantes, solo cargo los datos generales y defaults
-            del listar[:]
-            for r in data.itervalues():
-                listar.append(str(r).replace("'", "''"))
-            sql_insert_values_r = '\'' + '\', \''.join(listar) + '\''
-            """
-            if i >= desde:  # para hacerlo en partes
-                print(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
-                             % sql_insert_values_r).replace("\"", '').replace('.', ''))
-                print("commit;")
-                con.commit()
-            """
         if i >= hasta:  # segun uniprot el número de entradas de secuencias es 54247468
             # print("\n")
             # print(i)
