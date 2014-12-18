@@ -121,7 +121,6 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
             out.append(features[a][0])
         interes = list(set(out).intersection(ptmrecords))  # armar un set con los interesantes y hacerlo lista interes
         if interes and i > desde:  # si interes no está vacía, entonces hay algo para cargar
-            # todo evitar duplicados de secuencia, relacion via AC?
             # ahora cargo cada PTM en data (subinstancias de entrada)
             for feature in features:  # iterar los features de la entrada
                 if feature[0] in interes:  # si el titulo del FT interesa, proseguir ¡mejora un poco! =D
@@ -193,10 +192,9 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                     else: data['TO_AA'] = B_res  # De otra forma asignar el to_aa (caso crosslnk xej)
 
                                 if ptm.find("with") != -1:  # si la ptm contiene la palabra "with" (caso crosslink)
-                                    print(ptm)
-                                    note = ptm.split(" (with")[0].split(" (int")[0]
+                                    note = ptm
                                     ptm = ptm.split(" (with")[0].split(" (int")[0]  # recortar
-                                    print(ptm + '\n')
+                                    data['NOTE'] = note
 
                             data['PTM'] = ptm
                             if D != '':
