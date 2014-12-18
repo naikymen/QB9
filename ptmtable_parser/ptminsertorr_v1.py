@@ -72,17 +72,6 @@ with open(ptmlist_file) as ptmlist:
             # output.write(str(record.items()))
             sql_insert_values = '\'' + '\', \''.join(record.itervalues()) + '\''  # unir los values con comas
             # y encerrarlos entre comillas simples
-            """
-            if "with" in sql_insert_values:
-                output.write(sql_insert_values + "\n")
-                output.write(sql_insert_values.replace("putazo", ""))
-                # todo preguntar como manejar los "..." ¿qué hace python? ¿qué hace mysql?
-                output.write(sql_insert_values + "\n\n")
-            """
-            # tgs = (((sql_insert_values.replace("'", "").replace(".", "")).split(", "))[3])
-            # tgs = tgs.split("-")
-            # output.write(("INSERT INTO ptm_table VALUES (%r);"
-            #              % sql_insert_values + '\n').replace("\"", '').replace('.', ''))
             cur.execute(("INSERT INTO sprot_ptmtable1 VALUES (%r);"
                          % sql_insert_values + '\n').replace("-...", "").replace("\"", '').replace('.', ''))
             con.commit()  # con esto logro que se graben los inserts, sino no anda... pero lo hace re lenteja!
