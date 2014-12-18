@@ -146,12 +146,12 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
             listaq.append(str(q))  # y los pongo en una lista
         sql_insert_values_q = ', '.join(listaq)
 
-        if i >= desde:
-            print("INSERT INTO " + tabla_cuentas + " VALUES ('"
-                        + record.accessions[0] + "', '"
-                        + record.organism_classification[0] + "', "
-                        + str(record.sequence_length)
-                        + ", " + sql_insert_values_q + ");")
+        #if i >= desde:
+        #    print("INSERT INTO " + tabla_cuentas + " VALUES ('"
+        #                + record.accessions[0] + "', '"
+        #                + record.organism_classification[0] + "', "
+        #                + str(record.sequence_length)
+        #                + ", " + sql_insert_values_q + ");")
             # print("commit;")
             # con.commit()
 
