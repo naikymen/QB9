@@ -74,9 +74,10 @@ table_def_items = []  # lista para concatenaciones de key y valor
 for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def_2 = ', '.join(table_def_items)  # definicion de la tabla
+"""
 cur.execute("CREATE TABLE IF NOT EXISTS " + tabla_ptms + " (" + table_def_2 + ") ENGINE=InnoDB;")
 con.commit()
-
+"""
 # Variables del loop
 i = 0
 j = 0
@@ -132,7 +133,6 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             D = feature[4]  # este aparece a veces? todo wtf?
 
                             # reiniciar FT, FROM y TO
-
                             data['FT'] = 'NOFT'
                             data['FROM_RES'] = '?'
                             data['TO_RES'] = '?'
@@ -140,10 +140,18 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             data['TO_AA'] = '?'
 
                             # Asignar FT
-
                             data['FT'] = feature[0]
+
+                            # Asignar FROM y TO_RES, preparar FROM y TO_AA
                             data['FROM_RES'] = A
+                            if type(A) is int:
+                                A_res = sequence[int(data['FROM_RES'])-1]
+                            else: A_res = '?'
+
                             data['TO_RES'] = B
+                            if type(B) is int:
+                                B_res = sequence[int(data['TO_RES'])-1]
+                            else: B_res = '?'
 
                             # reiniciar PTM, NOTE y STATUS
                             ptm = ''
@@ -176,17 +184,18 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                 data['TO_AA'] = 'C'
                             else:  # pero si no lo es, guardamos cosas normalmente.
                                 # Asignar target residue
-                                if A != '?':
-                                    data['FROM_AA'] = sequence[int(data['FROM_RES'])-1]
+                                if A == '?': data['FROM_AA'] = '?'  # Si from es desconocido, asignar ?
+                                else: data['FROM_AA'] = A_res  # de lo contrario asignar A_res
+
+                                if B == '?': data['TO_AA'] = '?'  # Si to es desconocido, asignar ?
                                 else:
-                                    data['FROM_AA'] = '?'
-                                if B != '?':
-                                    data['TO_AA'] = sequence[int(data['TO_RES'])-1]
-                                else:
-                                    data['TO_AA'] = '?'
+                                    if A == B: data['TO_AA'] = "-"  # Si en cambio to=from, poner un guion en to_aa
+                                    else: data['TO_AA'] = B_res  # De otra forma asignar el to_aa (caso crosslnk xej)
 
                                 if ptm.find("with") != -1:  # si la ptm contiene la palabra "with" (caso crosslink)
+                                    print(ptm)
                                     ptm = ptm.split(" (with")[0].split(" (int")[0]  # recortar
+                                    print(ptm + '\n')
 
                             data['PTM'] = ptm
                             if D != '':
@@ -214,10 +223,10 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             # El insert, en el que reemplazo ' por '', para escaparlas en sql
 
                             if i >= desde:  # para hacerlo en partes
-
+                                """
                                 cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
                                              % sql_insert_values_p).replace("-...", "").replace("\"", '').replace('.', ''))
-
+                                """
                                 # print("commit;")
                                 # con.commit()
 
