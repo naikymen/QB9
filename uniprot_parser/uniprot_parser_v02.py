@@ -146,7 +146,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             # reiniciar PTM, NOTE y STATUS
                             ptm = ''
                             data['PTM'] = 'NOFT'
-                            data['NOTE'] = 'sin nota'
+                            data['NOTE'] = 's/n'
                             data['STATUS'] = "Experimental"
 
                             # Asignar STATUS y PTM
