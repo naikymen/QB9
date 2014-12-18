@@ -67,7 +67,7 @@ empty_data['FROM_AA'] = '?'
 empty_data['TO_AA'] = '?'
 data = empty_data.copy()  # este es el diccionario de registros vacío que voy a usar
 
-# cur.execute("DROP TABLE " + tabla_ptms + ";")
+cur.execute("DROP TABLE " + tabla_ptms + ";")
 
 # Crear la tabla de ptms
 table_def_items = []  # lista para concatenaciones de key y valor
@@ -75,8 +75,7 @@ for cat, value in categories.items():  # concatenaciones key y valor
     table_def_items.append(cat + ' ' + value)  # guardadaes en la lista
 table_def_2 = ', '.join(table_def_items)  # definicion de la tabla
 cur.execute("CREATE TABLE IF NOT EXISTS " + tabla_ptms + " (" + table_def_2 + ") ENGINE=InnoDB;")
-#print("commit;")
-# con.commit()
+con.commit()
 
 # Variables del loop
 i = 0
@@ -232,6 +231,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
 # todo consider PE "protein existence", KW contiene "glycoprotein" qué otros?
 # todo también dentro de FT
 
+con.commit()
 print('\n')
 print(time.time() - start_time)
 
