@@ -16,7 +16,7 @@ tabla_cuentas = "sprot_count1"
 tabla_ptms = "sprot_ptms1"
 file_name = "uniprot_sprot.dat"
 desde = 0
-hasta = 542783  # Hay 542782 entradas de AC??
+hasta = 12  # Hay 542782 entradas de AC??
 
 # Conectar a la base de datos
 con = mdb.connect('localhost', 'nicolas', passwd="nicolaslfp", db=database)
@@ -147,7 +147,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         sql_insert_values_q = ', '.join(listaq)
 
         if i >= desde:
-            cur.execute("INSERT INTO " + tabla_cuentas + " VALUES ('"
+            print("INSERT INTO " + tabla_cuentas + " VALUES ('"
                         + record.accessions[0] + "', '"
                         + record.organism_classification[0] + "', "
                         + str(record.sequence_length)
@@ -218,16 +218,16 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             else:  # pero si no lo es, guardamos cosas normalmente.
                                 # Asignar target residue
                                 if A != '?':
-                                    data['FROM_AA'] = data['SQ'][int(data['FROM_RES'])-1]
+                                    data['FROM_AA'] = record.sequence[int(data['FROM_RES'])-1]
                                 else:
                                     data['FROM_AA'] = '?'
                                 if B != '?':
-                                    data['TO_AA'] = data['SQ'][int(data['TO_RES'])-1]
+                                    data['TO_AA'] = record.sequence[int(data['TO_RES'])-1]
                                 else:
                                     data['TO_AA'] = '?'
 
                                 if ptm.find("with") != -1:  # si la ptm contiene la palabra "with" (caso crosslink)
-                                    ptm = ptm.split(" (with")[0].split(" (int")[0]  # pero si la contiene, recortar
+                                    ptm = ptm.split(" (with")[0].split(" (int")[0]  # recortar
 
                             data['PTM'] = ptm
 
