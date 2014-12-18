@@ -15,8 +15,8 @@ database = "ptmdb"
 tabla_cuentas = "sprot_count2"
 tabla_ptms = "sprot_ptms2"
 file_name = "uniprot_sprot.dat"
-desde = 0
-hasta = 542783  # Hay 542782 entradas de AC??
+desde = 75
+hasta = 78  # Hay 542782 entradas de AC??
 
 # Conectar a la base de datos
 con = mdb.connect('localhost', 'nicolas', passwd="nicolaslfp", db=database)
@@ -140,6 +140,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             data['TO_AA'] = '?'
 
                             # Asignar FT
+                            print(type(A), type(B))
                             data['FT'] = feature[0]
                             data['FROM_RES'] = A
                             data['TO_RES'] = B
