@@ -39,6 +39,7 @@ categories['AC'] = "varchar(30) NOT NULL"  # accesion number
 categories['FT'] = "varchar(30) NOT NULL"
 categories['STATUS'] = "varchar(30) NOT NULL"
 categories['PTM'] = "varchar(100) NOT NULL"
+categories['NOTE'] = "varchar(100) NOT NULL"
 
 categories['FROM_RES'] = "varchar(10) NOT NULL"
 categories['TO_RES'] = "varchar(10) NOT NULL"
@@ -143,9 +144,10 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             data['FROM_RES'] = A
                             data['TO_RES'] = B
 
-                            # reiniciar PTM y STATUS
+                            # reiniciar PTM, NOTE y STATUS
                             ptm = ''
                             data['PTM'] = 'NOFT'
+                            data['NOTE'] = 'NOFT'
                             data['STATUS'] = "Experimental"
 
                             # Asignar STATUS y PTM
@@ -186,6 +188,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                     ptm = ptm.split(" (with")[0].split(" (int")[0]  # recortar
 
                             data['PTM'] = ptm
+                            data['NOTE'] = D
 
                             del listap[:]
                             for p in data.itervalues():  # itero los valores de los datos que fui cargando al dict.
