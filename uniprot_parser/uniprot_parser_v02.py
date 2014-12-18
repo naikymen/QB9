@@ -120,7 +120,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
         for a in range(0, len(features)):  # guardar los campos "candidato" del FT en una lista llamada out
             out.append(features[a][0])
         interes = list(set(out).intersection(ptmrecords))  # armar un set con los interesantes y hacerlo lista interes
-        if interes:  # si interes no está vacía, entonces hay algo para cargar
+        if interes and i > desde:  # si interes no está vacía, entonces hay algo para cargar
             # todo evitar duplicados de secuencia, relacion via AC?
             # ahora cargo cada PTM en data (subinstancias de entrada)
             for feature in features:  # iterar los features de la entrada
