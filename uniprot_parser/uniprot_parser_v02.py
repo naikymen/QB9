@@ -15,8 +15,8 @@ database = "ptmdb"
 tabla_cuentas = "sprot_count2"
 tabla_ptms = "sprot_ptms2"
 file_name = "uniprot_sprot.dat"
-desde = 868
-hasta = 870  # Hay 542782 entradas de AC??
+desde = 0
+hasta = 2000  # Hay 542782 entradas de AC??
 
 # Conectar a la base de datos
 con = mdb.connect('localhost', 'nicolas', passwd="nicolaslfp", db=database)
@@ -141,6 +141,9 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
 
                             # Asignar FT
                             print(type(A), type(B))
+                            if (type(A) is str) or (type(B) is str):
+                                print(A,B)
+                                print(features)
                             data['FT'] = feature[0]
                             data['FROM_RES'] = A
                             data['TO_RES'] = B
@@ -199,8 +202,10 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             # El insert, en el que reemplazo ' por '', para escaparlas en sql
 
                             if i >= desde:  # para hacerlo en partes
+                                """
                                 print(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
                                              % sql_insert_values_p).replace("-...", "").replace("\"", '').replace('.', ''))
+                                """
                                 # print("commit;")
                                 # con.commit()
 
