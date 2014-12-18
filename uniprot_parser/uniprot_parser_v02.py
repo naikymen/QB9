@@ -90,6 +90,8 @@ interes = []
 with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
     for record in SwissProt.parse(uniprot):  # parseando los records de uniprot
         i += 1
+        if i%1000 == 0:
+            print(i)
         data = empty_data.copy()  # en vez de vaciar el diccionario, le asigno el dafault sin enlazarlo al vacío
         sequence = record.sequence
         # Acá cargo los datos generales para las PTMs de una proteína/entrada de uniprot (instancias de entradas)
