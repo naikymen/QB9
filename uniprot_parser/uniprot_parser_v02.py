@@ -83,7 +83,6 @@ j = 0
 ptm = ''
 out = []
 listap = []
-listaq = []
 listar = []
 olista = []
 interes = []
@@ -113,22 +112,6 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
 
         data['inumber'] = str(i)  # solo para debuguear =) ver hasta donde llegó
 
-        # Generar y guardar el insert del #AA en la secuencia
-        del listaq[:]
-        contenido_aa = count_amino_acids_ext(sequence)  # Guardo el dict con partes AA, #AA de la secuencia
-        for q in contenido_aa.itervalues():
-            listaq.append(str(q))  # y los pongo en una lista
-        sql_insert_values_q = ', '.join(listaq)
-        """
-        if i >= desde:
-            print("INSERT INTO " + tabla_cuentas + " VALUES ('"
-                        + record.accessions[0] + "', '"
-                        + record.organism_classification[0] + "', "
-                        + str(record.sequence_length)
-                        + ", " + sql_insert_values_q + ");")
-            # print("commit;")
-            # con.commit()
-        """
         # Acá empiezo con los features, hay alguno interesante?
         features = record.features  # todo insertar los FTs en otra tabla junto con OC; OX, OR...?
         del out[:]
