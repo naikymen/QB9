@@ -187,7 +187,8 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                                     ptm = ptm.split(" (with")[0].split(" (int")[0]  # recortar
 
                             data['PTM'] = ptm
-                            data['NOTE'] = D
+                            if D != '':
+                                data['NOTE'] = D
 
                             del listap[:]
                             for p in data.itervalues():  # itero los valores de los datos que fui cargando al dict.
