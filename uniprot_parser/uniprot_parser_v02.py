@@ -145,12 +145,14 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                             data['FROM_RES'] = A
                             if type(A) is int:
                                 A_res = sequence[int(data['FROM_RES'])-1]
-                            else: A_res = '?'
+                            else:
+                                A_res = '?'
 
                             data['TO_RES'] = B
                             if type(B) is int:
                                 B_res = sequence[int(data['TO_RES'])-1]
-                            else: B_res = '?'
+                            else:
+                                B_res = '?'
 
                             # reiniciar PTM, NOTE y STATUS
                             ptm = ''
@@ -212,9 +214,6 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
 
                             cur.execute(("INSERT INTO " + tabla_ptms + " VALUES (%r);"
                                          % sql_insert_values_p).replace("-...", "").replace("\"", '').replace('.', ''))
-
-                                # print("commit;")
-                                # con.commit()
 
                             # unir los elementos de values con comas
         if i >= hasta:  # segun uniprot el número de entradas de secuencias es 54247468
