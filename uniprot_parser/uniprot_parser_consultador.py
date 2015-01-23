@@ -17,7 +17,7 @@ tabla_ptms = "sprot_ptms2"
 file_name = "uniprot_sprot.dat"
 desde = 0
 hasta = 542782  # Hay 542782 entradas de AC??
-este = 550
+este = 1482
 
 # Abrir el .dat de uniprot
 uniprot_file = expanduser("~") + '/QB9_Files/' + file_name
@@ -108,7 +108,7 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
                 if feature[0] in interes:  # si el titulo del FT interesa, proseguir ¡mejora un poco! =D
                     print(feature)
 
-        if i >= hasta:  # segun uniprot el número de entradas de secuencias es 54247468
+        if i > este:  # segun uniprot el número de entradas de secuencias es 54247468
             # print("\n")
             # print(i)
             break
