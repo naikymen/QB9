@@ -16,8 +16,8 @@ tabla_cuentas = "sprot_count2"
 tabla_ptms = "sprot_ptms2"
 file_name = "uniprot_sprot.dat"
 desde = 0
-hasta = 170  # Hay 542782 entradas de AC??
-este = 167
+hasta = 542782  # Hay 542782 entradas de AC??
+este = 550
 
 # Abrir el .dat de uniprot
 uniprot_file = expanduser("~") + '/QB9_Files/' + file_name
