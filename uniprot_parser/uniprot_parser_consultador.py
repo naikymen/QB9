@@ -104,8 +104,10 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
             out.append(features[a][0])
         interes = list(set(out).intersection(ptmrecords))  # armar un set con los interesantes y hacerlo lista interes
         if i == este:  # si interes no está vacía, entonces hay algo para cargar
-            print(features)
-                            # unir los elementos de values con comas
+            for feature in features:
+                if feature[0] in interes:  # si el titulo del FT interesa, proseguir ¡mejora un poco! =D
+                    print(feature)
+
         if i >= hasta:  # segun uniprot el número de entradas de secuencias es 54247468
             # print("\n")
             # print(i)
@@ -118,7 +120,6 @@ with open(uniprot_file) as uniprot:  # esto me abre y cierra el archivo al final
 # todo consider PE "protein existence", KW contiene "glycoprotein" qué otros?
 # todo también dentro de FT
 
-con.commit()
 print('\n')
 print(time.time() - start_time)
 
