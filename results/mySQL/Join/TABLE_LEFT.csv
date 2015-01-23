@@ -1,0 +1,467 @@
+id,sprot_ptm
+" (Tyr-Met) (with W-)",NULL
+"(2-aminosuccinimidyl)acetic acid (Asn-Gly)",NULL
+"(2-aminosuccinimidyl)acetic acid (Asp-Gly)",NULL
+(3R)-3-hydroxyarginine,(3R)-3-hydroxyarginine
+(3R)-3-hydroxyasparagine,(3R)-3-hydroxyasparagine
+(3R)-3-hydroxyaspartate,(3R)-3-hydroxyaspartate
+"(3R,4R)-3,4-dihydroxyproline","(3R,4R)-3,4-dihydroxyproline"
+"(3R,4R)-4,5-dihydroxyisoleucine","(3R,4R)-4,5-dihydroxyisoleucine"
+"(3R,4S)-3,4-dihydroxyproline","(3R,4S)-3,4-dihydroxyproline"
+"(3R,4S)-4-hydroxyisoleucine","(3R,4S)-4-hydroxyisoleucine"
+(3S)-3-hydroxyasparagine,(3S)-3-hydroxyasparagine
+(3S)-3-hydroxyaspartate,(3S)-3-hydroxyaspartate
+(3S)-3-hydroxyhistidine,(3S)-3-hydroxyhistidine
+"(3S,4R)-3,4-dihydroxyisoleucine","(3S,4R)-3,4-dihydroxyisoleucine"
+"(4R)-4,5-dihydroxyleucine","(4R)-4,5-dihydroxyleucine"
+"(4S)-thiazoline-4-carboxylic acid (Thr-Cys)",NULL
+(5R)-5-hydroxylysine,NULL
+(5S)-5-hydroxylysine,NULL
+"(E)-2,3-didehydrobutyrine","(E)-2,3-didehydrobutyrine"
+"(E)-2,3-didehydrotyrosine","(E)-2,3-didehydrotyrosine"
+"(Z)-2,3-didehydrobutyrine","(Z)-2,3-didehydrobutyrine"
+"(Z)-2,3-didehydrotyrosine","(Z)-2,3-didehydrotyrosine"
+"1'-histidyl-3'-tyrosine (His-Tyr)","1'-histidyl-3'-tyrosine (His-Tyr)"
+"1-(tryptophan-3-yl)-tryptophan (Trp-Trp) (interchain with W-)",NULL
+1-amino-2-propanone,1-amino-2-propanone
+1-thioglycine,1-thioglycine
+"2',4',5'-topaquinone","2',4',5'-topaquinone"
+"2'-(S-cysteinyl)-histidine (Cys-His)","2'-(S-cysteinyl)-histidine (Cys-His)"
+"2'-cysteinyl-6'-hydroxytryptophan sulfoxide (Trp-Cys)","2'-cysteinyl-6'-hydroxytryptophan sulfoxide (Trp-Cys)"
+2'-methylsulfonyltryptophan,2'-methylsulfonyltryptophan
+"2,3-didehydroalanine (Cys)","2,3-didehydroalanine (Cys)"
+"2,3-didehydroalanine (Ser)","2,3-didehydroalanine (Ser)"
+"2,3-didehydrobutyrine","2,3-didehydrobutyrine"
+"2,3-didehydrotyrosine","2,3-didehydrotyrosine"
+"2-(3-methylbutanoyl)-5-hydroxyoxazole-4-carbothionic acid (Leu-Cys)",NULL
+"2-(4-guanidinobutanoyl)-5-hydroxyimidazole-4-carbothionic acid (Arg-Cys)",NULL
+"2-(S-cysteinyl)pyruvic acid O-phosphothioketal",NULL
+"2-cysteinyl-D-allo-threonine (Cys-Thr)","2-cysteinyl-D-allo-threonine (Cys-Thr)"
+"2-cysteinyl-D-phenylalanine (Cys-Phe)","2-cysteinyl-D-phenylalanine (Cys-Phe)"
+"2-cysteinyl-L-phenylalanine (Cys-Phe)","2-cysteinyl-L-phenylalanine (Cys-Phe)"
+"2-iminomethyl-5-imidazolinone (Gln-Gly)","2-iminomethyl-5-imidazolinone (Gln-Gly)"
+"2-iminomethyl-5-imidazolinone (Glu-Gly)","2-iminomethyl-5-imidazolinone (Glu-Gly)"
+"2-iminomethyl-5-imidazolinone (Met-Gly)","2-iminomethyl-5-imidazolinone (Met-Gly)"
+2-methylglutamine,2-methylglutamine
+"2-oxobutanoic acid","2-oxobutanoic acid"
+"2-tetrahydro-2-pyridyl-5-imidazolinone (Lys-Gly)","2-tetrahydro-2-pyridyl-5-imidazolinone (Lys-Gly)"
+"3',4'-dihydroxyphenylalanine","3',4'-dihydroxyphenylalanine"
+"3'-(S-cysteinyl)-tyrosine (Cys-Tyr)","3'-(S-cysteinyl)-tyrosine (Cys-Tyr)"
+"3'-(S-cysteinyl)-tyrosine (Tyr-Cys)","3'-(S-cysteinyl)-tyrosine (Tyr-Cys)"
+"3'-geranyl-2',N2-cyclotryptophan","3'-geranyl-2',N2-cyclotryptophan"
+"3'-histidyl-3-tyrosine (His-Tyr)","3'-histidyl-3-tyrosine (His-Tyr)"
+3'-nitrotyrosine,3'-nitrotyrosine
+"3,4-dihydroxyarginine","3,4-dihydroxyarginine"
+"3,4-dihydroxyproline","3,4-dihydroxyproline"
+"3-(O4'-tyrosyl)-valine (Val-Tyr)","3-(O4'-tyrosyl)-valine (Val-Tyr)"
+"3-(S-cysteinyl)-tyrosine (Cys-Tyr)","3-(S-cysteinyl)-tyrosine (Cys-Tyr)"
+"3-cysteinyl-aspartic acid (Cys-Asp)","3-cysteinyl-aspartic acid (Cys-Asp)"
+3-hydroxyasparagine,3-hydroxyasparagine
+3-hydroxyaspartate,NULL
+3-hydroxyphenylalanine,3-hydroxyphenylalanine
+3-hydroxyproline,3-hydroxyproline
+"3-hydroxypyridine-2,5-dicarboxylic acid (Ser-Cys) (with S-)",NULL
+"3-hydroxypyridine-2,5-dicarboxylic acid (Ser-Ser) (with C-)",NULL
+3-hydroxytryptophan,3-hydroxytryptophan
+3-hydroxyvaline,3-hydroxyvaline
+"3-methylthioaspartic acid","3-methylthioaspartic acid"
+"3-oxoalanine (Cys)","3-oxoalanine (Cys)"
+"3-oxoalanine (Ser)","3-oxoalanine (Ser)"
+"3-phenyllactic acid","3-phenyllactic acid"
+"4'-cysteinyl-tryptophylquinone (Cys-Trp)","4'-cysteinyl-tryptophylquinone (Cys-Trp)"
+"4,5,5'-trihydroxyleucine","4,5,5'-trihydroxyleucine"
+"4,5-dihydroxylysine","4,5-dihydroxylysine"
+4-aspartylphosphate,4-aspartylphosphate
+4-carboxyglutamate,4-carboxyglutamate
+"4-cysteinyl-glutamic acid (Cys-Glu)","4-cysteinyl-glutamic acid (Cys-Glu)"
+4-hydroxyarginine,4-hydroxyarginine
+4-hydroxyglutamate,4-hydroxyglutamate
+4-hydroxyproline,4-hydroxyproline
+5'-chlorotryptophan,NULL
+"5'-tyrosyl-5'-aminotyrosine (Tyr-Tyr) (interchain with Y-)",NULL
+"5-(methoxymethyl)thiazole-4-carboxylic acid (Val-Cys)","5-(methoxymethyl)thiazole-4-carboxylic acid (Val-Cys)"
+"5-amino-piperideine-2,5-dicarboxylic acid (Ser-Cys) (with S-)",NULL
+"5-amino-piperideine-2,5-dicarboxylic acid (Ser-Ser) (with C-)",NULL
+"5-glutamyl 2-aminoadipic acid","5-glutamyl 2-aminoadipic acid"
+"5-glutamyl glutamate","5-glutamyl glutamate"
+"5-glutamyl glycerylphosphorylethanolamine","5-glutamyl glycerylphosphorylethanolamine"
+"5-glutamyl N2-lysine","5-glutamyl N2-lysine"
+"5-glutamyl N2-ornithine","5-glutamyl N2-ornithine"
+"5-glutamyl polyglutamate",NULL
+"5-glutamyl polyglycine","5-glutamyl polyglycine"
+"5-hydroxy-3-methylproline (Ile)","5-hydroxy-3-methylproline (Ile)"
+5-hydroxylysine,5-hydroxylysine
+"5-imidazolinone (Ala-Gly)","5-imidazolinone (Ala-Gly)"
+"5-imidazolinone (Asn-Gly)","5-imidazolinone (Asn-Gly)"
+"5-imidazolinone (Cys-Gly)","5-imidazolinone (Cys-Gly)"
+"5-imidazolinone (Lys-Gly)","5-imidazolinone (Lys-Gly)"
+"5-imidazolinone (Ser-Gly)","5-imidazolinone (Ser-Gly)"
+"5-methoxythiazole-4-carboxylic acid (Val-Cys)",NULL
+5-methylarginine,5-methylarginine
+"5-methyloxazole-4-carboxylic acid (Cys-Thr)",NULL
+"5-methyloxazole-4-carboxylic acid (Ser-Thr)",NULL
+"5-methyloxazole-4-carboxylic acid (Thr-Thr)",NULL
+"5-methyloxazoline-4-carboxylic acid (Ser-Thr)",NULL
+"5-methylthiazole-4-carboxylic acid (Asn-Cys)",NULL
+6'-bromotryptophan,6'-bromotryptophan
+6'-chlorotryptophan,6'-chlorotryptophan
+7'-hydroxytryptophan,7'-hydroxytryptophan
+ADP-ribosylarginine,ADP-ribosylarginine
+ADP-ribosylasparagine,ADP-ribosylasparagine
+ADP-ribosylcysteine,ADP-ribosylcysteine
+ADP-ribosylserine,ADP-ribosylserine
+"Alanine amide","Alanine amide"
+"Alanine derivative",NULL
+"Alanine isoaspartyl cyclopeptide (Ala-Asn)",NULL
+Allysine,Allysine
+"Aminomalonic acid (Ser)","Aminomalonic acid (Ser)"
+"Arginine amide","Arginine amide"
+"Arginine derivative",NULL
+"Asparagine amide","Asparagine amide"
+"Aspartate 1-(chondroitin 4-sulfate)-ester","Aspartate 1-(chondroitin 4-sulfate)-ester"
+"Aspartic acid 1-amide","Aspartic acid 1-amide"
+"Aspartic acid 1-[(3-aminopropyl)(5'-adenosyl)phosphono]amide",NULL
+"Aspartyl aldehyde","Aspartyl aldehyde"
+"Aspartyl isopeptide (Asn)","Aspartyl isopeptide (Asn)"
+"Aspartyl isopeptide (Asp)","Aspartyl isopeptide (Asp)"
+"Asymmetric dimethylarginine","Asymmetric dimethylarginine"
+"Beta-decarboxylated aspartate","Beta-decarboxylated aspartate"
+"Beta-methyllanthionine (Cys-Thr)","Beta-methyllanthionine (Cys-Thr)"
+"Beta-methyllanthionine (Thr-Cys)","Beta-methyllanthionine (Thr-Cys)"
+"Beta-methyllanthionine sulfoxide (Thr-Cys)",NULL
+"Blocked amino end (Ala)","Blocked amino end (Ala)"
+"Blocked amino end (Arg)","Blocked amino end (Arg)"
+"Blocked amino end (Asn)","Blocked amino end (Asn)"
+"Blocked amino end (Asp)","Blocked amino end (Asp)"
+"Blocked amino end (Asx)",NULL
+"Blocked amino end (Cys)","Blocked amino end (Cys)"
+"Blocked amino end (Gln)","Blocked amino end (Gln)"
+"Blocked amino end (Glu)","Blocked amino end (Glu)"
+"Blocked amino end (Gly)","Blocked amino end (Gly)"
+"Blocked amino end (Ile)","Blocked amino end (Ile)"
+"Blocked amino end (Leu)","Blocked amino end (Leu)"
+"Blocked amino end (Met)","Blocked amino end (Met)"
+"Blocked amino end (Pro)","Blocked amino end (Pro)"
+"Blocked amino end (Ser)","Blocked amino end (Ser)"
+"Blocked amino end (Thr)","Blocked amino end (Thr)"
+"Blocked amino end (Val)","Blocked amino end (Val)"
+"Blocked amino end (Xaa)","Blocked amino end (Xaa)"
+"Blocked carboxyl end (Arg)","Blocked carboxyl end (Arg)"
+"Blocked carboxyl end (His)","Blocked carboxyl end (His)"
+Bromohistidine,Bromohistidine
+"Cholesterol glycine ester","Cholesterol glycine ester"
+"Cis-14-hydroxy-10,13-dioxo-7-heptadecenoic acid aspartate ester",NULL
+Citrulline,Citrulline
+"Cyclopeptide (Ala-Arg)","Cyclopeptide (Ala-Arg)"
+"Cyclopeptide (Ala-Ile)","Cyclopeptide (Ala-Ile)"
+"Cyclopeptide (Ala-Pro)","Cyclopeptide (Ala-Pro)"
+"Cyclopeptide (Arg-Cys) (interchain with C-)",NULL
+"Cyclopeptide (Asn-Gly)","Cyclopeptide (Asn-Gly)"
+"Cyclopeptide (Asp-Asn)","Cyclopeptide (Asp-Asn)"
+"Cyclopeptide (Cys-Arg) (interchain with R-)",NULL
+"Cyclopeptide (Gly-Asn)","Cyclopeptide (Gly-Asn)"
+"Cyclopeptide (Gly-Asp)","Cyclopeptide (Gly-Asp)"
+"Cyclopeptide (His-Asn)","Cyclopeptide (His-Asn)"
+"Cyclopeptide (His-Asp)","Cyclopeptide (His-Asp)"
+"Cyclopeptide (Ile-Pro)","Cyclopeptide (Ile-Pro)"
+"Cyclopeptide (Leu-Leu)","Cyclopeptide (Leu-Leu)"
+"Cyclopeptide (Leu-Trp)","Cyclopeptide (Leu-Trp)"
+"Cyclopeptide (Lys-Asp)","Cyclopeptide (Lys-Asp)"
+"Cyclopeptide (Pro-Met)","Cyclopeptide (Pro-Met)"
+"Cyclopeptide (Pro-Tyr)","Cyclopeptide (Pro-Tyr)"
+"Cyclopeptide (Ser-Asn)","Cyclopeptide (Ser-Asn)"
+"Cyclopeptide (Ser-Gly)","Cyclopeptide (Ser-Gly)"
+"Cyclo[(prolylserin)-O-yl] cysteinate","Cyclo[(prolylserin)-O-yl] cysteinate"
+"CysO-cysteine adduct","CysO-cysteine adduct"
+"Cysteine amide","Cysteine amide"
+"Cysteine derivative","Cysteine derivative"
+"Cysteine methyl disulfide","Cysteine methyl disulfide"
+"Cysteine methyl ester","Cysteine methyl ester"
+"Cysteine persulfide","Cysteine persulfide"
+"Cysteine sulfenic acid (-SOH)","Cysteine sulfenic acid (-SOH)"
+"Cysteine sulfinic acid (-SO2H)","Cysteine sulfinic acid (-SO2H)"
+"Cysteinyl-selenocysteine (Cys-Sec)","Cysteinyl-selenocysteine (Cys-Sec)"
+"Cysteinyl-selenocysteine (Sec-Cys)","Cysteinyl-selenocysteine (Sec-Cys)"
+D-4-hydroxyvaline,D-4-hydroxyvaline
+"D-alanine (Ala)","D-alanine (Ala)"
+"D-alanine (Ser)","D-alanine (Ser)"
+D-allo-isoleucine,D-allo-isoleucine
+D-asparagine,D-asparagine
+D-leucine,D-leucine
+D-methionine,D-methionine
+D-phenylalanine,D-phenylalanine
+"D-serine (Cys)","D-serine (Cys)"
+"D-serine (Ser)","D-serine (Ser)"
+D-threonine,D-threonine
+D-tryptophan,D-tryptophan
+D-valine,D-valine
+"Deamidated asparagine","Deamidated asparagine"
+"Deamidated glutamine","Deamidated glutamine"
+"Decarboxylated threonine","Decarboxylated threonine"
+Diiodotyrosine,NULL
+"Dimethylated arginine","Dimethylated arginine"
+Diphthamide,Diphthamide
+"FMN phosphoryl serine","FMN phosphoryl serine"
+"FMN phosphoryl threonine","FMN phosphoryl threonine"
+"Glutamate methyl ester (Gln)","Glutamate methyl ester (Gln)"
+"Glutamate methyl ester (Glu)","Glutamate methyl ester (Glu)"
+"Glutamic acid 1-amide","Glutamic acid 1-amide"
+"Glutamine amide","Glutamine amide"
+"Glutamine derivative","Glutamine derivative"
+"Glycine amide","Glycine amide"
+"Glycine radical","Glycine radical"
+"Glycyl adenylate","Glycyl adenylate"
+"Glycyl cysteine dithioester (Cys-Gly) (interchain with G-)",NULL
+"Glycyl cysteine dithioester (Gly-Cys) (interchain with C-)",NULL
+"Glycyl cysteine thioester (Cys-Gly) (interchain with G-)",NULL
+"Glycyl lysine isopeptide (Gly-Lys) (interchain with K-)",NULL
+"Glycyl lysine isopeptide (Lys-Gly) (interchain with G-)",NULL
+"Glycyl serine ester (Gly-Ser) (interchain with S-)",NULL
+"Glycyl serine ester (Ser-Gly) (interchain with G-)",NULL
+"Glycyl threonine ester (Gly-Thr) (interchain with T-)",NULL
+"Glycyl threonine ester (Thr-Gly) (interchain with G-)",NULL
+"GPI-anchor amidated alanine","GPI-anchor amidated alanine"
+"GPI-anchor amidated asparagine","GPI-anchor amidated asparagine"
+"GPI-anchor amidated aspartate","GPI-anchor amidated aspartate"
+"GPI-anchor amidated carboxyl end",NULL
+"GPI-anchor amidated cysteine","GPI-anchor amidated cysteine"
+"GPI-anchor amidated glycine","GPI-anchor amidated glycine"
+"GPI-anchor amidated serine","GPI-anchor amidated serine"
+"GPI-anchor amidated threonine","GPI-anchor amidated threonine"
+"GPI-like-anchor amidated alanine","GPI-like-anchor amidated alanine"
+"GPI-like-anchor amidated asparagine","GPI-like-anchor amidated asparagine"
+"GPI-like-anchor amidated aspartate","GPI-like-anchor amidated aspartate"
+"GPI-like-anchor amidated glycine","GPI-like-anchor amidated glycine"
+"GPI-like-anchor amidated serine","GPI-like-anchor amidated serine"
+"Histidine amide","Histidine amide"
+Hydroxyproline,Hydroxyproline
+Hypusine,Hypusine
+Iodotyrosine,NULL
+"Isoaspartyl cysteine isopeptide (Cys-Asn)",NULL
+"Isoaspartyl glycine isopeptide (Gly-Asn)","Isoaspartyl glycine isopeptide (Gly-Asn)"
+"Isoaspartyl lysine isopeptide (Asn-Lys) (interchain with K-)",NULL
+"Isoaspartyl lysine isopeptide (Lys-Asn)","Isoaspartyl lysine isopeptide (Lys-Asn)"
+"Isoaspartyl lysine isopeptide (Lys-Asn) (interchain with N-)",NULL
+"Isoaspartyl lysine isopeptide (Lys-Asp)","Isoaspartyl lysine isopeptide (Lys-Asp)"
+"Isodityrosine (Tyr-Tyr)","Isodityrosine (Tyr-Tyr)"
+"Isoglutamyl cysteine thioester (Cys-Gln)","Isoglutamyl cysteine thioester (Cys-Gln)"
+"Isoglutamyl glycine isopeptide (Gly-Glu)","Isoglutamyl glycine isopeptide (Gly-Glu)"
+"Isoglutamyl lysine isopeptide (Gln-Lys) (interchain with K-)",NULL
+"Isoglutamyl lysine isopeptide (Glu-Lys) (interchain with K-)",NULL
+"Isoglutamyl lysine isopeptide (Lys-Gln)","Isoglutamyl lysine isopeptide (Lys-Gln)"
+"Isoglutamyl lysine isopeptide (Lys-Gln) (interchain with Q-)",NULL
+"Isoglutamyl lysine isopeptide (Lys-Glu) (interchain with E-)",NULL
+"Isoleucine amide","Isoleucine amide"
+"Isoleucine derivative","Isoleucine derivative"
+L-allo-isoleucine,L-allo-isoleucine
+"Lactic acid","Lactic acid"
+"Lanthionine (Cys-Ser)","Lanthionine (Cys-Ser)"
+"Lanthionine (Ser-Cys)","Lanthionine (Ser-Cys)"
+"Leucine amide","Leucine amide"
+"Leucine methyl ester","Leucine methyl ester"
+"Lysine amide","Lysine amide"
+"Lysine derivative","Lysine derivative"
+"Lysine methyl ester","Lysine methyl ester"
+"Lysine tyrosylquinone (Lys-Tyr)","Lysine tyrosylquinone (Lys-Tyr)"
+"Lysine tyrosylquinone (Tyr-Lys)","Lysine tyrosylquinone (Tyr-Lys)"
+"Lysino-D-alanine (Lys)","Lysino-D-alanine (Lys)"
+"Lysinoalanine (Ser-Lys)","Lysinoalanine (Ser-Lys)"
+"Methionine (R)-sulfoxide","Methionine (R)-sulfoxide"
+"Methionine (S)-sulfoxide",NULL
+"Methionine amide","Methionine amide"
+"Methionine derivative","Methionine derivative"
+"Methionine sulfone","Methionine sulfone"
+"Methionine sulfoxide","Methionine sulfoxide"
+Methylhistidine,Methylhistidine
+"N,N,N-trimethylalanine","N,N,N-trimethylalanine"
+"N,N,N-trimethylglycine","N,N,N-trimethylglycine"
+"N,N,N-trimethylserine","N,N,N-trimethylserine"
+"N,N-(cysteine-1,S-diyl)phenylalanine (Cys-Phe)","N,N-(cysteine-1,S-diyl)phenylalanine (Cys-Phe)"
+"N,N-(cysteine-1,S-diyl)serine (Cys-Ser)","N,N-(cysteine-1,S-diyl)serine (Cys-Ser)"
+"N,N-dimethylalanine","N,N-dimethylalanine"
+"N,N-dimethylglycine","N,N-dimethylglycine"
+"N,N-dimethylleucine","N,N-dimethylleucine"
+"N,N-dimethylproline","N,N-dimethylproline"
+"N,N-dimethylserine","N,N-dimethylserine"
+N-(12-oxomyristoyl)cysteine,N-(12-oxomyristoyl)cysteine
+N-acetylalanine,N-acetylalanine
+N-acetylaspartate,N-acetylaspartate
+"N-acetylated lysine",NULL
+N-acetylcysteine,N-acetylcysteine
+N-acetylglutamate,N-acetylglutamate
+N-acetylglycine,N-acetylglycine
+N-acetylisoleucine,NULL
+N-acetylmethionine,N-acetylmethionine
+N-acetylproline,N-acetylproline
+N-acetylserine,N-acetylserine
+N-acetylthreonine,N-acetylthreonine
+N-acetyltyrosine,N-acetyltyrosine
+N-acetylvaline,N-acetylvaline
+N-carbamoylalanine,N-carbamoylalanine
+"N-D-glucuronoyl glycine","N-D-glucuronoyl glycine"
+N-formylglycine,N-formylglycine
+N-formylmethionine,N-formylmethionine
+N-methylalanine,N-methylalanine
+N-methylglycine,N-methylglycine
+N-methylisoleucine,N-methylisoleucine
+N-methylleucine,N-methylleucine
+N-methylmethionine,N-methylmethionine
+N-methylphenylalanine,N-methylphenylalanine
+N-methylproline,N-methylproline
+N-methylserine,N-methylserine
+N-methyltyrosine,N-methyltyrosine
+"N-myristoyl glycine","N-myristoyl glycine"
+"N-palmitoyl cysteine","N-palmitoyl cysteine"
+"N-palmitoyl glycine","N-palmitoyl glycine"
+"N-pyruvate 2-iminyl-cysteine","N-pyruvate 2-iminyl-cysteine"
+"N-pyruvate 2-iminyl-valine","N-pyruvate 2-iminyl-valine"
+N-[(12R)-12-hydroxymyristoyl]cysteine,N-[(12R)-12-hydroxymyristoyl]cysteine
+"N2,N2-dimethylarginine","N2,N2-dimethylarginine"
+N2-acetylarginine,N2-acetylarginine
+N2-succinyltryptophan,N2-succinyltryptophan
+"N4,N4-dimethylasparagine","N4,N4-dimethylasparagine"
+N4-methylasparagine,N4-methylasparagine
+N5-methylarginine,N5-methylarginine
+N5-methylglutamine,N5-methylglutamine
+"N6,N6,N6-trimethyl-5-hydroxylysine","N6,N6,N6-trimethyl-5-hydroxylysine"
+"N6,N6,N6-trimethyllysine","N6,N6,N6-trimethyllysine"
+"N6,N6-dimethyllysine","N6,N6-dimethyllysine"
+"N6-(3,6-diaminohexanoyl)-5-hydroxylysine","N6-(3,6-diaminohexanoyl)-5-hydroxylysine"
+N6-(ADP-ribosyl)lysine,N6-(ADP-ribosyl)lysine
+"N6-(pyridoxal phosphate)lysine","N6-(pyridoxal phosphate)lysine"
+N6-(retinylidene)lysine,N6-(retinylidene)lysine
+"N6-1-carboxyethyl lysine","N6-1-carboxyethyl lysine"
+N6-acetyllysine,N6-acetyllysine
+N6-biotinyllysine,N6-biotinyllysine
+N6-carboxylysine,N6-carboxylysine
+N6-crotonyl-L-lysine,N6-crotonyl-L-lysine
+N6-formyllysine,N6-formyllysine
+N6-lipoyllysine,N6-lipoyllysine
+N6-malonyllysine,N6-malonyllysine
+"N6-methylated lysine","N6-methylated lysine"
+N6-methyllysine,N6-methyllysine
+"N6-murein peptidoglycan lysine","N6-murein peptidoglycan lysine"
+"N6-myristoyl lysine","N6-myristoyl lysine"
+"N6-palmitoyl lysine","N6-palmitoyl lysine"
+N6-poly(methylaminopropyl)lysine,N6-poly(methylaminopropyl)lysine
+N6-succinyllysine,N6-succinyllysine
+"Nitrated tyrosine","Nitrated tyrosine"
+O-(2-aminoethylphosphoryl)serine,O-(2-aminoethylphosphoryl)serine
+O-(2-cholinephosphoryl)serine,O-(2-cholinephosphoryl)serine
+O-(5'-phospho-DNA)-serine,O-(5'-phospho-DNA)-serine
+O-(5'-phospho-DNA)-tyrosine,O-(5'-phospho-DNA)-tyrosine
+O-(5'-phospho-RNA)-serine,O-(5'-phospho-RNA)-serine
+O-(5'-phospho-RNA)-tyrosine,O-(5'-phospho-RNA)-tyrosine
+"O-(pantetheine 4'-phosphoryl)serine","O-(pantetheine 4'-phosphoryl)serine"
+"O-(phosphoribosyl dephospho-coenzyme A)serine","O-(phosphoribosyl dephospho-coenzyme A)serine"
+O-(sn-1-glycerophosphoryl)serine,O-(sn-1-glycerophosphoryl)serine
+"O-8alpha-FAD tyrosine","O-8alpha-FAD tyrosine"
+O-acetylserine,O-acetylserine
+O-acetylthreonine,O-acetylthreonine
+O-AMP-threonine,O-AMP-threonine
+O-AMP-tyrosine,O-AMP-tyrosine
+"O-decanoyl serine","O-decanoyl serine"
+"O-decanoyl threonine","O-decanoyl threonine"
+O-methylthreonine,O-methylthreonine
+"O-octanoyl serine","O-octanoyl serine"
+"O-octanoyl threonine","O-octanoyl threonine"
+"O-palmitoyl serine","O-palmitoyl serine"
+"O-palmitoyl threonine","O-palmitoyl threonine"
+O-UMP-tyrosine,O-UMP-tyrosine
+"Omega-hydroxyceramide glutamate ester","Omega-hydroxyceramide glutamate ester"
+Omega-N-methylarginine,Omega-N-methylarginine
+"Omega-N-methylated arginine","Omega-N-methylated arginine"
+"Oxazole-4-carboxylic acid (Cys-Ser)","Oxazole-4-carboxylic acid (Cys-Ser)"
+"Oxazole-4-carboxylic acid (Gly-Ser)","Oxazole-4-carboxylic acid (Gly-Ser)"
+"Oxazole-4-carboxylic acid (Ile-Ser)","Oxazole-4-carboxylic acid (Ile-Ser)"
+"Oxazole-4-carboxylic acid (Ser-Ser)","Oxazole-4-carboxylic acid (Ser-Ser)"
+"Oxazoline-4-carboxylic acid (Cys-Ser)","Oxazoline-4-carboxylic acid (Cys-Ser)"
+"Pentaglycyl murein peptidoglycan amidated alanine","Pentaglycyl murein peptidoglycan amidated alanine"
+"Pentaglycyl murein peptidoglycan amidated threonine","Pentaglycyl murein peptidoglycan amidated threonine"
+"Peptide (Met-Gly) (interchain with G-)",NULL
+"Phenylalanine amide","Phenylalanine amide"
+"Phosphatidylethanolamine amidated glycine","Phosphatidylethanolamine amidated glycine"
+Phosphoarginine,Phosphoarginine
+Phosphocysteine,Phosphocysteine
+Phosphohistidine,Phosphohistidine
+Phosphoserine,Phosphoserine
+Phosphothreonine,Phosphothreonine
+Phosphotyrosine,Phosphotyrosine
+"PolyADP-ribosyl glutamic acid","PolyADP-ribosyl glutamic acid"
+"Proline 5-hydroxy-oxazole-4-carbothionic acid (Pro-Cys)","Proline 5-hydroxy-oxazole-4-carbothionic acid (Pro-Cys)"
+"Proline amide","Proline amide"
+"Pros-8alpha-FAD histidine","Pros-8alpha-FAD histidine"
+Pros-methylhistidine,Pros-methylhistidine
+Pros-phosphohistidine,NULL
+"Pyridine-2,5-dicarboxylic acid (Ser-Cys) (with S-)",NULL
+"Pyridine-2,5-dicarboxylic acid (Ser-Ser) (with C-)",NULL
+"Pyrrolidone carboxylic acid","Pyrrolidone carboxylic acid"
+"Pyrrolidone carboxylic acid (Glu)","Pyrrolidone carboxylic acid (Glu)"
+"Pyrroloquinoline quinone (Glu-Tyr)","Pyrroloquinoline quinone (Glu-Tyr)"
+"Pyruvic acid (Cys)","Pyruvic acid (Cys)"
+"Pyruvic acid (Ser)","Pyruvic acid (Ser)"
+"S-(15-deoxy-Delta12,14-prostaglandin J2-9-yl)cysteine",NULL
+"S-(2-aminovinyl)-3-methyl-D-cysteine (Thr-Cys)","S-(2-aminovinyl)-3-methyl-D-cysteine (Thr-Cys)"
+"S-(2-aminovinyl)-D-cysteine (Cys-Cys)","S-(2-aminovinyl)-D-cysteine (Cys-Cys)"
+"S-(2-aminovinyl)-D-cysteine (Ser-Cys)","S-(2-aminovinyl)-D-cysteine (Ser-Cys)"
+"S-(2-aminovinyl)-L-cysteine (Cys-Cys)",NULL
+S-(4-hydroxycinnamyl)cysteine,S-(4-hydroxycinnamyl)cysteine
+S-(coelenterazin-3a-yl)cysteine,S-(coelenterazin-3a-yl)cysteine
+S-(dipyrrolylmethanemethyl)cysteine,S-(dipyrrolylmethanemethyl)cysteine
+"S-12-hydroxyfarnesyl cysteine","S-12-hydroxyfarnesyl cysteine"
+"S-4a-FMN cysteine","S-4a-FMN cysteine"
+"S-6-FMN cysteine","S-6-FMN cysteine"
+"S-8alpha-FAD cysteine","S-8alpha-FAD cysteine"
+"S-archaeol cysteine","S-archaeol cysteine"
+"S-bacillithiol cysteine disulfide","S-bacillithiol cysteine disulfide"
+"S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)","S-cysteinyl 3-(oxidosulfanyl)alanine (Cys-Cys)"
+"S-cysteinyl cysteine","S-cysteinyl cysteine"
+"S-diacylglycerol cysteine","S-diacylglycerol cysteine"
+"S-farnesyl cysteine","S-farnesyl cysteine"
+"S-geranylgeranyl cysteine","S-geranylgeranyl cysteine"
+"S-glutathionyl cysteine","S-glutathionyl cysteine"
+"S-Lysyl-methionine sulfilimine (Lys-Met) (interchain with M-)",NULL
+"S-Lysyl-methionine sulfilimine (Met-Lys) (interchain with K-)",NULL
+S-methylcysteine,S-methylcysteine
+S-nitrosocysteine,S-nitrosocysteine
+"S-palmitoyl cysteine","S-palmitoyl cysteine"
+S-selanylcysteine,S-selanylcysteine
+"S-stearoyl cysteine","S-stearoyl cysteine"
+"Serine amide","Serine amide"
+"Serine microcin E492 siderophore ester","Serine microcin E492 siderophore ester"
+Sulfoserine,Sulfoserine
+Sulfothreonine,Sulfothreonine
+Sulfotyrosine,Sulfotyrosine
+"Symmetric dimethylarginine","Symmetric dimethylarginine"
+"Tele-(1,2,3-trihydroxypropan-2-yl)histidine",NULL
+"Tele-8alpha-FAD histidine","Tele-8alpha-FAD histidine"
+"Tele-8alpha-FMN histidine","Tele-8alpha-FMN histidine"
+Tele-methylhistidine,Tele-methylhistidine
+Tele-phosphohistidine,Tele-phosphohistidine
+"Thiazole-4-carboxylic acid (Arg-Cys)","Thiazole-4-carboxylic acid (Arg-Cys)"
+"Thiazole-4-carboxylic acid (Asn-Cys)","Thiazole-4-carboxylic acid (Asn-Cys)"
+"Thiazole-4-carboxylic acid (Cys-Cys)","Thiazole-4-carboxylic acid (Cys-Cys)"
+"Thiazole-4-carboxylic acid (Glu-Cys)","Thiazole-4-carboxylic acid (Glu-Cys)"
+"Thiazole-4-carboxylic acid (Gly-Cys)","Thiazole-4-carboxylic acid (Gly-Cys)"
+"Thiazole-4-carboxylic acid (Ile-Cys)","Thiazole-4-carboxylic acid (Ile-Cys)"
+"Thiazole-4-carboxylic acid (Phe-Cys)","Thiazole-4-carboxylic acid (Phe-Cys)"
+"Thiazole-4-carboxylic acid (Pro-Cys)",NULL
+"Thiazole-4-carboxylic acid (Ser-Cys)","Thiazole-4-carboxylic acid (Ser-Cys)"
+"Thiazole-4-carboxylic acid (Thr-Cys)","Thiazole-4-carboxylic acid (Thr-Cys)"
+"Thiazole-4-carboxylic acid (Val-Cys)","Thiazole-4-carboxylic acid (Val-Cys)"
+"Thiazoline-4-carboxylic acid (Phe-Cys)","Thiazoline-4-carboxylic acid (Phe-Cys)"
+"Threonine 5-hydroxy-oxazole-4-carbonthionic acid (Thr-Cys)",NULL
+"Threonine amide","Threonine amide"
+"Threonine methyl ester",NULL
+"Threonyl lysine isopeptide (Lys-Thr) (interchain with T-)",NULL
+"Threonyl lysine isopeptide (Thr-Lys) (interchain with K-)",NULL
+Thyroxine,Thyroxine
+Triiodothyronine,Triiodothyronine
+"Trithiocysteine (Cys-Cys)",NULL
+"Tryptophan amide","Tryptophan amide"
+"Tryptophan derivative","Tryptophan derivative"
+"Tryptophan tryptophylquinone (Trp-Trp)","Tryptophan tryptophylquinone (Trp-Trp)"
+"Tryptophyl-tyrosyl-methioninium (Trp-Tyr) (with M-)",NULL
+Tryptophylquinone,Tryptophylquinone
+"Tyrosine amide","Tyrosine amide"
+"Valine amide","Valine amide"
