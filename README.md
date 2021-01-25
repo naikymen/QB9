@@ -1,4 +1,4 @@
-QB9
+PTMs for QB9
 ===
 
 Proyecto ABC-ácido
