@@ -3,10 +3,9 @@ QB9
 
 Proyecto ABC-ácido
 
-En este coso hay (o va a haber):
-Un coso que cuenta el número de modificaciones postraduccionales únicas en la lista de uniprot.
-Un coso que carga las modificaciones en una base de datos para hacerle preguntas fácilmente.
-Un coso que maneje swissprot entero para hacerle más preguntas.
+En este repositorio hay (o habrá) scripts para:
 
-Por cierto, si alguien lo usa favor de dar crédito al LFP de la UBA (http://www.proteinphysiologylab.tk/) y a mi.
-Credit to myself and LFP @UBA, Argentina (http://www.proteinphysiologylab.tk/).
+- [x] Contar el número de modificaciones postraduccionales únicas en la lista de uniprot.
+- [x] Agregar las PTMs a una base de datos para hacerle preguntas fácilmente.
+
+Crédito al LFP de la UBA (http://www.proteinphysiologylab.tk/) y a mi. Credit for this work should be given to LFP @UBA, Argentina (http://www.proteinphysiologylab.tk/) and myself.
